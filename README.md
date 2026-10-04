@@ -9,6 +9,8 @@ Visual financial accounting lessons: slides, notes, common mistakes and three-le
 - `site.css`: shared design for every page
 - `site.js`: shared behaviour (sidebar, slides, quiz, progress, video)
 - `<lesson>.html`: one file per lesson
+- `voiceovers/`: recording scripts, one folder per main topic, numbered in lesson order (blocked on the live site)
+- `_redirects`, `404.html`: hide internal files and show a friendly page for missing links
 
 ## Adding a video to a lesson
 
