@@ -9,7 +9,8 @@ window.DRDEBIT_LESSONS = [
       { id: 'what-is-accounting', title: 'What Is Accounting?', file: 'what-is-accounting.html' },
       { id: 'users', title: 'Users of Accounting Information', file: 'users-of-accounting.html' },
       { id: 'sub-fields', title: 'Sub-fields of Accounting', file: 'sub-fields-of-accounting.html' },
-      { id: 'assets-liabilities', title: 'Assets & Liabilities', file: 'assets-and-liabilities.html' }
+      { id: 'assets-liabilities', title: 'Assets & Liabilities', file: 'assets-and-liabilities.html' },
+      { id: 'capital-equation', title: 'Capital & the Accounting Equation', file: 'capital-and-accounting-equation.html' }
     ]
   }
 ];

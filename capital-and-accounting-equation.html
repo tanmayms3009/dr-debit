@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Capital &amp; the Accounting Equation · Dr. Debit</title>
+<meta name="description" content="Capital (owner's equity) and the accounting equation Assets = Liabilities + Capital, with worked examples and a three-level quiz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="rail" id="rail" aria-label="Topics">
+    <div class="brand" aria-label="Dr. Debit">
+      <span class="brand-word">Dr<span style="color:var(--real)">.</span>Debit</span>
+      <svg class="brand-pulse" viewBox="0 0 400 80" fill="none" aria-hidden="true">
+        <polyline points="0,58 80,58 96,58 110,22 126,74 140,38 152,58 214,58" stroke="var(--real)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="232" y="48" width="26" height="22" rx="5" fill="var(--personal)"/>
+        <rect x="272" y="34" width="26" height="36" rx="5" fill="var(--real)"/>
+        <rect x="312" y="20" width="26" height="50" rx="5" fill="var(--nominal)"/>
+        <rect x="352" y="6" width="26" height="64" rx="5" fill="var(--dr)"/>
+      </svg>
+    </div>
+    <div class="progress-wrap">
+      <span id="progText">0 of 1 lessons complete</span>
+      <div class="bar"><span id="progBar"></span></div>
+    </div>
+    <nav class="nav" id="nav"></nav>
+  </aside>
+
+  <main>
+    <button class="btn menu-btn" id="menuBtn" aria-controls="rail" aria-expanded="false">☰ Topics</button>
+
+    <div class="head">
+      <div class="crumbs">Financial Accounting <span>›</span> Introduction to Financial Accounting <span>›</span> <b>Capital &amp; the Accounting Equation</b></div>
+      <h1>Capital &amp; the Accounting Equation</h1>
+      <div class="meta">
+        <a class="chip" href="#slides">6 slides</a>
+        <a class="chip" href="#quiz-section">Quiz: Medium · High · Expert</a>
+      </div>
+    </div>
+
+    <div class="legend" aria-label="Colour key">
+      <span><i class="sw" style="background:var(--personal)"></i><span class="t-personal">Personal</span></span>
+      <span><i class="sw" style="background:var(--real)"></i><span class="t-real">Real</span></span>
+      <span><i class="sw" style="background:var(--nominal)"></i><span class="t-nominal">Nominal</span></span>
+      <span><i class="sw" style="background:var(--dr)"></i><span class="t-dr">Debit (Dr)</span></span>
+      <span><i class="sw" style="background:var(--cr)"></i><span class="t-cr">Credit (Cr)</span></span>
+    </div>
+
+    <section class="block">
+      <div class="block-title"><h2>Key takeaways</h2><small>30-second read</small></div>
+      <div class="takeaways">
+        <ul>
+          <li><span class="tick">✓</span><span><b>Capital</b> (owner's equity) is what is left for the owner after all liabilities are paid: <b>Assets − Liabilities</b>. It is also called <b>residual interest</b>.</span></li>
+          <li><span class="tick">✓</span><span>The <b>accounting equation</b>: <span class="t-real">Assets</span> = <span class="t-personal">Liabilities</span> + <span class="t-cr">Capital</span>. It balances after every transaction.</span></li>
+          <li><span class="tick">✓</span><span>Capital goes <b>up</b> with new investment, profits and revaluation gains, and <b>down</b> with drawings and losses.</span></li>
+          <li><span class="tick">✓</span><span>Capital is a liability <b>of the business to the owner</b>, because the business and the owner are treated as separate.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block deck" id="slides" aria-roledescription="carousel" aria-label="Lesson slides">
+      <div class="block-title"><h2>Slides</h2><small>Use ← → keys or the buttons</small></div>
+      <div class="stage" id="stage">
+
+        <div class="slide" data-script="A business owns things worth ten lakh rupees. It owes outsiders four lakh. So how much of this business really belongs to the owner? That number has a name, and it sits at the heart of all accounting.">
+          <p class="s-eyebrow a" style="--d:0">Quick question</p>
+          <p class="s-big a" style="--d:1">Owns ₹10 lakh. Owes ₹4 lakh.<br>How much is <span class="t-cr">really yours</span>?</p>
+          <p class="s-text a" style="--d:2">The answer has a name, and it holds all of accounting together.</p>
+        </div>
+
+        <div class="slide" data-script="That number is capital, also called owner's equity. It's what's left for the owner after every outsider has been paid. Assets minus liabilities. Because it's what remains at the end, it's also called residual interest.">
+          <p class="s-eyebrow a" style="--d:0">Capital = owner's equity</p>
+          <p class="s-title a" style="--d:1"><span class="t-cr">Capital</span> = <span class="t-real">Assets</span> − <span class="t-personal">Liabilities</span></p>
+          <p class="s-text a" style="--d:2">What's left for the owner after every outsider is paid. Also called <b>residual interest</b>.</p>
+          <div class="s-entry a" style="--d:3">10,00,000 − 4,00,000 = <span class="t-cr">6,00,000</span> belongs to the owner</div>
+        </div>
+
+        <div class="slide" data-script="Rearrange it and you get the accounting equation. Assets equal liabilities plus capital. Everything the business owns was paid for either by outsiders or by the owner. It must balance after every single transaction.">
+          <p class="s-eyebrow a" style="--d:0">The accounting equation</p>
+          <p class="s-big a" style="--d:1"><span class="t-real">A</span> = <span class="t-personal">L</span> + <span class="t-cr">C</span></p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:2;border-color:var(--real)"><b class="t-real">Assets</b><span>What the business owns</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--personal)"><b class="t-personal">Liabilities</b><span>Funded by outsiders</span></div>
+            <div class="s-card a" style="--d:4;border-color:var(--cr)"><b class="t-cr">Capital</b><span>Funded by the owner</span></div>
+          </div>
+        </div>
+
+        <div class="slide" data-script="What changes capital? It goes up when the owner invests at the start, adds more money later, when profits are kept in the business, and when assets are revalued upward. It goes down when the owner takes drawings, or when the business makes a loss.">
+          <p class="s-eyebrow a" style="--d:0">What moves capital</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:1;border-color:var(--real)"><b class="t-real">↑ Increases</b><span>Initial investment</span><span>Additional capital</span><span>Retained profits</span><span>Revaluation surplus</span></div>
+            <div class="s-card a" style="--d:2;border-color:var(--bad)"><b style="color:var(--bad)">↓ Decreases</b><span>Drawings</span><span>Losses</span></div>
+          </div>
+        </div>
+
+        <div class="slide" data-script="Watch the equation stay balanced. The owner starts with five lakh cash: assets five lakh, capital five lakh. Buy goods for two lakh on credit: assets go to seven lakh, liabilities two lakh. Withdraw thirty thousand for personal use: assets six lakh seventy thousand, capital four lakh seventy thousand. Balanced every time.">
+          <p class="s-eyebrow a" style="--d:0">Example · the equation stays balanced</p>
+          <div class="s-entry a" style="--d:1;font-size:2.2cqw;display:grid;grid-template-columns:auto auto auto auto auto auto;column-gap:1.4cqw;row-gap:.6cqw"><span style="color:var(--muted)">Transaction</span><span style="text-align:right"><span class="t-real">A</span></span><span style="text-align:center;color:var(--muted)">=</span><span style="text-align:right"><span class="t-personal">L</span></span><span style="text-align:center;color:var(--muted)">+</span><span style="text-align:right"><span class="t-cr">C</span></span><span style="">Start: cash in</span><span style="text-align:right">5,00,000</span><span style="text-align:center;color:var(--muted)">=</span><span style="text-align:right">0</span><span style="text-align:center;color:var(--muted)">+</span><span style="text-align:right">5,00,000</span><span style="">Goods on credit</span><span style="text-align:right">7,00,000</span><span style="text-align:center;color:var(--muted)">=</span><span style="text-align:right">2,00,000</span><span style="text-align:center;color:var(--muted)">+</span><span style="text-align:right">5,00,000</span><span style="">Drawings 30,000</span><span style="text-align:right">6,70,000</span><span style="text-align:center;color:var(--muted)">=</span><span style="text-align:right">2,00,000</span><span style="text-align:center;color:var(--muted)">+</span><span style="text-align:right">4,70,000</span></div>
+          <p class="s-text a" style="--d:2">Balanced after every transaction ✓</p>
+        </div>
+
+        <div class="slide" data-script="Back to our question. Owns ten lakh, owes four lakh. Six lakh belongs to the owner. That's capital. And remember the equation: assets equal liabilities plus capital. Always.">
+          <p class="s-eyebrow a" style="--d:0">Recap</p>
+          <p class="s-title a" style="--d:1">Yours: <span class="t-cr">₹6 lakh</span>. That's capital.</p>
+          <div class="s-rule a" style="--d:2"><div><span class="t-real">Assets</span> = <span class="t-personal">Liabilities</span> + <span class="t-cr">Capital</span></div></div>
+          <p class="s-text a" style="--d:3">It balances after every transaction.</p>
+        </div>
+
+        <span class="s-count" id="slideCount">1 / 6</span>
+      </div>
+      <div class="controls">
+        <button class="btn" id="prevSlide" aria-label="Previous slide">← Prev</button>
+        <div class="dots" id="dots"></div>
+        <button class="btn" id="autoBtn">▶ Auto-play</button>
+        <button class="btn" id="nextSlide" aria-label="Next slide">Next →</button>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title"><h2>Notes</h2><small>Capital and the equation</small></div>
+      <div class="prose">
+        <p><b>Capital</b>, or <b>owner's equity</b>, is the owner's share in the business. It is found by subtracting total liabilities from total assets. It is called <b>residual interest</b> because it is what remains for the owner once all obligations are settled.</p>
+        <p>The size of owner's equity helps judge a business's financial health and stability. It shows how much of the assets are financed with the owner's money rather than borrowed money.</p>
+      </div>
+
+      <div class="types two">
+        <article class="type">
+          <div class="type-head"><h3 class="t-cr">Items of capital</h3></div>
+          <dl>
+            <div><dt>Initial capital investment</dt><dd>The owner's first investment to set up the business</dd></div>
+            <div><dt>Additional capital</dt><dd>Further money or assets the owner brings in later</dd></div>
+            <div><dt>Retained earnings</dt><dd>Profits kept in the business instead of being taken out (in companies, not paid as dividends)</dd></div>
+            <div><dt>Revaluation surplus</dt><dd>The increase when assets are revalued upward</dd></div>
+            <div><dt>Drawings</dt><dd>Cash or goods the owner takes for personal use. These <b>reduce</b> capital.</dd></div>
+          </dl>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3>The equation</h3></div>
+          <p class="rule" style="background:var(--surface-2)"><span class="t-real">Assets</span> = <span class="t-personal">Liabilities</span> + <span class="t-cr">Capital</span></p>
+          <dl>
+            <div><dt>Rearranged</dt><dd>Capital = Assets − Liabilities<br>Liabilities = Assets − Capital</dd></div>
+            <div><dt>Closing capital</dt><dd>Opening capital + Additional capital + Profit − Drawings (− Loss)</dd></div>
+            <div><dt>Why it always balances</dt><dd>Every transaction has two sides (double entry), so a change on one side is matched by an equal change.</dd></div>
+          </dl>
+          <p class="ask">Capital is the business's obligation <b>to the owner</b>, under the business entity concept.</p>
+        </article>
+      </div>
+
+      <h3 style="font-size:20px;margin-top:8px">How transactions affect the equation</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Transaction</th><th style="text-align:right">Assets</th><th style="text-align:right">Liabilities</th><th style="text-align:right">Capital</th></tr></thead>
+          <tbody>
+            <tr><td>Owner starts the business with cash ₹5,00,000</td><td class="mono" style="text-align:right">+5,00,000</td><td class="mono" style="text-align:right">—</td><td class="mono" style="text-align:right">+5,00,000</td></tr>
+            <tr><td>Goods bought on credit ₹2,00,000</td><td class="mono" style="text-align:right">+2,00,000</td><td class="mono" style="text-align:right">+2,00,000</td><td class="mono" style="text-align:right">—</td></tr>
+            <tr><td>Furniture bought for cash ₹40,000</td><td class="mono" style="text-align:right">+40,000 −40,000</td><td class="mono" style="text-align:right">—</td><td class="mono" style="text-align:right">—</td></tr>
+            <tr><td>Paid a creditor ₹50,000 in cash</td><td class="mono" style="text-align:right">−50,000</td><td class="mono" style="text-align:right">−50,000</td><td class="mono" style="text-align:right">—</td></tr>
+            <tr><td>Rent paid ₹15,000 (an expense)</td><td class="mono" style="text-align:right">−15,000</td><td class="mono" style="text-align:right">—</td><td class="mono" style="text-align:right">−15,000</td></tr>
+            <tr><td>Owner withdraws ₹30,000 for personal use</td><td class="mono" style="text-align:right">−30,000</td><td class="mono" style="text-align:right">—</td><td class="mono" style="text-align:right">−30,000</td></tr>
+            <tr><td><b>Totals</b></td><td class="mono" style="text-align:right"><b>6,05,000</b></td><td class="mono" style="text-align:right"><b>1,50,000</b></td><td class="mono" style="text-align:right"><b>4,55,000</b></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="prose" style="font-size:14.5px;color:var(--muted)">Check: 6,05,000 = 1,50,000 + 4,55,000 ✓. Expenses reduce capital because they reduce profit, which belongs to the owner.</p>
+    </section>
+
+    <section class="block">
+      <div class="block-title"><h2>Common mistakes</h2><small>Where marks are lost</small></div>
+      <div class="mistakes">
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Capital is the cash the business has.</p><p><span class="lbl right">Right</span>Capital is the owner's claim on <b>all</b> assets: Assets − Liabilities. Cash is just one asset.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Drawings are a business expense.</p><p><span class="lbl right">Right</span>Drawings reduce <span class="t-cr">capital</span> directly. They don't appear in the Profit &amp; Loss Account.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Buying furniture for cash increases total assets.</p><p><span class="lbl right">Right</span>One asset rises and another falls by the same amount. Total assets don't change.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Capital is not a liability in any sense.</p><p><span class="lbl right">Right</span>Under the business entity concept, it is what the business owes <b>to its owner</b>.</p></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title" id="quiz-section"><h2>Test yourself</h2><small>Three levels, instant answers</small></div>
+      <div class="levels" role="tablist" aria-label="Quiz level" id="levels"></div>
+      <div class="quiz" id="quiz" aria-live="polite"></div>
+    </section>
+
+    <div class="complete-row">
+      <button class="btn primary" id="completeBtn">Mark lesson complete</button>
+      <span id="completeMsg" style="color:var(--muted);font-size:14px"></span>
+    </div>
+
+    <nav class="pager" id="pager" aria-label="Lesson navigation" hidden></nav>
+  </main>
+</div>
+
+<script>
+// Lesson settings. To show a video, paste the YouTube video ID between the quotes
+// (for https://www.youtube.com/watch?v=abc123XYZ use 'abc123XYZ').
+window.LESSON = {
+  id: 'capital-equation',
+  video: { youtubeId: '' },
+  quiz: [
+    { name: 'Medium', note: 'Know the basics', qs: [
+      { q: 'Which is the accounting equation?', o: ['Assets = Liabilities − Capital', 'Assets = Liabilities + Capital', 'Capital = Assets + Liabilities', 'Liabilities = Assets + Capital'], a: 1, why: 'Everything the business owns (assets) is financed either by outsiders (liabilities) or by the owner (capital).' },
+      { q: 'Assets are ₹8,00,000 and liabilities are ₹3,00,000. What is capital?', o: ['₹11,00,000', '₹5,00,000', '₹3,00,000', '₹8,00,000'], a: 1, why: 'Capital = Assets − Liabilities = 8,00,000 − 3,00,000 = 5,00,000.' },
+      { q: 'Why is capital called "residual interest"?', o: ['It earns interest for the owner', 'It is what remains for the owner after all liabilities are settled', 'It is the interest paid on loans', 'It is left over from last year'], a: 1, why: '"Residual" means what is left. Capital is the owner\'s claim after every outsider has been paid.' },
+      { q: 'Which of these reduces capital?', o: ['Additional capital brought in', 'Retained profits', 'Drawings', 'Revaluation surplus'], a: 2, why: 'Drawings take value out of the business for the owner\'s personal use, so they reduce capital.' },
+      { q: 'Profits kept in the business instead of being distributed are called:', o: ['Drawings', 'Retained earnings', 'Liabilities', 'Revaluation surplus'], a: 1, why: 'Retained earnings are accumulated profits left in the business. They increase owner\'s equity.' }
+    ]},
+    { name: 'High', note: 'Watch the traps', qs: [
+      { q: 'Furniture costing ₹40,000 is bought for cash. What happens to the equation?', o: ['Assets increase by ₹40,000', 'Assets and capital both increase', 'No change in total assets: furniture +40,000, cash −40,000', 'Liabilities increase by ₹40,000'], a: 2, why: 'One asset replaces another. Totals stay the same, so the equation is unchanged.' },
+      { q: 'Goods worth ₹2,00,000 are bought on credit. What is the effect?', o: ['Assets +2,00,000; Liabilities +2,00,000', 'Assets +2,00,000; Capital +2,00,000', 'Assets −2,00,000; Liabilities +2,00,000', 'No effect'], a: 0, why: 'Stock (asset) rises, and the amount owed to the supplier (liability) rises by the same amount.' },
+      { q: 'Rent of ₹15,000 is paid in cash. What is the effect on the equation?', o: ['Assets −15,000; Liabilities −15,000', 'Assets −15,000; Capital −15,000', 'Assets +15,000; Capital +15,000', 'Only cash changes; the equation is not affected'], a: 1, why: 'Cash falls. An expense reduces profit, and profit belongs to the owner, so capital falls by the same amount.' },
+      { q: 'Land is revalued from ₹10,00,000 to ₹14,00,000. What happens to capital?', o: ['It does not change', 'It rises by ₹4,00,000 through a revaluation surplus', 'It falls by ₹4,00,000', 'Liabilities rise by ₹4,00,000'], a: 1, why: 'The asset rises by 4,00,000. The gain belongs to the owner, so equity rises through the revaluation surplus.' },
+      { q: 'Under the business entity concept, capital is treated as:', o: ['An asset of the owner in the business books', 'An obligation of the business to its owner', 'An expense', 'Income of the business'], a: 1, why: 'The business and owner are separate, so the business "owes" the capital back to the owner.' }
+    ]},
+    { name: 'Expert', note: 'Think it through', qs: [
+      { q: 'Opening capital ₹4,00,000. Additional capital ₹50,000. Net profit ₹1,20,000. Drawings ₹60,000. What is closing capital?', o: ['₹5,10,000', '₹6,30,000', '₹4,60,000', '₹5,70,000'], a: 0, why: 'Closing capital = 4,00,000 + 50,000 + 1,20,000 − 60,000 = 5,10,000.' },
+      { q: 'Capital at the start of the year was ₹3,00,000 and at the end ₹3,80,000. The owner withdrew ₹40,000 and brought in no new capital. What was the profit?', o: ['₹80,000', '₹40,000', '₹1,20,000', '₹3,80,000'], a: 2, why: 'Closing = Opening + Profit − Drawings, so 3,80,000 = 3,00,000 + Profit − 40,000. Profit = 1,20,000.' },
+      { q: 'A business starts with cash ₹5,00,000 (capital), buys goods on credit ₹2,00,000, then the owner withdraws ₹30,000. What is the final position?', o: ['A 7,00,000 = L 2,00,000 + C 5,00,000', 'A 6,70,000 = L 2,00,000 + C 4,70,000', 'A 6,70,000 = L 1,70,000 + C 5,00,000', 'A 7,30,000 = L 2,30,000 + C 5,00,000'], a: 1, why: 'Assets: 5,00,000 + 2,00,000 − 30,000 = 6,70,000. Liabilities 2,00,000. Capital: 5,00,000 − 30,000 = 4,70,000.' },
+      { q: 'A creditor of ₹50,000 is paid in cash. Which statement is true?', o: ['Assets and liabilities both fall by ₹50,000; capital is unchanged', 'Capital falls by ₹50,000', 'Assets fall; liabilities rise', 'Only liabilities fall'], a: 0, why: 'Cash (asset) falls and the amount owed (liability) falls equally. The owner\'s equity is not affected.' },
+      { q: 'Total assets ₹12,00,000. Capital is twice the liabilities. What are the liabilities?', o: ['₹6,00,000', '₹4,00,000', '₹8,00,000', '₹3,00,000'], a: 1, why: 'A = L + C and C = 2L, so 12,00,000 = 3L. L = 4,00,000 and C = 8,00,000.' }
+    ]}
+  ]
+};
+</script>
+<script src="lessons.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
