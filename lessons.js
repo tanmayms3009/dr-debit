@@ -21,7 +21,8 @@ window.DRDEBIT_LESSONS = [
       { id: 'cash-flow', title: 'The Cash Flow Statement', file: 'cash-flow-statement.html' },
       { id: 'gaap-basic-concepts', title: 'GAAP & the Basic Concepts', file: 'gaap-and-basic-concepts.html' },
       { id: 'dual-realisation-accrual-matching', title: 'Dual Aspect, Realisation, Accrual & Matching', file: 'dual-aspect-realisation-accrual-matching.html' },
-      { id: 'accounting-conventions', title: 'Accounting Conventions', file: 'accounting-conventions.html' }
+      { id: 'accounting-conventions', title: 'Accounting Conventions', file: 'accounting-conventions.html' },
+      { id: 'advantages-limitations', title: 'Advantages & Limitations', file: 'advantages-and-limitations.html' }
     ]
   }
 ];
