@@ -18,7 +18,8 @@ window.DRDEBIT_LESSONS = [
       { id: 'financial-statements', title: 'Financial Statements: The Big Picture', file: 'financial-statements-big-picture.html' },
       { id: 'income-statement', title: 'The Income Statement', file: 'income-statement.html' },
       { id: 'balance-sheet', title: 'The Balance Sheet', file: 'balance-sheet.html' },
-      { id: 'cash-flow', title: 'The Cash Flow Statement', file: 'cash-flow-statement.html' }
+      { id: 'cash-flow', title: 'The Cash Flow Statement', file: 'cash-flow-statement.html' },
+      { id: 'gaap-basic-concepts', title: 'GAAP & the Basic Concepts', file: 'gaap-and-basic-concepts.html' }
     ]
   }
 ];
