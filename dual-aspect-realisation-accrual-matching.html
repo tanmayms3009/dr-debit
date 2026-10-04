@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dual Aspect, Realisation, Accrual &amp; Matching · Dr. Debit</title>
+<meta name="description" content="The dual aspect, realisation, accrual and matching concepts: how and when transactions are recorded, with outstanding, prepaid and accrued items and a quiz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="rail" id="rail" aria-label="Topics">
+    <div class="brand" aria-label="Dr. Debit">
+      <span class="brand-word">Dr<span style="color:var(--real)">.</span>Debit</span>
+      <svg class="brand-pulse" viewBox="0 0 400 80" fill="none" aria-hidden="true">
+        <polyline points="0,58 80,58 96,58 110,22 126,74 140,38 152,58 214,58" stroke="var(--real)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="232" y="48" width="26" height="22" rx="5" fill="var(--personal)"/>
+        <rect x="272" y="34" width="26" height="36" rx="5" fill="var(--real)"/>
+        <rect x="312" y="20" width="26" height="50" rx="5" fill="var(--nominal)"/>
+        <rect x="352" y="6" width="26" height="64" rx="5" fill="var(--dr)"/>
+      </svg>
+    </div>
+    <nav class="nav" id="nav"></nav>
+  </aside>
+
+  <main>
+    <button class="btn menu-btn" id="menuBtn" aria-controls="rail" aria-expanded="false">☰ Topics</button>
+
+    <div class="head">
+      <div class="crumbs">Financial Accounting <span>›</span> Introduction to Financial Accounting <span>›</span> <b>Dual Aspect, Realisation, Accrual &amp; Matching</b></div>
+      <h1>Dual Aspect, Realisation, Accrual &amp; Matching</h1>
+      <div class="meta">
+        <a class="chip" href="#slides">6 slides</a>
+        <a class="chip" href="#quiz-section">Quiz: Medium · High · Expert</a>
+      </div>
+    </div>
+
+    <div class="legend" aria-label="Colour key">
+      <span><i class="sw" style="background:var(--personal)"></i><span class="t-personal">Personal</span></span>
+      <span><i class="sw" style="background:var(--real)"></i><span class="t-real">Real</span></span>
+      <span><i class="sw" style="background:var(--nominal)"></i><span class="t-nominal">Nominal</span></span>
+      <span><i class="sw" style="background:var(--dr)"></i><span class="t-dr">Debit (Dr)</span></span>
+      <span><i class="sw" style="background:var(--cr)"></i><span class="t-cr">Credit (Cr)</span></span>
+    </div>
+
+    <section class="block">
+      <div class="block-title"><h2>Key takeaways</h2><small>30-second read</small></div>
+      <div class="takeaways">
+        <ul>
+          <li><span class="tick">✓</span><span><b>Dual aspect</b>: every transaction has two equal effects, so <span class="t-real">A</span> = <span class="t-personal">L</span> + <span class="t-cr">C</span> always holds.</span></li>
+          <li><span class="tick">✓</span><span><b>Realisation</b>: revenue is recorded when goods are delivered or services done and payment is reasonably certain, not when the order arrives or cash is paid.</span></li>
+          <li><span class="tick">✓</span><span><b>Accrual</b>: revenues and expenses are recorded in the period they are earned or incurred, whatever the timing of cash.</span></li>
+          <li><span class="tick">✓</span><span><b>Matching</b>: expenses of a period are set against the revenues of that same period to find the true profit.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block deck" id="slides" aria-roledescription="carousel" aria-label="Lesson slides">
+      <div class="block-title"><h2>Slides</h2><small>Use ← → keys or the buttons</small></div>
+      <div class="stage" id="stage">
+
+        <div class="slide" data-script="You deliver a one lakh rupee order to a customer in March. They pay you in April. Your financial year ends on thirty-first March. So which year's income is it? This year's, or next year's?">
+          <p class="s-eyebrow a" style="--d:0">Quick question</p>
+          <p class="s-big a" style="--d:1">Delivered in March. Paid in April.<br><span class="t-nominal">Whose income?</span></p>
+          <p class="s-text a" style="--d:2">The year ends on 31 March. Does the ₹1,00,000 belong to this year or next?</p>
+        </div>
+
+        <div class="slide" data-script="First, dual aspect. Every transaction has two equal effects. Borrow fifty thousand, and cash goes up fifty thousand while the loan goes up fifty thousand. That's why every debit has a matching credit, and why assets always equal liabilities plus capital.">
+          <p class="s-eyebrow a" style="--d:0">Dual aspect</p>
+          <p class="s-title a" style="--d:1">Every transaction has <span class="t-dr">two</span> equal effects</p>
+          <div class="s-entry a" style="--d:2">Borrow ₹50,000 → <span class="t-real">Cash +50,000</span> and <span class="t-personal">Loan +50,000</span></div>
+          <p class="s-text a" style="--d:3">Every debit has an equal credit, so A = L + C always holds.</p>
+        </div>
+
+        <div class="slide" data-script="Realisation tells you when to record revenue. Not when the order is placed. Not when the cash arrives. It's when the goods are delivered or the service is done, and payment is reasonably certain. And if a customer pays in advance, that's not revenue yet. It's a liability until you deliver.">
+          <p class="s-eyebrow a" style="--d:0">Realisation</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:1;border-color:var(--bad)"><b style="color:var(--bad)">Not when</b><span>The order is placed</span><span>Cash is received</span></div>
+            <div class="s-card a" style="--d:2;border-color:var(--real)"><b class="t-real">Record revenue when</b><span>Goods delivered or service done</span><span>Payment reasonably certain</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--personal)"><b class="t-personal">Advance received</b><span>A liability until you deliver</span></div>
+          </div>
+        </div>
+
+        <div class="slide" data-script="Accrual says: record revenue when it's earned and expenses when they're incurred, whatever the timing of cash. Matching says: set each period's expenses against that same period's revenue. Together, they give the true profit for the year. That's why March salary paid in April still counts in March.">
+          <p class="s-eyebrow a" style="--d:0">Accrual &amp; matching</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:1;border-color:var(--nominal)"><b class="t-nominal">Accrual</b><span>Record when earned or incurred, not when cash moves</span></div>
+            <div class="s-card a" style="--d:2;border-color:var(--nominal)"><b class="t-nominal">Matching</b><span>Set each period's expenses against that period's revenue</span></div>
+          </div>
+          <p class="s-text a" style="--d:3">Together they give the true profit for the period.</p>
+        </div>
+
+        <div class="slide" data-script="The year ends thirty-first March. Services worth one lakh delivered in March, paid in April: count it this year. March salary of thirty thousand, paid in April: count it this year. Rent of forty-five thousand paid in March for April to June: not this year's expense, it's prepaid. Profit from these: seventy thousand. On a pure cash view, you'd see minus forty-five thousand.">
+          <p class="s-eyebrow a" style="--d:0">Example · year ending 31 March</p>
+          <div class="s-entry a" style="--d:1;font-size:2.1cqw;display:grid;grid-template-columns:auto auto auto;column-gap:2.4cqw;row-gap:.5cqw">
+            <span style="color:var(--muted)">Item</span><span style="color:var(--muted);text-align:right">Accrual</span><span style="color:var(--muted);text-align:right">Cash view</span>
+            <span>March services, paid April</span><span class="t-real" style="text-align:right">+1,00,000</span><span style="text-align:right">0</span>
+            <span>March salary, paid April</span><span class="t-nominal" style="text-align:right">−30,000</span><span style="text-align:right">0</span>
+            <span>Rent paid for Apr–Jun</span><span style="text-align:right">0 (prepaid)</span><span style="text-align:right">−45,000</span>
+            <b>Result</b><b class="t-real" style="text-align:right">+70,000</b><b style="text-align:right">−45,000</b>
+          </div>
+        </div>
+
+        <div class="slide" data-script="So, the March delivery? It's this year's income, because it was earned in March. That's realisation and accrual. The cash arriving in April doesn't change which year earned it.">
+          <p class="s-eyebrow a" style="--d:0">Recap</p>
+          <p class="s-title a" style="--d:1">The March delivery? <span class="t-real">This year's income.</span></p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:2;border-color:var(--dr)"><b class="t-dr">Dual aspect</b><span>Two equal effects</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--real)"><b class="t-real">Realisation</b><span>Revenue when earned</span></div>
+            <div class="s-card a" style="--d:4;border-color:var(--nominal)"><b class="t-nominal">Accrual &amp; matching</b><span>Right period, true profit</span></div>
+          </div>
+        </div>
+
+        <span class="s-count" id="slideCount">1 / 6</span>
+      </div>
+      <div class="controls">
+        <button class="btn" id="prevSlide" aria-label="Previous slide">← Prev</button>
+        <div class="dots" id="dots"></div>
+        <button class="btn" id="autoBtn">▶ Auto-play</button>
+        <button class="btn" id="nextSlide" aria-label="Next slide">Next →</button>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title"><h2>Notes</h2><small>How and when to record</small></div>
+
+      <div class="types two">
+        <article class="type">
+          <div class="type-head"><h3 class="t-dr">Dual aspect</h3></div>
+          <p class="rule" style="background:var(--surface-2)">Every transaction has a two-fold effect of equal value: every debit has a corresponding credit.</p>
+          <p class="ask">This is the basis of the double-entry system and keeps Assets = Liabilities + Capital balanced.</p>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3 class="t-real">Realisation (revenue recognition)</h3></div>
+          <p class="rule" style="background:var(--real-bg)">Revenue is recognised when goods are delivered or services are provided and there is reasonable certainty of payment.</p>
+          <p class="ask">Not when the order is placed, and not necessarily when cash is received. An advance from a customer is a liability (income received in advance) until delivery.</p>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3 class="t-nominal">Accrual</h3></div>
+          <p class="rule" style="background:var(--nominal-bg)">Revenues and expenses are recognised in the period in which they occur, regardless of when cash is received or paid.</p>
+          <p class="ask">So the statements show all revenue earned and all expenses incurred in the period.</p>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3 class="t-nominal">Matching</h3></div>
+          <p class="rule" style="background:var(--nominal-bg)">Expenses of a period are matched against the revenues of the same period to find the correct profit.</p>
+          <p class="ask">Examples: depreciation spreads an asset's cost over the years it helps earn revenue; cost of goods sold is matched with the sales of those goods.</p>
+        </article>
+      </div>
+
+      <h3 style="font-size:20px;margin-top:8px">The four items accrual creates</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Item</th><th>What it means</th><th>Shown as</th></tr></thead>
+          <tbody>
+            <tr><td>Outstanding expense</td><td>Expense of this period, not yet paid (e.g. March salary paid in April)</td><td><span class="pill tag-p">Liability</span></td></tr>
+            <tr><td>Prepaid expense</td><td>Paid now for a future period (e.g. rent paid in March for April–June)</td><td><span class="pill tag-r">Asset</span></td></tr>
+            <tr><td>Accrued income</td><td>Income earned this period, not yet received (e.g. commission due)</td><td><span class="pill tag-r">Asset</span></td></tr>
+            <tr><td>Income received in advance</td><td>Cash received for work not yet done (e.g. advance from a customer)</td><td><span class="pill tag-p">Liability</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title"><h2>Common mistakes</h2><small>Where marks are lost</small></div>
+      <div class="mistakes">
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Revenue is recorded when the order is received.</p><p><span class="lbl right">Right</span>It is recorded when goods are <b>delivered</b> (or services done) and payment is reasonably certain.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>An advance from a customer is income.</p><p><span class="lbl right">Right</span>It is a <span class="t-personal">liability</span> (income received in advance) until the goods or services are delivered.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Only expenses actually paid count for the year.</p><p><span class="lbl right">Right</span>Under accrual, expenses <b>incurred</b> count, even if unpaid (outstanding).</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Matching means matching debits with credits.</p><p><span class="lbl right">Right</span>That is <b>dual aspect</b>. Matching sets a period's <b>expenses</b> against its <b>revenues</b>.</p></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title" id="quiz-section"><h2>Test yourself</h2><small>Three levels, instant answers</small></div>
+      <div class="levels" role="tablist" aria-label="Quiz level" id="levels"></div>
+      <div class="quiz" id="quiz" aria-live="polite"></div>
+    </section>
+
+    <nav class="pager" id="pager" aria-label="Lesson navigation" hidden></nav>
+  </main>
+</div>
+
+<script>
+// Lesson settings. To show a video, paste the YouTube video ID between the quotes
+// (for https://www.youtube.com/watch?v=abc123XYZ use 'abc123XYZ').
+window.LESSON = {
+  id: 'dual-realisation-accrual-matching',
+  video: { youtubeId: '' },
+  quiz: [
+    { name: 'Medium', note: 'Know the basics', qs: [
+      { q: 'Every transaction has two equal effects. Which concept is this?', o: ['Dual aspect', 'Matching', 'Realisation', 'Going concern'], a: 0, why: 'The dual aspect concept is the basis of double entry: every debit has an equal credit.' },
+      { q: 'Under the realisation concept, revenue is recognised when:', o: ['The order is received', 'Goods are delivered or services provided, and payment is reasonably certain', 'Cash is received', 'The year ends'], a: 1, why: 'Revenue is earned on delivery, provided payment is reasonably certain, not when the order arrives or cash comes in.' },
+      { q: 'Expenses are recorded when incurred, not when paid. Which concept is this?', o: ['Cost', 'Accrual', 'Money measurement', 'Business entity'], a: 1, why: 'Accrual records revenues and expenses in the period they occur, regardless of cash timing.' },
+      { q: 'Expenses of a period are set against the revenues of the same period. Which concept is this?', o: ['Matching', 'Dual aspect', 'Consistency', 'Materiality'], a: 0, why: 'The matching concept pairs each period\'s expenses with its revenues to find the true profit.' },
+      { q: 'A business borrows ₹50,000 in cash from a bank. What are the two effects?', o: ['Cash +50,000; capital +50,000', 'Cash +50,000; loan (liability) +50,000', 'Cash −50,000; loan +50,000', 'Only cash increases'], a: 1, why: 'Dual aspect: an asset (cash) and a liability (loan) both rise by 50,000.' }
+    ]},
+    { name: 'High', note: 'Watch the traps', qs: [
+      { q: 'An order is received on 25 March, and the goods are delivered on 5 April. The year ends on 31 March. When is the revenue recognised?', o: ['In March, when the order arrived', 'In April (next year), when the goods were delivered', 'Half in each year', 'Only when cash is received'], a: 1, why: 'Revenue is recognised on delivery, which happened in April, so it belongs to the next year.' },
+      { q: 'A customer pays an advance of ₹20,000 for goods to be delivered next month. How is it treated now?', o: ['As sales revenue', 'As a liability (income received in advance)', 'As capital', 'As an expense'], a: 1, why: 'No goods have been delivered yet, so the business owes either the goods or the money back: a liability.' },
+      { q: 'March salary of ₹30,000 is unpaid on 31 March. How is it treated in this year\'s accounts?', o: ['Ignored until paid', 'Shown as an expense and as outstanding salary (a liability)', 'Shown as an asset', 'Deducted from capital directly'], a: 1, why: 'Under accrual, the salary was incurred in March, so it is this year\'s expense; the unpaid amount is a liability.' },
+      { q: 'Rent of ₹45,000 is paid in March for April to June. How is it treated in the year ending 31 March?', o: ['As this year\'s rent expense', 'As a prepaid expense, an asset', 'As a liability', 'As income'], a: 1, why: 'The rent relates to the next year, so it is carried forward as a prepaid asset, not charged this year.' },
+      { q: 'A machine costing ₹5,00,000 with a 5-year life is depreciated at ₹1,00,000 a year instead of being charged fully in year 1. Which concept is this?', o: ['Matching', 'Realisation', 'Money measurement', 'Business entity'], a: 0, why: 'The machine helps earn revenue for 5 years, so its cost is matched against revenue over those years.' }
+    ]},
+    { name: 'Expert', note: 'Think it through', qs: [
+      { q: 'Year ending 31 March: services worth ₹1,00,000 delivered in March, paid in April; March salary ₹30,000 paid in April; rent ₹45,000 paid in March for April–June. What is the profit effect of these items under accrual?', o: ['−₹45,000', '+₹70,000', '+₹25,000', '+₹1,00,000'], a: 1, why: 'Include the 1,00,000 revenue and the 30,000 salary; exclude the prepaid rent. 1,00,000 − 30,000 = 70,000.' },
+      { q: 'Cash received from customers ₹4,50,000; opening debtors ₹50,000; closing debtors ₹80,000. What are the credit sales for the year?', o: ['₹4,50,000', '₹4,80,000', '₹4,20,000', '₹5,80,000'], a: 1, why: 'Credit sales = Cash received − Opening debtors + Closing debtors = 4,50,000 − 50,000 + 80,000 = 4,80,000.' },
+      { q: 'Rent paid during the year is ₹66,000, which includes ₹6,000 for next year. Nothing is outstanding. What rent expense is charged this year?', o: ['₹66,000', '₹60,000', '₹72,000', '₹6,000'], a: 1, why: 'The 6,000 relates to next year (prepaid), so this year\'s expense is 66,000 − 6,000 = 60,000.' },
+      { q: 'Commission earned this year is ₹12,000, but only ₹9,000 has been received. What is shown?', o: ['Income ₹9,000 only', 'Income ₹12,000, and accrued commission ₹3,000 as an asset', 'Income ₹12,000, and ₹3,000 as a liability', 'Income ₹3,000'], a: 1, why: 'Under accrual, all 12,000 earned is income. The 3,000 still due is accrued income, an asset.' },
+      { q: 'Under the dual aspect concept, which of these is impossible?', o: ['Assets and liabilities both rise by ₹30,000', 'One asset rises and another falls by ₹20,000', 'Assets rise by ₹20,000 with no other change', 'Assets and capital both fall by ₹5,000'], a: 2, why: 'Every transaction has two equal effects. An asset cannot rise on its own; something else must change by the same amount.' }
+    ]}
+  ]
+};
+</script>
+<script src="lessons.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
