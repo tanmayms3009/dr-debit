@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Balance Sheet · Dr. Debit</title>
+<meta name="description" content="The balance sheet: a snapshot of assets, liabilities and capital, horizontal and vertical formats, and how to judge liquidity, with a worked example and quiz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="rail" id="rail" aria-label="Topics">
+    <div class="brand" aria-label="Dr. Debit">
+      <span class="brand-word">Dr<span style="color:var(--real)">.</span>Debit</span>
+      <svg class="brand-pulse" viewBox="0 0 400 80" fill="none" aria-hidden="true">
+        <polyline points="0,58 80,58 96,58 110,22 126,74 140,38 152,58 214,58" stroke="var(--real)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="232" y="48" width="26" height="22" rx="5" fill="var(--personal)"/>
+        <rect x="272" y="34" width="26" height="36" rx="5" fill="var(--real)"/>
+        <rect x="312" y="20" width="26" height="50" rx="5" fill="var(--nominal)"/>
+        <rect x="352" y="6" width="26" height="64" rx="5" fill="var(--dr)"/>
+      </svg>
+    </div>
+    <nav class="nav" id="nav"></nav>
+  </aside>
+
+  <main>
+    <button class="btn menu-btn" id="menuBtn" aria-controls="rail" aria-expanded="false">☰ Topics</button>
+
+    <div class="head">
+      <div class="crumbs">Financial Accounting <span>›</span> Introduction to Financial Accounting <span>›</span> <b>The Balance Sheet</b></div>
+      <h1>The Balance Sheet</h1>
+      <div class="meta">
+        <a class="chip" href="#slides">6 slides</a>
+        <a class="chip" href="#quiz-section">Quiz: Medium · High · Expert</a>
+      </div>
+    </div>
+
+    <div class="legend" aria-label="Colour key">
+      <span><i class="sw" style="background:var(--personal)"></i><span class="t-personal">Personal</span></span>
+      <span><i class="sw" style="background:var(--real)"></i><span class="t-real">Real</span></span>
+      <span><i class="sw" style="background:var(--nominal)"></i><span class="t-nominal">Nominal</span></span>
+      <span><i class="sw" style="background:var(--dr)"></i><span class="t-dr">Debit (Dr)</span></span>
+      <span><i class="sw" style="background:var(--cr)"></i><span class="t-cr">Credit (Cr)</span></span>
+    </div>
+
+    <section class="block">
+      <div class="block-title"><h2>Key takeaways</h2><small>30-second read</small></div>
+      <div class="takeaways">
+        <ul>
+          <li><span class="tick">✓</span><span>The <b>balance sheet</b> is a snapshot of assets, liabilities and capital <b>as at a particular date</b>.</span></li>
+          <li><span class="tick">✓</span><span>It always balances: <span class="t-real">Assets</span> = <span class="t-personal">Liabilities</span> + <span class="t-cr">Capital</span>.</span></li>
+          <li><span class="tick">✓</span><span>Comparing <b>current assets</b> with <b>current liabilities</b> shows liquidity: can the business pay its short-term debts?</span></li>
+          <li><span class="tick">✓</span><span>Sole traders use a <b>horizontal</b> format (assets on the right). Companies use the <b>vertical</b> format of Schedule III.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block deck" id="slides" aria-roledescription="carousel" aria-label="Lesson slides">
+      <div class="block-title"><h2>Slides</h2><small>Use ← → keys or the buttons</small></div>
+      <div class="stage" id="stage">
+
+        <div class="slide" data-script="Two shops each made eighty thousand rupees of profit this year. One can pay all its bills next month. The other can't. Same profit, very different health. So how would you tell them apart?">
+          <p class="s-eyebrow a" style="--d:0">Quick question</p>
+          <p class="s-big a" style="--d:1">Same profit.<br>One can't pay its bills. <span class="t-nominal">Why?</span></p>
+          <p class="s-text a" style="--d:2">Two shops, each with ₹80,000 profit. How would you tell them apart?</p>
+        </div>
+
+        <div class="slide" data-script="The balance sheet is a snapshot of the business on one date: what it owns, what it owes, and the owner's capital. It's dated as at thirty-first March, not for the year. And it always balances: assets equal liabilities plus capital.">
+          <p class="s-eyebrow a" style="--d:0">The balance sheet</p>
+          <p class="s-title a" style="--d:1">A snapshot, <span class="t-real">as at</span> one date</p>
+          <div class="s-rule a" style="--d:2"><div><span class="t-real">Assets</span> = <span class="t-personal">Liabilities</span> + <span class="t-cr">Capital</span></div></div>
+          <p class="s-text a" style="--d:3">"As at 31 March", not "for the year".</p>
+        </div>
+
+        <div class="slide" data-script="In the traditional format for sole traders and partnerships, there are two sides. On the left: capital, long-term loans, and current liabilities like creditors. On the right: non-current assets like machinery, and current assets like stock, debtors and cash. Both sides total the same.">
+          <p class="s-eyebrow a" style="--d:0">Horizontal format</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:1;border-color:var(--personal)"><b class="t-personal">Left: Liabilities</b><span>Capital (+ profit − drawings)</span><span>Long-term loans</span><span>Current liabilities</span></div>
+            <div class="s-card a" style="--d:2;border-color:var(--real)"><b class="t-real">Right: Assets</b><span>Non-current assets</span><span>Current assets: stock, debtors, cash</span></div>
+          </div>
+          <p class="s-text a" style="--d:3">Companies use a vertical format under Schedule III.</p>
+        </div>
+
+        <div class="slide" data-script="What does it tell you? Liquidity: compare current assets with current liabilities to see if short-term debts can be paid. Creditworthiness: lenders check how risky it is to lend. And progress: compare balance sheets over several years to see how the business has changed.">
+          <p class="s-eyebrow a" style="--d:0">What it tells you</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:1;border-color:var(--real)"><b class="t-real">Liquidity</b><span>Current assets vs current liabilities</span></div>
+            <div class="s-card a" style="--d:2;border-color:var(--personal)"><b class="t-personal">Creditworthiness</b><span>Is it safe to lend?</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--cr)"><b class="t-cr">Progress</b><span>Compare year after year</span></div>
+          </div>
+        </div>
+
+        <div class="slide" data-script="Here's a shop's balance sheet. Capital, after adding profit and taking off drawings, four lakh fifty thousand. A loan of one lakh fifty thousand. Current liabilities, eighty thousand. Total, six lakh eighty thousand. On the other side, fixed assets of three lakh sixty thousand and current assets of three lakh twenty thousand. Also six lakh eighty thousand. Balanced.">
+          <p class="s-eyebrow a" style="--d:0">Example · as at 31 March</p>
+          <div class="s-row">
+            <div class="s-entry a" style="--d:1;flex:1">
+              <span class="t-personal">Liabilities</span><br>
+              Capital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4,50,000<br>
+              Loan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1,50,000<br>
+              Current liab.&nbsp;&nbsp;&nbsp;80,000<br>
+              <b>Total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6,80,000</b>
+            </div>
+            <div class="s-entry a" style="--d:2;flex:1">
+              <span class="t-real">Assets</span><br>
+              Fixed assets&nbsp;&nbsp;&nbsp;3,60,000<br>
+              Current assets&nbsp;3,20,000<br>
+              <br>
+              <b>Total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6,80,000</b>
+            </div>
+          </div>
+          <p class="s-text a" style="--d:3">Current assets 3,20,000 vs current liabilities 80,000: easily able to pay ✓</p>
+        </div>
+
+        <div class="slide" data-script="Back to our two shops. Profit doesn't tell you if bills can be paid. The balance sheet does. Compare current assets with current liabilities. The shop with more current assets than debts can pay. The other is in trouble.">
+          <p class="s-eyebrow a" style="--d:0">Recap</p>
+          <p class="s-title a" style="--d:1">Check <span class="t-real">current assets</span> vs <span class="t-personal">current liabilities</span></p>
+          <p class="s-text a" style="--d:2">Profit shows performance. The balance sheet shows whether the business can pay its bills.</p>
+        </div>
+
+        <span class="s-count" id="slideCount">1 / 6</span>
+      </div>
+      <div class="controls">
+        <button class="btn" id="prevSlide" aria-label="Previous slide">← Prev</button>
+        <div class="dots" id="dots"></div>
+        <button class="btn" id="autoBtn">▶ Auto-play</button>
+        <button class="btn" id="nextSlide" aria-label="Next slide">Next →</button>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title"><h2>Notes</h2><small>Reading a balance sheet</small></div>
+      <div class="prose">
+        <p>The balance sheet is a snapshot of a business's assets, liabilities and capital at a particular moment. With the income statement and cash flow statement, it is one of the main reports for judging financial status. In India it is prepared under the Accounting Standards (AS or Ind AS) and, for companies, the format in Schedule III of the Companies Act, 2013.</p>
+      </div>
+
+      <div class="types two">
+        <article class="type">
+          <div class="type-head"><h3 class="t-personal">Horizontal format</h3></div>
+          <p class="rule" style="background:var(--personal-bg)">Used by sole traders and partnerships. Two sides, side by side.</p>
+          <dl>
+            <div><dt>Left: Liabilities</dt><dd>Capital (+ net profit − drawings), long-term loans, current liabilities (creditors, bills payable, outstanding expenses)</dd></div>
+            <div><dt>Right: Assets</dt><dd>Non-current assets (land, buildings, machinery, furniture), current assets (stock, debtors, cash and bank)</dd></div>
+          </dl>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3 class="t-real">Vertical format (companies)</h3></div>
+          <p class="rule" style="background:var(--real-bg)">Schedule III, Companies Act 2013. One column, top to bottom.</p>
+          <dl>
+            <div><dt>I. Equity and Liabilities</dt><dd>Shareholders' funds, non-current liabilities, current liabilities</dd></div>
+            <div><dt>II. Assets</dt><dd>Non-current assets, current assets</dd></div>
+          </dl>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3>What it shows</h3></div>
+          <dl>
+            <div><dt>Liquidity</dt><dd>Whether current assets are enough to pay current liabilities</dd></div>
+            <div><dt>Creditworthiness</dt><dd>Creditors and banks judge whether they will be repaid and how risky lending is</dd></div>
+            <div><dt>Progress over time</dt><dd>Comparing balance sheets of several years shows how the financial position has changed</dd></div>
+            <div><dt>How it is funded</dt><dd>How much of the assets are financed by borrowing versus the owner's money</dd></div>
+          </dl>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3>Key ideas</h3></div>
+          <dl>
+            <div><dt>Equation</dt><dd>Assets = Liabilities + Capital (for companies: shareholders' equity)</dd></div>
+            <div><dt>Date</dt><dd>"As at 31 March", because it is a position on one date</dd></div>
+            <div><dt>A statement, not an account</dt><dd>It has no debit or credit sides and does not use "To" and "By"</dd></div>
+          </dl>
+        </article>
+      </div>
+
+      <h3 style="font-size:20px;margin-top:8px">Example: Balance Sheet as at 31 March (horizontal format)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Liabilities</th><th style="text-align:right">₹</th><th>Assets</th><th style="text-align:right">₹</th></tr></thead>
+          <tbody>
+            <tr><td>Capital 4,00,000 + Net profit 80,000 − Drawings 30,000</td><td class="mono" style="text-align:right">4,50,000</td><td>Machinery</td><td class="mono" style="text-align:right">3,00,000</td></tr>
+            <tr><td>Long-term loan</td><td class="mono" style="text-align:right">1,50,000</td><td>Furniture</td><td class="mono" style="text-align:right">60,000</td></tr>
+            <tr><td>Creditors</td><td class="mono" style="text-align:right">70,000</td><td>Stock</td><td class="mono" style="text-align:right">70,000</td></tr>
+            <tr><td>Outstanding salary</td><td class="mono" style="text-align:right">10,000</td><td>Debtors</td><td class="mono" style="text-align:right">1,20,000</td></tr>
+            <tr><td></td><td></td><td>Cash and bank</td><td class="mono" style="text-align:right">1,30,000</td></tr>
+            <tr><td><b>Total</b></td><td class="mono" style="text-align:right"><b>6,80,000</b></td><td><b>Total</b></td><td class="mono" style="text-align:right"><b>6,80,000</b></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="prose" style="font-size:14.5px;color:var(--muted)">Current assets = 70,000 + 1,20,000 + 1,30,000 = 3,20,000. Current liabilities = 70,000 + 10,000 = 80,000. Current ratio = 3,20,000 ÷ 80,000 = 4 : 1.</p>
+    </section>
+
+    <section class="block">
+      <div class="block-title"><h2>Common mistakes</h2><small>Where marks are lost</small></div>
+      <div class="mistakes">
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Heading it "for the year ended 31 March".</p><p><span class="lbl right">Right</span>A balance sheet is "<b>as at</b> 31 March". "For the year" is for the income statement.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Showing net profit as a separate income item.</p><p><span class="lbl right">Right</span>Net profit is <b>added to capital</b>; drawings are deducted from it.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Writing "To" and "By" in a balance sheet.</p><p><span class="lbl right">Right</span>It is a <b>statement</b>, not an account, so it has no To/By or Dr/Cr sides.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>A profitable business can always pay its bills.</p><p><span class="lbl right">Right</span>Check <b>current assets vs current liabilities</b>. Profit and liquidity are different things.</p></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title" id="quiz-section"><h2>Test yourself</h2><small>Three levels, instant answers</small></div>
+      <div class="levels" role="tablist" aria-label="Quiz level" id="levels"></div>
+      <div class="quiz" id="quiz" aria-live="polite"></div>
+    </section>
+
+    <nav class="pager" id="pager" aria-label="Lesson navigation" hidden></nav>
+  </main>
+</div>
+
+<script>
+// Lesson settings. To show a video, paste the YouTube video ID between the quotes
+// (for https://www.youtube.com/watch?v=abc123XYZ use 'abc123XYZ').
+window.LESSON = {
+  id: 'balance-sheet',
+  video: { youtubeId: '' },
+  quiz: [
+    { name: 'Medium', note: 'Know the basics', qs: [
+      { q: 'A balance sheet shows the financial position:', o: ['For a whole year', 'As at a particular date', 'For one month only', 'Only when the business closes'], a: 1, why: 'The balance sheet is a snapshot of assets, liabilities and capital on one date.' },
+      { q: 'Which equation does the balance sheet follow?', o: ['Assets = Liabilities + Capital', 'Assets = Liabilities − Capital', 'Capital = Assets + Liabilities', 'Profit = Assets − Liabilities'], a: 0, why: 'Everything owned is funded by outsiders (liabilities) or the owner (capital).' },
+      { q: 'In a sole trader\'s horizontal balance sheet, capital is shown on the:', o: ['Assets side', 'Liabilities side', 'Income statement', 'It is not shown'], a: 1, why: 'Capital is what the business owes the owner, so it sits with liabilities on the left side.' },
+      { q: 'Creditors appear in the balance sheet under:', o: ['Non-current assets', 'Current assets', 'Current liabilities', 'Capital'], a: 2, why: 'Creditors are amounts owed to suppliers, usually payable within a year.' },
+      { q: 'Machinery appears in the balance sheet under:', o: ['Current assets', 'Non-current assets', 'Current liabilities', 'Capital'], a: 1, why: 'Machinery is used for several years, so it is a non-current (fixed) asset.' }
+    ]},
+    { name: 'High', note: 'Watch the traps', qs: [
+      { q: 'Which heading is correct for a balance sheet?', o: ['Balance Sheet for the year ended 31 March', 'Balance Sheet as at 31 March', 'Balance Sheet for the month of March', 'Balance Sheet from 1 April to 31 March'], a: 1, why: 'A balance sheet shows the position on one date, so it is "as at". "For the year" belongs to the income statement.' },
+      { q: 'How is net profit for the year shown in a sole trader\'s balance sheet?', o: ['As a current asset', 'Added to capital on the liabilities side', 'As a separate income item', 'It is not shown'], a: 1, why: 'Profit belongs to the owner, so it increases capital. Drawings are then deducted.' },
+      { q: 'How are drawings treated in the balance sheet?', o: ['Shown as an asset', 'Deducted from capital', 'Added to liabilities', 'Shown as income'], a: 1, why: 'Drawings are withdrawals by the owner, which reduce the owner\'s capital.' },
+      { q: 'Why does a balance sheet not use "To" and "By"?', o: ['It is too short', 'It is a statement, not an account', 'Only companies use To and By', 'It shows only cash'], a: 1, why: 'To and By belong to ledger accounts. The balance sheet is a statement of balances, not an account.' },
+      { q: 'Under Schedule III, the first part of a company\'s vertical balance sheet is:', o: ['Assets', 'Equity and Liabilities', 'Revenue from operations', 'Cash flows'], a: 1, why: 'Schedule III starts with I. Equity and Liabilities, followed by II. Assets.' }
+    ]},
+    { name: 'Expert', note: 'Think it through', qs: [
+      { q: 'Opening capital ₹4,00,000; net profit ₹80,000; drawings ₹30,000. What capital is shown in the balance sheet?', o: ['₹4,00,000', '₹4,50,000', '₹5,10,000', '₹3,50,000'], a: 1, why: 'Closing capital = 4,00,000 + 80,000 − 30,000 = 4,50,000.' },
+      { q: 'Liabilities side: capital ₹4,50,000, loan ₹1,50,000, creditors ₹70,000, outstanding salary ₹10,000. Assets: machinery ₹3,00,000, furniture ₹60,000, stock ₹70,000, debtors ₹1,20,000 and cash. What is the cash balance?', o: ['₹1,30,000', '₹1,50,000', '₹80,000', '₹6,80,000'], a: 0, why: 'Liabilities total 6,80,000. Other assets total 5,50,000, so cash = 6,80,000 − 5,50,000 = 1,30,000.' },
+      { q: 'Current assets are ₹3,20,000 and current liabilities are ₹80,000. What is the current ratio?', o: ['1 : 4', '4 : 1', '2.4 : 1', '3.2 : 1'], a: 1, why: 'Current ratio = Current assets ÷ Current liabilities = 3,20,000 ÷ 80,000 = 4 : 1.' },
+      { q: 'Shop A: current assets ₹2,00,000, current liabilities ₹2,50,000. Shop B: current assets ₹3,00,000, current liabilities ₹1,00,000. Both made the same profit. Which is better placed to pay short-term debts?', o: ['Shop A', 'Shop B', 'Both are equal, since profit is the same', 'Neither can pay'], a: 1, why: 'Shop B\'s current assets are three times its current liabilities. Shop A\'s current assets don\'t even cover its current liabilities.' },
+      { q: 'Outstanding rent of ₹12,000 is not recorded at year end. What is the effect on the balance sheet?', o: ['It no longer balances', 'Liabilities are understated by ₹12,000 and capital (via profit) is overstated by ₹12,000', 'Assets are overstated by ₹12,000', 'There is no effect'], a: 1, why: 'The missing expense makes profit, and so capital, 12,000 too high, while the liability is missing. The totals still match, so the error is hidden.' }
+    ]}
+  ]
+};
+</script>
+<script src="lessons.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
