@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Assets &amp; Liabilities · Dr. Debit</title>
+<meta name="description" content="Assets and liabilities explained: tangible and intangible assets, current and non-current classification, with examples and a three-level quiz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="rail" id="rail" aria-label="Topics">
+    <div class="brand" aria-label="Dr. Debit">
+      <span class="brand-word">Dr<span style="color:var(--real)">.</span>Debit</span>
+      <svg class="brand-pulse" viewBox="0 0 400 80" fill="none" aria-hidden="true">
+        <polyline points="0,58 80,58 96,58 110,22 126,74 140,38 152,58 214,58" stroke="var(--real)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="232" y="48" width="26" height="22" rx="5" fill="var(--personal)"/>
+        <rect x="272" y="34" width="26" height="36" rx="5" fill="var(--real)"/>
+        <rect x="312" y="20" width="26" height="50" rx="5" fill="var(--nominal)"/>
+        <rect x="352" y="6" width="26" height="64" rx="5" fill="var(--dr)"/>
+      </svg>
+    </div>
+    <div class="progress-wrap">
+      <span id="progText">0 of 1 lessons complete</span>
+      <div class="bar"><span id="progBar"></span></div>
+    </div>
+    <nav class="nav" id="nav"></nav>
+  </aside>
+
+  <main>
+    <button class="btn menu-btn" id="menuBtn" aria-controls="rail" aria-expanded="false">☰ Topics</button>
+
+    <div class="head">
+      <div class="crumbs">Financial Accounting <span>›</span> Introduction to Financial Accounting <span>›</span> <b>Assets &amp; Liabilities</b></div>
+      <h1>Assets &amp; Liabilities</h1>
+      <div class="meta">
+        <a class="chip" href="#slides">6 slides</a>
+        <a class="chip" href="#quiz-section">Quiz: Medium · High · Expert</a>
+      </div>
+    </div>
+
+    <div class="legend" aria-label="Colour key">
+      <span><i class="sw" style="background:var(--personal)"></i><span class="t-personal">Personal</span></span>
+      <span><i class="sw" style="background:var(--real)"></i><span class="t-real">Real</span></span>
+      <span><i class="sw" style="background:var(--nominal)"></i><span class="t-nominal">Nominal</span></span>
+      <span><i class="sw" style="background:var(--dr)"></i><span class="t-dr">Debit (Dr)</span></span>
+      <span><i class="sw" style="background:var(--cr)"></i><span class="t-cr">Credit (Cr)</span></span>
+    </div>
+
+    <section class="block">
+      <div class="block-title"><h2>Key takeaways</h2><small>30-second read</small></div>
+      <div class="takeaways">
+        <ul>
+          <li><span class="tick">✓</span><span>An <span class="t-real">asset</span> is a resource the business owns or controls that is expected to bring future benefits.</span></li>
+          <li><span class="tick">✓</span><span>Assets are <b>tangible</b> (machinery, furniture, vehicles) or <b>intangible</b> (goodwill, patents, trademarks, copyrights).</span></li>
+          <li><span class="tick">✓</span><span>A <span class="t-personal">liability</span> is an amount the business owes to outsiders and must pay in the future, such as creditors or a bank loan.</span></li>
+          <li><span class="tick">✓</span><span>Both are split into <b>current</b> (settled within 12 months or the operating cycle) and <b>non-current</b> (longer term).</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block deck" id="slides" aria-roledescription="carousel" aria-label="Lesson slides">
+      <div class="block-title"><h2>Slides</h2><small>Use ← → keys or the buttons</small></div>
+      <div class="stage" id="stage">
+
+        <div class="slide" data-script="You buy a laptop for your business for sixty thousand rupees, but you'll pay the shop next month. So what do you have now? An asset? A liability? Let's find out.">
+          <p class="s-eyebrow a" style="--d:0">Quick question</p>
+          <p class="s-big a" style="--d:1">A laptop, bought on credit.<br><span class="t-real">Asset</span> or <span class="t-personal">liability</span>?</p>
+          <p class="s-text a" style="--d:2">₹60,000 laptop for the business. Payment due to the shop next month.</p>
+        </div>
+
+        <div class="slide" data-script="An asset is a resource the business owns or controls, and that will bring benefits in the future. Some assets you can touch: machinery, furniture, vehicles, computers. These are tangible. Others you can't touch but still have value: goodwill, patents, trademarks and copyrights. These are intangible.">
+          <p class="s-eyebrow a" style="--d:0">Assets</p>
+          <p class="s-title a" style="--d:1">Owned or controlled. Brings <span class="t-real">future benefits</span>.</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:2;border-color:var(--real)"><b class="t-real">Tangible</b><span>You can touch them</span><span>Machinery · Furniture · Vehicles · Computers</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--real)"><b class="t-real">Intangible</b><span>No physical form, but valuable</span><span>Goodwill · Patents · Trademarks · Copyrights</span></div>
+          </div>
+        </div>
+
+        <div class="slide" data-script="A liability is what the business owes to outsiders and must pay in future. Buy goods on credit, and you owe the supplier. Borrow from a bank, and you owe the loan plus interest.">
+          <p class="s-eyebrow a" style="--d:0">Liabilities</p>
+          <p class="s-title a" style="--d:1">What the business <span class="t-personal">owes</span> to outsiders</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:2;border-color:var(--personal)"><b class="t-personal">Creditors</b><span>Goods bought on credit, to be paid later</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--personal)"><b class="t-personal">Loans</b><span>Money borrowed, repaid with interest</span></div>
+          </div>
+        </div>
+
+        <div class="slide" data-script="Both assets and liabilities are split by time. Current means settled within twelve months, or within the business's normal operating cycle. Cash, stock and debtors are current assets. Creditors and outstanding salary are current liabilities. Everything longer term is non-current, like machinery or a five-year bank loan.">
+          <p class="s-eyebrow a" style="--d:0">Split by time</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:1;border-color:var(--real)"><b class="t-real">Current assets</b><span>Cash · Stock · Debtors</span></div>
+            <div class="s-card a" style="--d:2;border-color:var(--real)"><b class="t-real">Non-current assets</b><span>Machinery · Buildings · Patents</span></div>
+          </div>
+          <div class="s-row">
+            <div class="s-card a" style="--d:3;border-color:var(--personal)"><b class="t-personal">Current liabilities</b><span>Creditors · Outstanding salary</span></div>
+            <div class="s-card a" style="--d:4;border-color:var(--personal)"><b class="t-personal">Non-current liabilities</b><span>5-year bank loan · Debentures</span></div>
+          </div>
+          <p class="s-text a" style="--d:5">Current = within 12 months or the normal operating cycle.</p>
+        </div>
+
+        <div class="slide" data-script="Let's sort a real list. Cash fifty thousand, stock one lakh twenty thousand and debtors eighty thousand: current assets of two lakh fifty thousand. Machinery four lakh and a patent one lakh: non-current assets of five lakh. Creditors seventy thousand and outstanding salary twenty thousand: current liabilities of ninety thousand. And a five-year loan of three lakh: non-current.">
+          <p class="s-eyebrow a" style="--d:0">Example · sort the list</p>
+          <div class="s-row">
+            <div class="s-entry a" style="--d:1;flex:1">
+              <span class="t-real">Current assets</span><br>
+              Cash&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50,000<br>
+              Stock&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1,20,000<br>
+              Debtors&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80,000<br>
+              <b>Total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2,50,000</b><br>
+              <span class="t-real">Non-current</span><br>
+              Machinery&nbsp;&nbsp;4,00,000<br>
+              Patent&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1,00,000
+            </div>
+            <div class="s-entry a" style="--d:2;flex:1">
+              <span class="t-personal">Current liabilities</span><br>
+              Creditors&nbsp;&nbsp;&nbsp;70,000<br>
+              O/s salary&nbsp;&nbsp;20,000<br>
+              <b>Total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;90,000</b><br>
+              <span class="t-personal">Non-current</span><br>
+              5-yr loan&nbsp;&nbsp;3,00,000
+            </div>
+          </div>
+        </div>
+
+        <div class="slide" data-script="Back to the laptop. It's both. The laptop is a non-current asset, used for years. The sixty thousand you owe the shop is a current liability, due next month. One transaction, two sides. That's how accounting always works.">
+          <p class="s-eyebrow a" style="--d:0">Recap</p>
+          <p class="s-title a" style="--d:1">The laptop? <span class="t-real">Both.</span></p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:2;border-color:var(--real)"><b class="t-real">Laptop</b><span>Non-current asset, used for years</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--personal)"><b class="t-personal">₹60,000 owed</b><span>Current liability, due next month</span></div>
+          </div>
+          <p class="s-text a" style="--d:4">One transaction, two sides.</p>
+        </div>
+
+        <span class="s-count" id="slideCount">1 / 6</span>
+      </div>
+      <div class="controls">
+        <button class="btn" id="prevSlide" aria-label="Previous slide">← Prev</button>
+        <div class="dots" id="dots"></div>
+        <button class="btn" id="autoBtn">▶ Auto-play</button>
+        <button class="btn" id="nextSlide" aria-label="Next slide">Next →</button>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title"><h2>Notes</h2><small>Meanings and classification</small></div>
+      <div class="prose">
+        <p>Knowing accounting terms is the base for everything that follows. Two of the most important are <span class="t-real">assets</span> and <span class="t-personal">liabilities</span>.</p>
+      </div>
+
+      <div class="types two">
+        <article class="type">
+          <div class="type-head"><h3 class="t-real">Assets</h3></div>
+          <p class="rule" style="background:var(--real-bg)">Resources owned or controlled by the business, used to generate future profits.</p>
+          <dl>
+            <div><dt>Tangible</dt><dd>Physical: equipment, buildings, vehicles, computers, furniture</dd></div>
+            <div><dt>Intangible</dt><dd>No physical form but valuable rights: goodwill, patents, trademarks, copyrights, designs. A brand is recorded only if it was purchased; a brand built in-house is not shown as an asset.</dd></div>
+          </dl>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3 class="t-personal">Liabilities</h3></div>
+          <p class="rule" style="background:var(--personal-bg)">Amounts the business owes to outsiders, to be paid in the future.</p>
+          <dl>
+            <div><dt>Examples</dt><dd>Suppliers for goods bought on credit; a bank loan plus interest; outstanding expenses</dd></div>
+          </dl>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3 class="t-real">Current assets</h3></div>
+          <p style="font-size:14.5px;color:var(--muted)">An asset is current if <b>any</b> of these apply:</p>
+          <ul style="margin:0;padding-left:18px;font-size:14.5px;display:grid;gap:4px">
+            <li>It is expected to be sold or used up within the normal operating cycle</li>
+            <li>It is held mainly for trading</li>
+            <li>It is expected to be realised within 12 months after the reporting date</li>
+            <li>It is cash or a cash equivalent, unless restricted from being used to settle a liability for at least 12 months after the reporting date</li>
+          </ul>
+          <p class="ask">All other assets are <b>non-current</b>, e.g. machinery held for long-term use.</p>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3 class="t-personal">Current liabilities</h3></div>
+          <p style="font-size:14.5px;color:var(--muted)">A liability is current if <b>any</b> of these apply:</p>
+          <ul style="margin:0;padding-left:18px;font-size:14.5px;display:grid;gap:4px">
+            <li>It is expected to be settled within the normal operating cycle</li>
+            <li>It is held mainly for trading</li>
+            <li>It is due to be settled within 12 months after the reporting date</li>
+            <li>The company does not have an unconditional right to defer settlement for at least 12 months after the reporting date</li>
+          </ul>
+          <p class="ask">All other liabilities are <b>non-current</b>, e.g. long-term loans and debentures.</p>
+        </article>
+      </div>
+
+      <h3 style="font-size:20px;margin-top:8px">Classify it</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Item</th><th>Type</th><th>Why</th></tr></thead>
+          <tbody>
+            <tr><td>Cash in hand</td><td><span class="pill tag-r">Current asset</span></td><td>Available for immediate use</td></tr>
+            <tr><td>Stock of goods for sale</td><td><span class="pill tag-r">Current asset</span></td><td>Held for trading</td></tr>
+            <tr><td>Debtors due in 30 days</td><td><span class="pill tag-r">Current asset</span></td><td>Realised within 12 months</td></tr>
+            <tr><td>Machinery</td><td><span class="pill tag-r">Non-current asset</span></td><td>Tangible, used for many years</td></tr>
+            <tr><td>Patent purchased</td><td><span class="pill tag-r">Non-current asset</span></td><td>Intangible, gives benefits for years</td></tr>
+            <tr><td>Trade creditors</td><td><span class="pill tag-p">Current liability</span></td><td>Payable within the operating cycle</td></tr>
+            <tr><td>Outstanding salary</td><td><span class="pill tag-p">Current liability</span></td><td>Due within weeks</td></tr>
+            <tr><td>Bank loan repayable after 5 years</td><td><span class="pill tag-p">Non-current liability</span></td><td>Due after more than 12 months</td></tr>
+            <tr><td>Debentures issued</td><td><span class="pill tag-p">Non-current liability</span></td><td>Long-term borrowing</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title"><h2>Common mistakes</h2><small>Where marks are lost</small></div>
+      <div class="mistakes">
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>All assets are things you can touch.</p><p><span class="lbl right">Right</span>Intangible assets like patents and goodwill have no physical form but are still assets.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>A 5-year loan is entirely non-current.</p><p><span class="lbl right">Right</span>The part due within the next 12 months is a <b>current</b> liability; only the rest is non-current.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>A famous brand the business built itself is shown as an asset.</p><p><span class="lbl right">Right</span>Only a <b>purchased</b> brand is recorded. A self-built brand is not shown.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Debtors are a Real account because they are an asset.</p><p><span class="lbl right">Right</span>Debtors are an asset, but they are persons, so it's a <span class="t-personal">Personal</span> account.</p></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title" id="quiz-section"><h2>Test yourself</h2><small>Three levels, instant answers</small></div>
+      <div class="levels" role="tablist" aria-label="Quiz level" id="levels"></div>
+      <div class="quiz" id="quiz" aria-live="polite"></div>
+    </section>
+
+    <div class="complete-row">
+      <button class="btn primary" id="completeBtn">Mark lesson complete</button>
+      <span id="completeMsg" style="color:var(--muted);font-size:14px"></span>
+    </div>
+
+    <nav class="pager" id="pager" aria-label="Lesson navigation" hidden></nav>
+  </main>
+</div>
+
+<script>
+// Lesson settings. To show a video, paste the YouTube video ID between the quotes
+// (for https://www.youtube.com/watch?v=abc123XYZ use 'abc123XYZ').
+window.LESSON = {
+  id: 'assets-liabilities',
+  video: { youtubeId: '' },
+  quiz: [
+    { name: 'Medium', note: 'Know the basics', qs: [
+      { q: 'Which of these is an intangible asset?', o: ['Machinery', 'Cash', 'Patent', 'Stock of goods'], a: 2, why: 'A patent has no physical form but gives valuable rights, so it is intangible. The others are tangible.' },
+      { q: 'Which best describes an asset?', o: ['Any money the owner spends', 'A resource owned or controlled by the business that is expected to bring future benefits', 'An amount the business owes', 'An expense of the current year'], a: 1, why: 'Assets are resources the business owns or controls and expects to benefit from in future.' },
+      { q: 'A liability is:', o: ['A resource that earns income', 'An amount the business owes to outsiders, payable in future', "The owner's investment", 'A loss by fire'], a: 1, why: 'Liabilities are obligations to outsiders, such as suppliers or banks, that must be settled later.' },
+      { q: 'Machinery bought for long-term use in the factory is a:', o: ['Current asset', 'Non-current asset', 'Current liability', 'Expense'], a: 1, why: 'It will be used for many years, not sold or used up within 12 months, so it is non-current.' },
+      { q: 'Amounts owed to suppliers, payable in 60 days, are a:', o: ['Current asset', 'Non-current liability', 'Current liability', 'Intangible asset'], a: 2, why: 'They are owed to outsiders and due within 12 months, so they are a current liability.' }
+    ]},
+    { name: 'High', note: 'Watch the traps', qs: [
+      { q: 'A company holds ₹2,00,000 in a bank deposit that cannot be used for 2 years because it secures a loan. How is it classified?', o: ['Current asset, because it is cash', 'Non-current asset, because it is restricted for more than 12 months', 'Current liability', 'Not recorded'], a: 1, why: 'Cash is current unless restricted from use for at least 12 months after the reporting date. This deposit is restricted for 2 years.' },
+      { q: 'A business has built a well-known brand over 20 years. Is the brand shown as an asset?', o: ['Yes, at its market value', 'Yes, at the advertising cost', 'No, only a purchased brand is recorded as an asset', 'Yes, as a current asset'], a: 2, why: 'Internally built brands are not recognised as assets. A brand appears only when it is bought from someone else.' },
+      { q: 'Stock held for trading that the business expects to sell in 14 months is:', o: ['Non-current, because it exceeds 12 months', 'Current, because it is held for trading', 'A liability', 'An intangible asset'], a: 1, why: "Any one condition makes an asset current. Being held for trading is enough, even beyond 12 months." },
+      { q: 'A loan agreement gives the company an unconditional right to delay repayment for 18 months after the reporting date. The loan is:', o: ['Current', 'Non-current', 'An asset', 'Capital'], a: 1, why: 'A liability is current only if the company cannot defer settlement for at least 12 months. Here it can, so it is non-current.' },
+      { q: 'How are debtors classified?', o: ['Asset; Real account', 'Asset; Personal account', 'Liability; Personal account', 'Expense; Nominal account'], a: 1, why: 'Debtors owe money to the business, so they are an asset. They are persons, so the account is Personal.' }
+    ]},
+    { name: 'Expert', note: 'Think it through', qs: [
+      { q: 'A ₹5,00,000 bank loan is repaid in equal yearly instalments of ₹1,00,000. How is it shown at the year end?', o: ['₹5,00,000 non-current', '₹5,00,000 current', '₹1,00,000 current and ₹4,00,000 non-current', '₹4,00,000 current and ₹1,00,000 non-current'], a: 2, why: 'The instalment due within 12 months is current (1,00,000). The remaining 4,00,000 is non-current.' },
+      { q: 'Cash ₹50,000, stock ₹1,20,000, debtors ₹80,000, machinery ₹4,00,000 and a patent ₹1,00,000. What are the current assets?', o: ['₹2,50,000', '₹7,50,000', '₹1,70,000', '₹5,00,000'], a: 0, why: 'Current assets = cash + stock + debtors = 50,000 + 1,20,000 + 80,000 = 2,50,000. Machinery and patent are non-current.' },
+      { q: 'A whisky maker ages its product for 3 years before sale; this is its normal operating cycle. How is the ageing stock classified?', o: ['Non-current, because it is held for more than 12 months', 'Current, because it will be used within the normal operating cycle', 'Intangible asset', 'Liability'], a: 1, why: 'An asset sold or used within the normal operating cycle is current, even if the cycle is longer than 12 months.' },
+      { q: 'Total assets are ₹7,50,000 and total liabilities are ₹3,90,000. What is the owner\'s share?', o: ['₹11,40,000', '₹3,60,000', '₹3,90,000', '₹7,50,000'], a: 1, why: "Owner's share = assets − liabilities = 7,50,000 − 3,90,000 = 3,60,000. This is capital, covered in the next lesson." },
+      { q: 'Which of these is NOT a current liability?', o: ['Outstanding salary', 'Trade creditors', 'Debentures repayable after 7 years', 'Bills payable due next month'], a: 2, why: 'Debentures due after 7 years are long-term borrowing, so they are non-current. The others are due within 12 months.' }
+    ]}
+  ]
+};
+</script>
+<script src="lessons.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
