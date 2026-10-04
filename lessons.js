@@ -14,7 +14,8 @@ window.DRDEBIT_LESSONS = [
       { id: 'revenue-expenses', title: 'Revenue, Expenses & Costs', file: 'revenue-expenses-and-costs.html' },
       { id: 'goods-inventory', title: 'Goods & Inventory', file: 'goods-and-inventory.html' },
       { id: 'debtors-creditors', title: 'Debtors & Creditors', file: 'debtors-and-creditors.html' },
-      { id: 'debits-credits', title: 'Debits, Credits & Double Entry', file: 'debits-credits-and-double-entry.html' }
+      { id: 'debits-credits', title: 'Debits, Credits & Double Entry', file: 'debits-credits-and-double-entry.html' },
+      { id: 'financial-statements', title: 'Financial Statements: The Big Picture', file: 'financial-statements-big-picture.html' }
     ]
   }
 ];

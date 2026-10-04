@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Financial Statements: The Big Picture · Dr. Debit</title>
+<meta name="description" content="What financial statements (final accounts) are, the main statements, how they are prepared from the trial balance, and where each balance goes, with a three-level quiz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="rail" id="rail" aria-label="Topics">
+    <div class="brand" aria-label="Dr. Debit">
+      <span class="brand-word">Dr<span style="color:var(--real)">.</span>Debit</span>
+      <svg class="brand-pulse" viewBox="0 0 400 80" fill="none" aria-hidden="true">
+        <polyline points="0,58 80,58 96,58 110,22 126,74 140,38 152,58 214,58" stroke="var(--real)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="232" y="48" width="26" height="22" rx="5" fill="var(--personal)"/>
+        <rect x="272" y="34" width="26" height="36" rx="5" fill="var(--real)"/>
+        <rect x="312" y="20" width="26" height="50" rx="5" fill="var(--nominal)"/>
+        <rect x="352" y="6" width="26" height="64" rx="5" fill="var(--dr)"/>
+      </svg>
+    </div>
+    <nav class="nav" id="nav"></nav>
+  </aside>
+
+  <main>
+    <button class="btn menu-btn" id="menuBtn" aria-controls="rail" aria-expanded="false">☰ Topics</button>
+
+    <div class="head">
+      <div class="crumbs">Financial Accounting <span>›</span> Introduction to Financial Accounting <span>›</span> <b>Financial Statements: The Big Picture</b></div>
+      <h1>Financial Statements: The Big Picture</h1>
+      <div class="meta">
+        <a class="chip" href="#slides">6 slides</a>
+        <a class="chip" href="#quiz-section">Quiz: Medium · High · Expert</a>
+      </div>
+    </div>
+
+    <div class="legend" aria-label="Colour key">
+      <span><i class="sw" style="background:var(--personal)"></i><span class="t-personal">Personal</span></span>
+      <span><i class="sw" style="background:var(--real)"></i><span class="t-real">Real</span></span>
+      <span><i class="sw" style="background:var(--nominal)"></i><span class="t-nominal">Nominal</span></span>
+      <span><i class="sw" style="background:var(--dr)"></i><span class="t-dr">Debit (Dr)</span></span>
+      <span><i class="sw" style="background:var(--cr)"></i><span class="t-cr">Credit (Cr)</span></span>
+    </div>
+
+    <section class="block">
+      <div class="block-title"><h2>Key takeaways</h2><small>30-second read</small></div>
+      <div class="takeaways">
+        <ul>
+          <li><span class="tick">✓</span><span><b>Financial statements</b> (final accounts) are the end product of accounting. They answer two questions: the <span class="t-nominal">result</span> for a period and the <span class="t-real">position</span> at its end.</span></li>
+          <li><span class="tick">✓</span><span>The main statements: the <span class="t-nominal">income statement</span>, the <span class="t-real">balance sheet</span> and the <span class="t-personal">cash flow statement</span>.</span></li>
+          <li><span class="tick">✓</span><span>They are prepared from the <b>trial balance</b>, after journal and ledger.</span></li>
+          <li><span class="tick">✓</span><span>Debit balances are assets (balance sheet) or expenses and losses (income statement). Credit balances are liabilities and capital (balance sheet) or incomes and gains (income statement).</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block deck" id="slides" aria-roledescription="carousel" aria-label="Lesson slides">
+      <div class="block-title"><h2>Slides</h2><small>Use ← → keys or the buttons</small></div>
+      <div class="stage" id="stage">
+
+        <div class="slide" data-script="A business records thousands of transactions in a year. The owner has five minutes. How do they see the whole year at a glance? That's the job of financial statements.">
+          <p class="s-eyebrow a" style="--d:0">Quick question</p>
+          <p class="s-big a" style="--d:1">Thousands of entries.<br>Five minutes. <span class="t-nominal">How?</span></p>
+          <p class="s-text a" style="--d:2">How does an owner see a whole year of business at a glance?</p>
+        </div>
+
+        <div class="slide" data-script="Financial statements, also called final accounts, summarise the year. The income statement shows the result: profit or loss for the period. The balance sheet shows the position: assets, liabilities and capital at the end. And the cash flow statement shows how cash came in and went out.">
+          <p class="s-eyebrow a" style="--d:0">The main statements</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:1;border-color:var(--nominal)"><b class="t-nominal">Income statement</b><span>Profit or loss</span><span>For a period</span></div>
+            <div class="s-card a" style="--d:2;border-color:var(--real)"><b class="t-real">Balance sheet</b><span>Assets, liabilities, capital</span><span>On a date</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--personal)"><b class="t-personal">Cash flow statement</b><span>Cash in and out</span><span>For a period</span></div>
+          </div>
+        </div>
+
+        <div class="slide" data-script="Where do they come from? Transactions are recorded in the journal, posted to the ledger, and balanced. The balances are listed in a trial balance. And from the trial balance, we prepare the final accounts.">
+          <p class="s-eyebrow a" style="--d:0">The journey</p>
+          <p class="s-title a" style="--d:1">From transaction to statement</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:2;border-color:var(--personal)"><b class="t-personal" style="font-size:2.5cqw">1 · Journal</b><span>Record each transaction</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--real)"><b class="t-real" style="font-size:2.5cqw">2 · Ledger</b><span>Group by account and balance</span></div>
+            <div class="s-card a" style="--d:4;border-color:var(--nominal)"><b class="t-nominal" style="font-size:2.5cqw">3 · Trial balance</b><span>List balances; Dr = Cr</span></div>
+            <div class="s-card a" style="--d:5;border-color:var(--cr)"><b class="t-cr" style="font-size:2.5cqw">4 · Final accounts</b><span>Prepare the statements</span></div>
+          </div>
+        </div>
+
+        <div class="slide" data-script="Every balance in the trial balance has a home. Debit balances are either assets, which go to the balance sheet, or expenses and losses, which go to the income statement. Credit balances are either liabilities and capital, which go to the balance sheet, or incomes and gains, which go to the income statement.">
+          <p class="s-eyebrow a" style="--d:0">Where each balance goes</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:1;border-color:var(--dr)"><b class="t-dr">Debit balances</b><span>Assets → <span class="t-real">Balance sheet</span></span><span>Expenses, losses → <span class="t-nominal">Income statement</span></span></div>
+            <div class="s-card a" style="--d:2;border-color:var(--cr)"><b class="t-cr">Credit balances</b><span>Liabilities, capital, reserves → <span class="t-real">Balance sheet</span></span><span>Incomes, gains → <span class="t-nominal">Income statement</span></span></div>
+          </div>
+        </div>
+
+        <div class="slide" data-script="Let's sort some balances. Machinery, debit: an asset, so balance sheet. Purchases, debit: an expense, so income statement. Capital, credit: balance sheet. Sales, credit: income, so income statement. Creditors, credit: a liability, so balance sheet. Commission received, credit: income statement.">
+          <p class="s-eyebrow a" style="--d:0">Example · sort the trial balance</p>
+          <div class="s-entry a" style="--d:1;font-size:2.1cqw;display:grid;grid-template-columns:auto auto auto;column-gap:2.4cqw;row-gap:.5cqw">
+            <span style="color:var(--muted)">Balance</span><span style="color:var(--muted)">Side</span><span style="color:var(--muted)">Goes to</span>
+            <span>Machinery 3,00,000</span><span class="t-dr">Dr</span><span class="t-real">Balance sheet</span>
+            <span>Purchases 2,00,000</span><span class="t-dr">Dr</span><span class="t-nominal">Income statement</span>
+            <span>Capital 4,00,000</span><span class="t-cr">Cr</span><span class="t-real">Balance sheet</span>
+            <span>Sales 3,50,000</span><span class="t-cr">Cr</span><span class="t-nominal">Income statement</span>
+            <span>Creditors 50,000</span><span class="t-cr">Cr</span><span class="t-real">Balance sheet</span>
+            <span>Commission 10,000</span><span class="t-cr">Cr</span><span class="t-nominal">Income statement</span>
+          </div>
+        </div>
+
+        <div class="slide" data-script="So how does the owner see the year in five minutes? Through financial statements. The income statement for the result, the balance sheet for the position, and the cash flow statement for cash. All built from the trial balance.">
+          <p class="s-eyebrow a" style="--d:0">Recap</p>
+          <p class="s-title a" style="--d:1">A year in five minutes: <span class="t-real">the statements</span>.</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:2;border-color:var(--nominal)"><b class="t-nominal">Result</b><span>Income statement</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--real)"><b class="t-real">Position</b><span>Balance sheet</span></div>
+            <div class="s-card a" style="--d:4;border-color:var(--personal)"><b class="t-personal">Cash</b><span>Cash flow statement</span></div>
+          </div>
+        </div>
+
+        <span class="s-count" id="slideCount">1 / 6</span>
+      </div>
+      <div class="controls">
+        <button class="btn" id="prevSlide" aria-label="Previous slide">← Prev</button>
+        <div class="dots" id="dots"></div>
+        <button class="btn" id="autoBtn">▶ Auto-play</button>
+        <button class="btn" id="nextSlide" aria-label="Next slide">Next →</button>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title"><h2>Notes</h2><small>What the statements are</small></div>
+      <div class="prose">
+        <p>Financial statements, often called <b>final accounts</b>, are the results of the financial accounting process. They summarise the accounts to find out two things: the <b>net profit or loss</b> from trading for a period, and the <b>state of the business's finances</b> (assets and liabilities) at the end of that period.</p>
+      </div>
+
+      <div class="types two">
+        <article class="type">
+          <div class="type-head"><h3 class="t-nominal">Income statement</h3></div>
+          <p class="rule" style="background:var(--nominal-bg)">Trading and Profit &amp; Loss Accounts. Includes all revenues and gains, and all expenses and losses, for the period.</p>
+          <p class="ask">Answers: did we make a profit or a loss?</p>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3 class="t-real">Balance sheet</h3></div>
+          <p class="rule" style="background:var(--real-bg)">The position statement. Shows assets, liabilities and capital at the end of the period.</p>
+          <p class="ask">Answers: what do we own and owe, and how is it funded?</p>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3 class="t-personal">Cash flow statement</h3></div>
+          <p class="rule" style="background:var(--personal-bg)">Shows cash coming in and going out from operating, investing and financing activities over a period.</p>
+          <p class="ask">Answers: where did cash come from and go? Helps judge liquidity, solvency and flexibility.</p>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3>Who prepares what</h3></div>
+          <dl>
+            <div><dt>Sole traders &amp; partnerships</dt><dd>Usually a Trading Account, a Profit &amp; Loss Account and a Balance Sheet</dd></div>
+            <div><dt>Companies (Companies Act, 2013)</dt><dd>Balance Sheet, Statement of Profit and Loss, Cash Flow Statement, Statement of Changes in Equity (where applicable) and Notes. Some small companies and one person companies need not prepare a cash flow statement.</dd></div>
+            <div><dt>Rules in India</dt><dd>Accounting Standards (AS) or Ind AS issued through ICAI, and Schedule III for company formats</dd></div>
+          </dl>
+        </article>
+      </div>
+
+      <h3 style="font-size:20px;margin-top:8px">Where trial balance items go</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Balance</th><th>Side</th><th>Nature</th><th>Goes to</th></tr></thead>
+          <tbody>
+            <tr><td>Machinery ₹3,00,000</td><td class="t-dr">Dr</td><td>Asset</td><td><span class="pill tag-r">Balance Sheet</span> assets</td></tr>
+            <tr><td>Debtors ₹90,000</td><td class="t-dr">Dr</td><td>Asset</td><td><span class="pill tag-r">Balance Sheet</span> assets</td></tr>
+            <tr><td>Cash ₹1,60,000</td><td class="t-dr">Dr</td><td>Asset</td><td><span class="pill tag-r">Balance Sheet</span> assets</td></tr>
+            <tr><td>Purchases ₹2,00,000</td><td class="t-dr">Dr</td><td>Expense (direct)</td><td><span class="pill tag-n">Trading Account</span></td></tr>
+            <tr><td>Salary ₹60,000</td><td class="t-dr">Dr</td><td>Expense (indirect)</td><td><span class="pill tag-n">Profit &amp; Loss Account</span></td></tr>
+            <tr><td>Capital ₹4,00,000</td><td class="t-cr">Cr</td><td>Capital</td><td><span class="pill tag-r">Balance Sheet</span> liabilities side</td></tr>
+            <tr><td>Creditors ₹50,000</td><td class="t-cr">Cr</td><td>Liability</td><td><span class="pill tag-r">Balance Sheet</span> liabilities side</td></tr>
+            <tr><td>Sales ₹3,50,000</td><td class="t-cr">Cr</td><td>Income</td><td><span class="pill tag-n">Trading Account</span></td></tr>
+            <tr><td>Commission received ₹10,000</td><td class="t-cr">Cr</td><td>Income</td><td><span class="pill tag-n">Profit &amp; Loss Account</span></td></tr>
+            <tr><td><b>Totals</b></td><td colspan="3"><b>Dr 8,10,000 = Cr 8,10,000</b></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="prose" style="font-size:14.5px;color:var(--muted)">Format note: in the traditional horizontal Balance Sheet used by sole traders and partnerships, assets are on the right and liabilities and capital on the left. Companies use a vertical format under Schedule III.</p>
+    </section>
+
+    <section class="block">
+      <div class="block-title"><h2>Common mistakes</h2><small>Where marks are lost</small></div>
+      <div class="mistakes">
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>All debit balances are expenses.</p><p><span class="lbl right">Right</span>Debit balances are <b>assets</b> or <b>expenses and losses</b>. Machinery has a debit balance but is an asset.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>The Balance Sheet shows the profit for the year.</p><p><span class="lbl right">Right</span>Profit is found in the <span class="t-nominal">income statement</span>; it is then added to capital in the Balance Sheet.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Final accounts are prepared straight from the journal.</p><p><span class="lbl right">Right</span>Journal → ledger → <b>trial balance</b> → final accounts.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Every business must prepare a cash flow statement.</p><p><span class="lbl right">Right</span>Sole traders usually don't, and some small companies are exempt.</p></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title" id="quiz-section"><h2>Test yourself</h2><small>Three levels, instant answers</small></div>
+      <div class="levels" role="tablist" aria-label="Quiz level" id="levels"></div>
+      <div class="quiz" id="quiz" aria-live="polite"></div>
+    </section>
+
+    <nav class="pager" id="pager" aria-label="Lesson navigation" hidden></nav>
+  </main>
+</div>
+
+<script>
+// Lesson settings. To show a video, paste the YouTube video ID between the quotes
+// (for https://www.youtube.com/watch?v=abc123XYZ use 'abc123XYZ').
+window.LESSON = {
+  id: 'financial-statements',
+  video: { youtubeId: '' },
+  quiz: [
+    { name: 'Medium', note: 'Know the basics', qs: [
+      { q: 'Final accounts are prepared directly from the:', o: ['Journal', 'Trial balance', 'Cash memo', 'Bank statement'], a: 1, why: 'Transactions go through the journal and ledger; the ledger balances are listed in the trial balance, which is the base for final accounts.' },
+      { q: 'Which statement shows the financial position on a particular date?', o: ['Income statement', 'Balance sheet', 'Cash flow statement', 'Trading account'], a: 1, why: 'The balance sheet is a snapshot of assets, liabilities and capital on one date.' },
+      { q: 'Which statement shows the profit or loss for a period?', o: ['Balance sheet', 'Income statement (Trading and P&L Account)', 'Trial balance', 'Ledger'], a: 1, why: 'The income statement brings together revenues, gains, expenses and losses for the period to find profit or loss.' },
+      { q: 'The cash flow statement classifies cash flows into:', o: ['Assets, liabilities and capital', 'Operating, investing and financing activities', 'Personal, real and nominal', 'Direct and indirect costs'], a: 1, why: 'Cash flows are grouped as operating, investing and financing activities.' },
+      { q: 'The debit balance of Machinery A/c goes to:', o: ['The Trading Account', 'The Profit & Loss Account', 'The assets side of the Balance Sheet', 'The liabilities side of the Balance Sheet'], a: 2, why: 'Machinery is an asset, so its debit balance is shown in the Balance Sheet.' }
+    ]},
+    { name: 'High', note: 'Watch the traps', qs: [
+      { q: 'The debit balance of Salary A/c goes to:', o: ['The Balance Sheet as an asset', 'The Profit & Loss Account as an expense', 'The Trading Account as income', 'The Balance Sheet as a liability'], a: 1, why: 'Salary is an indirect expense, so it is charged to the Profit & Loss Account.' },
+      { q: 'The credit balance of Commission Received A/c goes to:', o: ['The Balance Sheet as a liability', 'The Profit & Loss Account as income', 'The Trading Account as an expense', 'Capital'], a: 1, why: 'Commission received is an income (gain), so it is credited to the Profit & Loss Account.' },
+      { q: 'Credit balances of Reserves and Provisions are shown in:', o: ['The Trading Account', 'The Balance Sheet, on the liabilities side', 'The Profit & Loss Account as income', 'The cash flow statement only'], a: 1, why: 'Reserves and provisions are credit balances that belong with capital and liabilities in the Balance Sheet.' },
+      { q: 'Which statement forms part of a company\'s financial statements under the Companies Act, 2013, but is usually not prepared by a sole trader?', o: ['Profit & Loss Account', 'Balance Sheet', 'Statement of Changes in Equity', 'Trading Account'], a: 2, why: 'Company financial statements include a statement of changes in equity (where applicable) and notes. Sole traders usually prepare only the trading, P&L account and balance sheet.' },
+      { q: 'In the traditional horizontal Balance Sheet of a sole trader, assets are shown on the:', o: ['Left-hand side', 'Right-hand side', 'Top only', 'They are not shown'], a: 1, why: 'In the horizontal format, liabilities and capital are on the left and assets on the right. Companies use a vertical format.' }
+    ]},
+    { name: 'Expert', note: 'Think it through', qs: [
+      { q: 'A trial balance has debit balances: Machinery ₹3,00,000, Purchases ₹2,00,000, Salary ₹60,000, Debtors ₹90,000 and Cash. Credit balances: Capital ₹4,00,000, Sales ₹3,50,000, Commission ₹10,000, Creditors ₹50,000. What is the cash balance?', o: ['₹1,60,000', '₹8,10,000', '₹6,50,000', '₹2,10,000'], a: 0, why: 'Credits total 8,10,000. Debits must match: 3,00,000 + 2,00,000 + 60,000 + 90,000 = 6,50,000, so cash = 8,10,000 − 6,50,000 = 1,60,000.' },
+      { q: 'From that trial balance, which items go to the Balance Sheet?', o: ['Purchases, Sales, Salary', 'Machinery, Debtors, Cash, Capital, Creditors', 'Sales and Commission only', 'All of the items'], a: 1, why: 'Assets (machinery, debtors, cash), capital and liabilities (creditors) go to the Balance Sheet. Purchases, salary, sales and commission go to the income statement.' },
+      { q: 'What is the correct order of the accounting process?', o: ['Journal → Trial balance → Ledger → Final accounts', 'Transactions → Journal → Ledger → Trial balance → Final accounts', 'Ledger → Journal → Final accounts → Trial balance', 'Final accounts → Trial balance → Ledger → Journal'], a: 1, why: 'Transactions are journalised, posted to the ledger, balanced into a trial balance, and then summarised in the final accounts.' },
+      { q: 'A business shows a profit of ₹2,00,000, but its cash balance fell during the year. Which is the most likely reason?', o: ['The owner brought in more capital', 'Most sales were on credit and customers have not paid yet', 'Commission was received in cash', 'Sales were higher than expenses'], a: 1, why: 'Credit sales add to profit before any cash arrives. Profit and cash are not the same, which is why the cash flow statement is useful.' },
+      { q: 'Which statements cover a period of time rather than a single date?', o: ['Income statement and cash flow statement', 'Balance sheet only', 'Balance sheet and cash flow statement', 'All three cover a single date'], a: 0, why: 'The income statement and cash flow statement report activity over a period. The balance sheet shows the position on one date.' }
+    ]}
+  ]
+};
+</script>
+<script src="lessons.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
