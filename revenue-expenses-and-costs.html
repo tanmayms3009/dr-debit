@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Revenue, Expenses &amp; Costs · Dr. Debit</title>
+<meta name="description" content="Revenue, the types of expenses, and how costs are classified (direct, indirect, fixed, variable, opportunity), with examples and a three-level quiz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="rail" id="rail" aria-label="Topics">
+    <div class="brand" aria-label="Dr. Debit">
+      <span class="brand-word">Dr<span style="color:var(--real)">.</span>Debit</span>
+      <svg class="brand-pulse" viewBox="0 0 400 80" fill="none" aria-hidden="true">
+        <polyline points="0,58 80,58 96,58 110,22 126,74 140,38 152,58 214,58" stroke="var(--real)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="232" y="48" width="26" height="22" rx="5" fill="var(--personal)"/>
+        <rect x="272" y="34" width="26" height="36" rx="5" fill="var(--real)"/>
+        <rect x="312" y="20" width="26" height="50" rx="5" fill="var(--nominal)"/>
+        <rect x="352" y="6" width="26" height="64" rx="5" fill="var(--dr)"/>
+      </svg>
+    </div>
+    <div class="progress-wrap">
+      <span id="progText">0 of 1 lessons complete</span>
+      <div class="bar"><span id="progBar"></span></div>
+    </div>
+    <nav class="nav" id="nav"></nav>
+  </aside>
+
+  <main>
+    <button class="btn menu-btn" id="menuBtn" aria-controls="rail" aria-expanded="false">☰ Topics</button>
+
+    <div class="head">
+      <div class="crumbs">Financial Accounting <span>›</span> Introduction to Financial Accounting <span>›</span> <b>Revenue, Expenses &amp; Costs</b></div>
+      <h1>Revenue, Expenses &amp; Costs</h1>
+      <div class="meta">
+        <a class="chip" href="#slides">6 slides</a>
+        <a class="chip" href="#quiz-section">Quiz: Medium · High · Expert</a>
+      </div>
+    </div>
+
+    <div class="legend" aria-label="Colour key">
+      <span><i class="sw" style="background:var(--personal)"></i><span class="t-personal">Personal</span></span>
+      <span><i class="sw" style="background:var(--real)"></i><span class="t-real">Real</span></span>
+      <span><i class="sw" style="background:var(--nominal)"></i><span class="t-nominal">Nominal</span></span>
+      <span><i class="sw" style="background:var(--dr)"></i><span class="t-dr">Debit (Dr)</span></span>
+      <span><i class="sw" style="background:var(--cr)"></i><span class="t-cr">Credit (Cr)</span></span>
+    </div>
+
+    <section class="block">
+      <div class="block-title"><h2>Key takeaways</h2><small>30-second read</small></div>
+      <div class="takeaways">
+        <ul>
+          <li><span class="tick">✓</span><span><span class="t-real">Revenue</span> is income from normal operations, like sales. It increases equity, but money the owner puts in is <b>not</b> revenue.</span></li>
+          <li><span class="tick">✓</span><span><span class="t-nominal">Expenses</span> are costs used up to earn revenue: operating, cost of goods sold, non-operating, depreciation and interest.</span></li>
+          <li><span class="tick">✓</span><span>A <b>cost</b> is what you pay to acquire or make something. It becomes an <b>expense</b> when it is used up or sold.</span></li>
+          <li><span class="tick">✓</span><span>Costs are classified as direct or indirect, fixed or variable. Opportunity cost guides decisions but is <b>not recorded</b>.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block deck" id="slides" aria-roledescription="carousel" aria-label="Lesson slides">
+      <div class="block-title"><h2>Slides</h2><small>Use ← → keys or the buttons</small></div>
+      <div class="stage" id="stage">
+
+        <div class="slide" data-script="You buy stock worth eighty thousand rupees for your shop. Money has gone out. So, is that an expense? Most students say yes. Let's see why the answer is: not yet.">
+          <p class="s-eyebrow a" style="--d:0">Quick question</p>
+          <p class="s-big a" style="--d:1">You buy stock for ₹80,000.<br>Is it an <span class="t-nominal">expense</span>?</p>
+          <p class="s-text a" style="--d:2">Money has gone out. But is that enough to call it an expense?</p>
+        </div>
+
+        <div class="slide" data-script="Start with revenue. It's the income a business earns from its normal operations: selling goods or services. Other sources include interest, royalties and dividends received. Revenue increases equity. But money the owner puts in is not revenue. And revenue is recognised when the goods are delivered or the service is done, and payment is probable, not when the cash arrives.">
+          <p class="s-eyebrow a" style="--d:0">Revenue</p>
+          <p class="s-title a" style="--d:1">Income from <span class="t-real">normal operations</span></p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:2;border-color:var(--real)"><b class="t-real">Sources</b><span>Sales of goods or services</span><span>Interest · Royalties · Dividends</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--real)"><b class="t-real">Recognised when</b><span>Goods delivered or service done, and payment is probable</span></div>
+            <div class="s-card a" style="--d:4;border-color:var(--bad)"><b style="color:var(--bad)">Not revenue</b><span>Capital the owner brings in</span><span>A loan from a bank</span></div>
+          </div>
+        </div>
+
+        <div class="slide" data-script="Expenses are costs used up to earn that revenue. Operating expenses, like selling and administrative costs. Cost of goods sold, which is the cost of the stock you actually sold. Non-operating expenses, like losses on investments. Depreciation and amortisation, which spread an asset's cost over its life. And interest on borrowed money.">
+          <p class="s-eyebrow a" style="--d:0">Expenses</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:1;border-color:var(--nominal)"><b class="t-nominal" style="font-size:2.4cqw">Operating</b><span>Selling: ads, commission</span><span>Admin: office salaries, rent</span></div>
+            <div class="s-card a" style="--d:2;border-color:var(--nominal)"><b class="t-nominal" style="font-size:2.4cqw">Cost of goods sold</b><span>Cost of the stock actually sold</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--nominal)"><b class="t-nominal" style="font-size:2.4cqw">Non-operating</b><span>Loss on investments</span></div>
+            <div class="s-card a" style="--d:4;border-color:var(--nominal)"><b class="t-nominal" style="font-size:2.4cqw">Depreciation &amp; interest</b><span>Spread asset cost; cost of loans</span></div>
+          </div>
+        </div>
+
+        <div class="slide" data-script="Costs can be classified in different ways. Direct costs can be traced to one product, like raw materials. Indirect costs can't, like electricity for the whole office. Fixed costs, like rent, stay the same within a normal range of output. Variable costs, like raw materials, rise and fall with output. And opportunity cost is the benefit you give up by choosing one option over another. It helps decisions, but it's never recorded in the books.">
+          <p class="s-eyebrow a" style="--d:0">Classifying costs</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:1;border-color:var(--personal)"><b class="t-personal">Direct vs indirect</b><span>Traceable to one product? Raw materials vs office electricity</span></div>
+            <div class="s-card a" style="--d:2;border-color:var(--real)"><b class="t-real">Fixed vs variable</b><span>Rent stays the same (within a range); materials rise with output</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--dr)"><b class="t-dr">Opportunity cost</b><span>Benefit given up. Used for decisions, <b>not recorded</b></span></div>
+          </div>
+        </div>
+
+        <div class="slide" data-script="Now our stock. You buy goods for eighty thousand. That's a cost, held as an asset. You sell three quarters of them for ninety thousand. Only the cost of what you sold, sixty thousand, becomes an expense: cost of goods sold. Gross profit is thirty thousand. The other twenty thousand is still stock, an asset.">
+          <p class="s-eyebrow a" style="--d:0">Example · cost becomes expense</p>
+          <div class="s-row">
+            <div class="s-entry a" style="--d:1;flex:1">
+              Stock bought&nbsp;&nbsp;&nbsp;&nbsp;80,000<br>
+              Sold ¾ of it<br>
+              <span class="t-nominal">COGS</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60,000<br>
+              <span class="t-real">Unsold stock</span>&nbsp;&nbsp;&nbsp;&nbsp;20,000
+            </div>
+            <div class="s-entry a" style="--d:2;flex:1">
+              <span class="t-real">Sales revenue</span>&nbsp;&nbsp;90,000<br>
+              <span class="t-nominal">− COGS</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60,000<br>
+              <b>Gross profit&nbsp;&nbsp;&nbsp;30,000</b>
+            </div>
+          </div>
+          <p class="s-text a" style="--d:3">The unsold ₹20,000 stays an asset until it is sold.</p>
+        </div>
+
+        <div class="slide" data-script="So, is buying stock an expense? Not yet. It's a cost. It becomes an expense only when the goods are sold. Remember: revenue comes in from operations, expenses are costs used up to earn it, and profit is revenue minus expenses.">
+          <p class="s-eyebrow a" style="--d:0">Recap</p>
+          <p class="s-title a" style="--d:1">Buying stock? A cost, <span class="t-nominal">not yet an expense</span>.</p>
+          <div class="s-rule a" style="--d:2"><div><span class="t-real">Revenue</span> − <span class="t-nominal">Expenses</span> = Profit</div></div>
+          <p class="s-text a" style="--d:3">A cost becomes an expense when it is used up or sold.</p>
+        </div>
+
+        <span class="s-count" id="slideCount">1 / 6</span>
+      </div>
+      <div class="controls">
+        <button class="btn" id="prevSlide" aria-label="Previous slide">← Prev</button>
+        <div class="dots" id="dots"></div>
+        <button class="btn" id="autoBtn">▶ Auto-play</button>
+        <button class="btn" id="nextSlide" aria-label="Next slide">Next →</button>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title"><h2>Notes</h2><small>Revenue, expenses and costs</small></div>
+
+      <div class="types two">
+        <article class="type">
+          <div class="type-head"><h3 class="t-real">Revenue</h3></div>
+          <p class="rule" style="background:var(--real-bg)">Income from normal operations: the gross inflow of economic benefits in a period that increases equity, other than contributions from owners.</p>
+          <dl>
+            <div><dt>Sources</dt><dd>Sales, interest, royalties, dividends</dd></div>
+            <div><dt>When recognised</dt><dd>When goods are delivered or services are provided, and payment is probable (not necessarily received)</dd></div>
+            <div><dt>Why it matters</dt><dd>It is the top line of the income statement. Profit = Revenue − Expenses.</dd></div>
+          </dl>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3 class="t-nominal">Expenses</h3></div>
+          <p class="rule" style="background:var(--nominal-bg)">Costs incurred in operations to earn revenue. They reduce assets (assets used up) or increase liabilities (more owed).</p>
+          <dl>
+            <div><dt>Operating expenses</dt><dd><b>Selling</b>: advertising, sales commission. <b>Administrative</b>: office staff salaries, office supplies, insurance.</dd></div>
+            <div><dt>Cost of goods sold (COGS)</dt><dd>Materials, labour and overheads directly linked to the goods actually sold</dd></div>
+            <div><dt>Non-operating</dt><dd>Not part of core operations, e.g. losses on investments</dd></div>
+            <div><dt>Depreciation &amp; amortisation</dt><dd>Spreading an asset's cost over its useful life: depreciation for tangible assets, amortisation for intangible ones</dd></div>
+            <div><dt>Interest expense</dt><dd>The cost of borrowed funds, such as interest on loans or debentures</dd></div>
+          </dl>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3 class="t-personal">Costs</h3></div>
+          <p class="rule" style="background:var(--personal-bg)">The money value spent to acquire, produce or maintain goods and services, including delivery to customers.</p>
+          <dl>
+            <div><dt>Direct</dt><dd>Easily traced to one product, service or project: raw materials, direct labour</dd></div>
+            <div><dt>Indirect</dt><dd>Needed for operations but not traceable to one item: utilities, rent, administration</dd></div>
+            <div><dt>Fixed</dt><dd>Stay the same in total within a normal range of output: rent, salaries, insurance. Fixed cost <b>per unit</b> falls as output rises.</dd></div>
+            <div><dt>Variable</dt><dd>Change in proportion to output: raw materials, direct labour</dd></div>
+            <div><dt>Opportunity cost</dt><dd>The benefit given up when one option is chosen over another. Used for decisions; not recorded in the books.</dd></div>
+          </dl>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3>Cost vs expense</h3></div>
+          <p class="rule" style="background:var(--surface-2)">A cost becomes an expense when the benefit is used up.</p>
+          <dl>
+            <div><dt>Stock bought</dt><dd>Cost held as an asset → becomes COGS when sold</dd></div>
+            <div><dt>Machinery bought</dt><dd>Cost held as an asset → becomes an expense year by year through depreciation</dd></div>
+            <div><dt>Rent for this month</dt><dd>Used up in the month → an expense straight away</dd></div>
+          </dl>
+        </article>
+      </div>
+
+      <h3 style="font-size:20px;margin-top:8px">Classify it</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Item</th><th>Type</th></tr></thead>
+          <tbody>
+            <tr><td>Sale of goods ₹5,00,000</td><td><span class="pill tag-r">Revenue</span></td></tr>
+            <tr><td>Dividend received on investments</td><td><span class="pill tag-r">Revenue</span> (other income)</td></tr>
+            <tr><td>Advertising for a new product</td><td><span class="pill tag-n">Selling expense</span></td></tr>
+            <tr><td>Salary of the office accountant</td><td><span class="pill tag-n">Administrative expense</span></td></tr>
+            <tr><td>Cost of the goods that were sold</td><td><span class="pill tag-n">Cost of goods sold</span></td></tr>
+            <tr><td>Loss on sale of investments</td><td><span class="pill tag-n">Non-operating expense</span></td></tr>
+            <tr><td>Yearly write-off of a patent's cost</td><td><span class="pill tag-n">Amortisation</span></td></tr>
+            <tr><td>Interest on a bank loan</td><td><span class="pill tag-n">Interest expense</span></td></tr>
+            <tr><td>Additional capital brought in by the owner</td><td><span class="pill tag-p">Not revenue</span> (increases capital)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title"><h2>Common mistakes</h2><small>Where marks are lost</small></div>
+      <div class="mistakes">
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Revenue is recorded only when cash is received.</p><p><span class="lbl right">Right</span>It is recognised when goods are delivered or services provided, and payment is <b>probable</b>.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Capital brought in by the owner is income.</p><p><span class="lbl right">Right</span>Owner contributions increase <span class="t-cr">capital</span>, not revenue.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Fixed costs never change.</p><p><span class="lbl right">Right</span>They stay fixed in total only <b>within a normal range</b> of output. Per unit, they fall as output rises.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Opportunity cost is entered in the books.</p><p><span class="lbl right">Right</span>It is a decision tool only. No money is paid, so nothing is recorded.</p></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title" id="quiz-section"><h2>Test yourself</h2><small>Three levels, instant answers</small></div>
+      <div class="levels" role="tablist" aria-label="Quiz level" id="levels"></div>
+      <div class="quiz" id="quiz" aria-live="polite"></div>
+    </section>
+
+    <div class="complete-row">
+      <button class="btn primary" id="completeBtn">Mark lesson complete</button>
+      <span id="completeMsg" style="color:var(--muted);font-size:14px"></span>
+    </div>
+
+    <nav class="pager" id="pager" aria-label="Lesson navigation" hidden></nav>
+  </main>
+</div>
+
+<script>
+// Lesson settings. To show a video, paste the YouTube video ID between the quotes
+// (for https://www.youtube.com/watch?v=abc123XYZ use 'abc123XYZ').
+window.LESSON = {
+  id: 'revenue-expenses',
+  video: { youtubeId: '' },
+  quiz: [
+    { name: 'Medium', note: 'Know the basics', qs: [
+      { q: 'Which of these is revenue?', o: ['Sale of goods to customers', 'Capital brought in by the owner', 'A loan taken from a bank', 'Purchase of furniture'], a: 0, why: 'Revenue is income from normal operations, such as sales. Capital and loans are sources of funds, not income.' },
+      { q: 'Salary paid to office staff is an example of:', o: ['A selling expense', 'An administrative expense', 'Cost of goods sold', 'A non-operating expense'], a: 1, why: 'General office costs, including salaries of administrative staff, are administrative expenses.' },
+      { q: 'Which cost usually stays the same in total when output changes (within a normal range)?', o: ['Raw materials', 'Factory rent', 'Packing material per unit sold', 'Sales commission per unit'], a: 1, why: 'Rent does not change with the number of units produced, so it is a fixed cost.' },
+      { q: 'A cost that can be easily traced to one specific product is a:', o: ['Direct cost', 'Indirect cost', 'Fixed cost', 'Opportunity cost'], a: 0, why: 'Direct costs, like the raw materials in a product, can be linked to that product.' },
+      { q: 'Interest paid on a bank loan is:', o: ['Revenue', 'An interest expense', 'Cost of goods sold', 'Drawings'], a: 1, why: 'Interest is the cost of borrowed funds, recorded as an interest expense.' }
+    ]},
+    { name: 'High', note: 'Watch the traps', qs: [
+      { q: 'The owner brings in ₹2,00,000 as additional capital. Is this revenue?', o: ['Yes, because cash came in', 'No, because contributions from owners are excluded from revenue', 'Yes, but only if spent on the business', 'No, it is an expense'], a: 1, why: 'Revenue increases equity through operations. Owner contributions increase capital directly and are never revenue.' },
+      { q: 'Goods are delivered to a reliable customer on credit in March; payment arrives in May. When is the revenue recognised?', o: ['In May, when cash is received', 'In March, when the goods are delivered and payment is probable', 'When the order was placed', 'At the end of the year only'], a: 1, why: 'Revenue is recognised when the goods are delivered and payment is probable, not when cash arrives.' },
+      { q: 'A firm turns down a contract worth ₹50,000 profit to take one worth ₹70,000. How is the ₹50,000 treated?', o: ['Recorded as an expense', 'It is the opportunity cost of the choice, and it is not recorded', 'Recorded as a loss', 'Deducted from capital'], a: 1, why: 'Opportunity cost is the benefit forgone. It helps compare options but no transaction happens, so nothing is recorded.' },
+      { q: 'Which matches correctly?', o: ['Depreciation → intangible assets; amortisation → tangible assets', 'Depreciation → tangible assets; amortisation → intangible assets', 'Both apply only to land', 'Both are types of revenue'], a: 1, why: 'Depreciation spreads the cost of tangible assets like machinery; amortisation spreads the cost of intangibles like patents.' },
+      { q: 'Variable cost is ₹40 per unit. Output rises from 1,000 to 1,500 units. What happens to total variable cost?', o: ['Stays at ₹40,000', 'Rises from ₹40,000 to ₹60,000', 'Falls to ₹26,667', 'Rises to ₹1,00,000'], a: 1, why: 'Variable cost moves in proportion to output: 1,000 × 40 = 40,000; 1,500 × 40 = 60,000.' }
+    ]},
+    { name: 'Expert', note: 'Think it through', qs: [
+      { q: 'Goods costing ₹80,000 are bought. Three-quarters are sold for ₹90,000. What are the cost of goods sold and gross profit?', o: ['COGS ₹80,000; gross profit ₹10,000', 'COGS ₹60,000; gross profit ₹30,000', 'COGS ₹60,000; gross profit ₹10,000', 'COGS ₹90,000; gross profit ₹0'], a: 1, why: 'Only the cost of goods actually sold is an expense: ¾ × 80,000 = 60,000. Gross profit = 90,000 − 60,000 = 30,000. The rest (20,000) is still stock.' },
+      { q: 'Sales ₹10,00,000; COGS ₹6,00,000; operating expenses ₹2,50,000; interest paid ₹20,000; interest received ₹10,000. What is net profit?', o: ['₹1,50,000', '₹1,40,000', '₹1,60,000', '₹4,00,000'], a: 1, why: 'Gross profit = 4,00,000. Less operating expenses 2,50,000 = 1,50,000. Less interest paid 20,000, plus interest received 10,000 = 1,40,000.' },
+      { q: 'Fixed costs are ₹1,20,000 a month. What is the fixed cost per unit at 2,000 units and at 3,000 units?', o: ['₹60 and ₹60', '₹60 and ₹40', '₹40 and ₹60', '₹1,20,000 and ₹1,80,000'], a: 1, why: 'Total stays at 1,20,000, so per unit: 1,20,000 ÷ 2,000 = 60 and 1,20,000 ÷ 3,000 = 40. Per-unit fixed cost falls as output rises.' },
+      { q: 'A machine costs ₹6,00,000, has a useful life of 5 years and no scrap value. Under the straight-line method, what is the yearly depreciation?', o: ['₹6,00,000', '₹1,20,000', '₹1,00,000', '₹3,00,000'], a: 1, why: 'Straight-line depreciation = (Cost − Scrap value) ÷ Life = (6,00,000 − 0) ÷ 5 = 1,20,000 a year.' },
+      { q: 'Which item increases assets but is NOT revenue?', o: ['Cash sales', 'A bank loan received', 'Commission earned', 'Interest received'], a: 1, why: 'A loan increases cash, but it also creates a liability. It does not come from operations, so it is not revenue.' }
+    ]}
+  ]
+};
+</script>
+<script src="lessons.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
