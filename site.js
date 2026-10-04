@@ -8,15 +8,29 @@
   const ALL = GROUPS.flatMap(g => g.lessons);
   const here = ALL.findIndex(l => l.id === LESSON.id);
 
-  // ---------- Sidebar ----------
+  // ---------- Sidebar: one collapsible dropdown per chapter ----------
   function renderNav() {
     const nav = document.getElementById('nav');
     if (!nav) return;
     nav.innerHTML = '';
-    GROUPS.forEach(g => {
+    GROUPS.forEach((g, gi) => {
+      const hasCurrent = g.lessons.some(l => l.id === LESSON.id);
       const box = document.createElement('div'); box.className = 'nav-group';
-      const h = document.createElement('h4'); h.textContent = g.topic; box.appendChild(h);
-      const ul = document.createElement('ul');
+      const listId = 'nav-list-' + gi;
+      const btn = document.createElement('button');
+      btn.className = 'nav-toggle'; btn.type = 'button';
+      btn.setAttribute('aria-expanded', hasCurrent ? 'true' : 'false');
+      btn.setAttribute('aria-controls', listId);
+      btn.innerHTML = '<span class="nav-topic"></span><span class="nav-count"></span><span class="nav-chev" aria-hidden="true">▾</span>';
+      btn.querySelector('.nav-topic').textContent = g.topic;
+      btn.querySelector('.nav-count').textContent = g.lessons.length;
+      btn.querySelector('.nav-count').setAttribute('aria-label', g.lessons.length + ' lessons');
+      const ul = document.createElement('ul'); ul.id = listId; ul.hidden = !hasCurrent;
+      btn.addEventListener('click', () => {
+        const open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+        ul.hidden = open;
+      });
       g.lessons.forEach(l => {
         const li = document.createElement('li');
         const cur = l.id === LESSON.id;
@@ -27,7 +41,7 @@
         el.textContent = l.title;
         li.appendChild(el); ul.appendChild(li);
       });
-      box.appendChild(ul); nav.appendChild(box);
+      box.append(btn, ul); nav.appendChild(box);
     });
   }
   renderNav();
