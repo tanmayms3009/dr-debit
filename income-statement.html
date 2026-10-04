@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Income Statement · Dr. Debit</title>
+<meta name="description" content="The income statement: the Trading Account for gross profit, the Profit and Loss Account for net profit, and direct vs indirect expenses, with a worked example and quiz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="rail" id="rail" aria-label="Topics">
+    <div class="brand" aria-label="Dr. Debit">
+      <span class="brand-word">Dr<span style="color:var(--real)">.</span>Debit</span>
+      <svg class="brand-pulse" viewBox="0 0 400 80" fill="none" aria-hidden="true">
+        <polyline points="0,58 80,58 96,58 110,22 126,74 140,38 152,58 214,58" stroke="var(--real)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="232" y="48" width="26" height="22" rx="5" fill="var(--personal)"/>
+        <rect x="272" y="34" width="26" height="36" rx="5" fill="var(--real)"/>
+        <rect x="312" y="20" width="26" height="50" rx="5" fill="var(--nominal)"/>
+        <rect x="352" y="6" width="26" height="64" rx="5" fill="var(--dr)"/>
+      </svg>
+    </div>
+    <nav class="nav" id="nav"></nav>
+  </aside>
+
+  <main>
+    <button class="btn menu-btn" id="menuBtn" aria-controls="rail" aria-expanded="false">☰ Topics</button>
+
+    <div class="head">
+      <div class="crumbs">Financial Accounting <span>›</span> Introduction to Financial Accounting <span>›</span> <b>The Income Statement</b></div>
+      <h1>The Income Statement</h1>
+      <div class="meta">
+        <a class="chip" href="#slides">6 slides</a>
+        <a class="chip" href="#quiz-section">Quiz: Medium · High · Expert</a>
+      </div>
+    </div>
+
+    <div class="legend" aria-label="Colour key">
+      <span><i class="sw" style="background:var(--personal)"></i><span class="t-personal">Personal</span></span>
+      <span><i class="sw" style="background:var(--real)"></i><span class="t-real">Real</span></span>
+      <span><i class="sw" style="background:var(--nominal)"></i><span class="t-nominal">Nominal</span></span>
+      <span><i class="sw" style="background:var(--dr)"></i><span class="t-dr">Debit (Dr)</span></span>
+      <span><i class="sw" style="background:var(--cr)"></i><span class="t-cr">Credit (Cr)</span></span>
+    </div>
+
+    <section class="block">
+      <div class="block-title"><h2>Key takeaways</h2><small>30-second read</small></div>
+      <div class="takeaways">
+        <ul>
+          <li><span class="tick">✓</span><span>The <b>income statement</b> shows revenues, expenses and the resulting profit or loss <b>for a period</b>. It is also called the Profit &amp; Loss Account, statement of operations or earnings statement.</span></li>
+          <li><span class="tick">✓</span><span>The <span class="t-nominal">Trading Account</span> deals with buying, making and selling goods and finds <b>gross profit</b>.</span></li>
+          <li><span class="tick">✓</span><span>The <span class="t-nominal">Profit &amp; Loss Account</span> takes gross profit, adds other incomes, deducts indirect expenses, and finds <b>net profit</b>.</span></li>
+          <li><span class="tick">✓</span><span>Owners, managers, investors and lenders use it to judge profitability and control costs.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block deck" id="slides" aria-roledescription="carousel" aria-label="Lesson slides">
+      <div class="block-title"><h2>Slides</h2><small>Use ← → keys or the buttons</small></div>
+      <div class="stage" id="stage">
+
+        <div class="slide" data-script="A shop earns two lakh twenty thousand rupees of profit on the goods it sells. But at the end of the year, its profit is only eighty thousand. Where did the rest go? The income statement shows you, step by step.">
+          <p class="s-eyebrow a" style="--d:0">Quick question</p>
+          <p class="s-big a" style="--d:1">₹2.2 lakh profit on goods.<br>₹80,000 at year end. <span class="t-nominal">Why?</span></p>
+          <p class="s-text a" style="--d:2">Where did the rest of the profit go?</p>
+        </div>
+
+        <div class="slide" data-script="The income statement lists all revenues and gains, and all expenses and losses, for a period. The difference is profit or loss. You'll hear it called the profit and loss account, statement of operations, or earnings statement. Companies call it the statement of profit and loss.">
+          <p class="s-eyebrow a" style="--d:0">The income statement</p>
+          <p class="s-title a" style="--d:1"><span class="t-real">Revenues</span> − <span class="t-nominal">Expenses</span> = Profit</p>
+          <p class="s-text a" style="--d:2">For a period. Also called the Profit &amp; Loss Account, statement of operations or earnings statement.</p>
+        </div>
+
+        <div class="slide" data-script="For a trading business, it has two parts. The trading account deals with goods: sales, minus the cost of goods sold, gives gross profit. Then the profit and loss account takes gross profit, adds other incomes, subtracts indirect expenses like salaries and rent, and gives net profit.">
+          <p class="s-eyebrow a" style="--d:0">Two parts</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:1;border-color:var(--nominal)"><b class="t-nominal">Trading Account</b><span>Sales − Cost of goods sold</span><span><b>= Gross profit</b></span></div>
+            <div class="s-card a" style="--d:2;border-color:var(--nominal)"><b class="t-nominal">Profit &amp; Loss Account</b><span>Gross profit + Other incomes − Indirect expenses</span><span><b>= Net profit</b></span></div>
+          </div>
+        </div>
+
+        <div class="slide" data-script="How do you know where an expense goes? Direct expenses are linked to buying or making goods: wages, carriage inwards, factory power. They go to the trading account. Indirect expenses are about running and selling: office salaries, rent, advertising, carriage outwards. They go to the profit and loss account.">
+          <p class="s-eyebrow a" style="--d:0">Direct vs indirect</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:1;border-color:var(--nominal)"><b class="t-nominal">Direct → Trading</b><span>Wages</span><span>Carriage inwards</span><span>Factory power</span></div>
+            <div class="s-card a" style="--d:2;border-color:var(--nominal)"><b class="t-nominal">Indirect → P&amp;L</b><span>Office salaries · Rent</span><span>Advertising</span><span>Carriage outwards</span></div>
+          </div>
+        </div>
+
+        <div class="slide" data-script="Here are the numbers. Sales six lakh. Cost of goods sold three lakh eighty thousand. Gross profit two lakh twenty thousand. Add commission received, ten thousand. Subtract indirect expenses of one lakh fifty thousand: salaries, rent, advertising and depreciation. Net profit: eighty thousand.">
+          <p class="s-eyebrow a" style="--d:0">Example · gross to net</p>
+          <div class="s-row">
+            <div class="s-entry a" style="--d:1;flex:1">
+              <span class="t-nominal">Trading</span><br>
+              Sales&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6,00,000<br>
+              − COGS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3,80,000<br>
+              <b class="t-real">Gross profit 2,20,000</b>
+            </div>
+            <div class="s-entry a" style="--d:2;flex:1.1">
+              <span class="t-nominal">Profit &amp; Loss</span><br>
+              Gross profit&nbsp;&nbsp;&nbsp;2,20,000<br>
+              + Commission&nbsp;&nbsp;&nbsp;&nbsp;10,000<br>
+              − Indirect exp.&nbsp;1,50,000<br>
+              <b class="t-real">Net profit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80,000</b>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide" data-script="So where did the rest go? The two lakh twenty thousand was gross profit, after only the cost of goods. Running the business, salaries, rent, advertising and depreciation, used up a lot of it. What's left is net profit: eighty thousand.">
+          <p class="s-eyebrow a" style="--d:0">Recap</p>
+          <p class="s-title a" style="--d:1">Gross profit ≠ <span class="t-real">net profit</span></p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:2;border-color:var(--nominal)"><b class="t-nominal">Gross profit</b><span>After the cost of goods only</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--real)"><b class="t-real">Net profit</b><span>After every expense of running the business</span></div>
+          </div>
+        </div>
+
+        <span class="s-count" id="slideCount">1 / 6</span>
+      </div>
+      <div class="controls">
+        <button class="btn" id="prevSlide" aria-label="Previous slide">← Prev</button>
+        <div class="dots" id="dots"></div>
+        <button class="btn" id="autoBtn">▶ Auto-play</button>
+        <button class="btn" id="nextSlide" aria-label="Next slide">Next →</button>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title"><h2>Notes</h2><small>Trading and Profit &amp; Loss</small></div>
+      <div class="prose">
+        <p>The income statement shows revenues, expenditures and the net income of a business over a period. Its main aim is to show financial performance: whether the business is making a profit or a loss. Together with the balance sheet and cash flow statement, it gives a full view of the business.</p>
+      </div>
+
+      <div class="types two">
+        <article class="type">
+          <div class="type-head"><h3 class="t-nominal">Trading Account</h3></div>
+          <p class="rule" style="background:var(--nominal-bg)">Gross profit = Net sales − Cost of goods sold</p>
+          <dl>
+            <div><dt>Net sales</dt><dd>Sales − Sales returns</dd></div>
+            <div><dt>Cost of goods sold</dt><dd>Opening stock + Net purchases + Direct expenses − Closing stock</dd></div>
+            <div><dt>Direct expenses</dt><dd>Wages, carriage inwards, freight inwards, factory power and fuel, factory rent</dd></div>
+          </dl>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3 class="t-nominal">Profit &amp; Loss Account</h3></div>
+          <p class="rule" style="background:var(--nominal-bg)">Net profit = Gross profit + Other incomes − Indirect expenses and losses</p>
+          <dl>
+            <div><dt>Other incomes</dt><dd>Commission received, interest received, rent received, discount received</dd></div>
+            <div><dt>Indirect expenses</dt><dd>Office salaries, office rent, advertising, carriage outwards, depreciation, interest on loans, bad debts</dd></div>
+            <div><dt>If expenses are larger</dt><dd>The result is a net loss</dd></div>
+          </dl>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3>Why it matters</h3></div>
+          <dl>
+            <div><dt>Profitability analysis</dt><dd>Shows whether profit can be improved by raising revenue, cutting costs, or both, and how well strategies worked</dd></div>
+            <div><dt>Expense tracking</dt><dd>Reveals rising or unexpected costs such as salaries, rent and supplies, and where budgets are overshot</dd></div>
+            <div><dt>Overall evaluation</dt><dd>Investors and lenders use it to judge performance and viability before investing or lending</dd></div>
+          </dl>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3>Names you'll see</h3></div>
+          <dl>
+            <div><dt>Sole traders &amp; partnerships</dt><dd>Trading and Profit &amp; Loss Account</dd></div>
+            <div><dt>Companies</dt><dd>Statement of Profit and Loss (Schedule III)</dd></div>
+            <div><dt>Also called</dt><dd>Income statement, statement of operations, earnings statement</dd></div>
+          </dl>
+        </article>
+      </div>
+
+      <h3 style="font-size:20px;margin-top:8px">Worked example</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Item</th><th>Account</th><th style="text-align:right">₹</th></tr></thead>
+          <tbody>
+            <tr><td>Sales</td><td>Trading (Cr)</td><td class="mono" style="text-align:right">6,00,000</td></tr>
+            <tr><td>Opening stock + Purchases + Wages + Carriage inwards (50,000 + 3,50,000 + 40,000 + 10,000)</td><td>Trading (Dr)</td><td class="mono" style="text-align:right">4,50,000</td></tr>
+            <tr><td>Less closing stock</td><td>Trading (Cr)</td><td class="mono" style="text-align:right">70,000</td></tr>
+            <tr><td><b>Cost of goods sold</b></td><td></td><td class="mono" style="text-align:right"><b>3,80,000</b></td></tr>
+            <tr><td><b>Gross profit</b> (6,00,000 − 3,80,000)</td><td>to P&amp;L</td><td class="mono" style="text-align:right"><b>2,20,000</b></td></tr>
+            <tr><td>Add commission received</td><td>P&amp;L (Cr)</td><td class="mono" style="text-align:right">10,000</td></tr>
+            <tr><td>Less salaries 80,000 + office rent 36,000 + advertising 14,000 + depreciation 20,000</td><td>P&amp;L (Dr)</td><td class="mono" style="text-align:right">1,50,000</td></tr>
+            <tr><td><b>Net profit</b></td><td>to Capital</td><td class="mono" style="text-align:right"><b>80,000</b></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title"><h2>Common mistakes</h2><small>Where marks are lost</small></div>
+      <div class="mistakes">
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Gross profit and net profit are the same.</p><p><span class="lbl right">Right</span>Gross profit is after the cost of goods only. Net profit is after <b>all</b> expenses.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Carriage outwards goes to the Trading Account.</p><p><span class="lbl right">Right</span>Carriage <b>inwards</b> (bringing goods in) → Trading. Carriage <b>outwards</b> (delivering to customers) → P&amp;L.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Cost of goods sold = purchases.</p><p><span class="lbl right">Right</span>Adjust for opening and closing stock and add direct expenses.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>The income statement is prepared "as on" a date.</p><p><span class="lbl right">Right</span>It covers a period: "for the year ended 31 March".</p></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title" id="quiz-section"><h2>Test yourself</h2><small>Three levels, instant answers</small></div>
+      <div class="levels" role="tablist" aria-label="Quiz level" id="levels"></div>
+      <div class="quiz" id="quiz" aria-live="polite"></div>
+    </section>
+
+    <nav class="pager" id="pager" aria-label="Lesson navigation" hidden></nav>
+  </main>
+</div>
+
+<script>
+// Lesson settings. To show a video, paste the YouTube video ID between the quotes
+// (for https://www.youtube.com/watch?v=abc123XYZ use 'abc123XYZ').
+window.LESSON = {
+  id: 'income-statement',
+  video: { youtubeId: '' },
+  quiz: [
+    { name: 'Medium', note: 'Know the basics', qs: [
+      { q: 'Gross profit is found in the:', o: ['Balance Sheet', 'Trading Account', 'Profit & Loss Account', 'Cash flow statement'], a: 1, why: 'The Trading Account compares sales with the cost of goods sold to find gross profit.' },
+      { q: 'Net profit is found in the:', o: ['Trading Account', 'Profit & Loss Account', 'Trial balance', 'Ledger'], a: 1, why: 'The Profit & Loss Account starts from gross profit, adds other incomes and deducts indirect expenses to find net profit.' },
+      { q: 'Wages paid to factory workers are shown in the:', o: ['Trading Account', 'Profit & Loss Account', 'Balance Sheet', 'Cash flow statement only'], a: 0, why: 'Wages are a direct expense of making goods, so they go to the Trading Account.' },
+      { q: 'Which is another name for the income statement?', o: ['Position statement', 'Statement of operations', 'Trial balance', 'Cash book'], a: 1, why: 'The income statement is also called the profit and loss account, statement of operations or earnings statement.' },
+      { q: 'Gross profit is calculated as:', o: ['Sales − Cost of goods sold', 'Sales − All expenses', 'Assets − Liabilities', 'Net profit + Indirect expenses + Tax'], a: 0, why: 'Gross profit = (Net) sales − cost of goods sold.' }
+    ]},
+    { name: 'High', note: 'Watch the traps', qs: [
+      { q: 'Carriage outwards (delivering goods to customers) is shown in the:', o: ['Trading Account', 'Profit & Loss Account', 'Balance Sheet', 'It is not recorded'], a: 1, why: 'Carriage outwards is a selling expense, so it is indirect and goes to the P&L Account. Carriage inwards goes to Trading.' },
+      { q: 'Carriage inwards (bringing purchased goods to the shop) is shown in the:', o: ['Trading Account', 'Profit & Loss Account', 'Balance Sheet', 'Capital Account'], a: 0, why: 'It is part of the cost of getting goods ready for sale, a direct expense, so it goes to Trading.' },
+      { q: 'Office rent is ₹36,000 and factory rent is ₹48,000. Where is office rent shown?', o: ['Trading Account', 'Profit & Loss Account', 'Balance Sheet', 'Added to closing stock'], a: 1, why: 'Office rent is an indirect administrative expense (P&L). Factory rent is a direct expense of production (Trading).' },
+      { q: 'Commission received of ₹10,000 is shown:', o: ['On the debit side of the Trading Account', 'On the credit side of the Profit & Loss Account', 'On the assets side of the Balance Sheet', 'Deducted from sales'], a: 1, why: 'Commission received is an indirect income, so it is credited to the Profit & Loss Account.' },
+      { q: 'Why do lenders study a business\'s income statement?', o: ['To find its address', 'To judge its profitability and viability before lending', 'To count its employees', 'To set its prices'], a: 1, why: 'A profitable, viable business is more likely to repay. The income statement shows performance over the period.' }
+    ]},
+    { name: 'Expert', note: 'Think it through', qs: [
+      { q: 'Sales ₹6,00,000; opening stock ₹50,000; purchases ₹3,50,000; wages ₹40,000; carriage inwards ₹10,000; closing stock ₹70,000. What is the gross profit?', o: ['₹2,20,000', '₹1,50,000', '₹2,90,000', '₹1,80,000'], a: 0, why: 'COGS = 50,000 + 3,50,000 + 40,000 + 10,000 − 70,000 = 3,80,000. Gross profit = 6,00,000 − 3,80,000 = 2,20,000.' },
+      { q: 'With that gross profit, commission received is ₹10,000 and indirect expenses total ₹1,50,000. What is the net profit?', o: ['₹70,000', '₹80,000', '₹2,30,000', '₹60,000'], a: 1, why: 'Net profit = 2,20,000 + 10,000 − 1,50,000 = 80,000.' },
+      { q: 'Sales ₹5,00,000; sales returns ₹20,000; cost of goods sold ₹3,00,000. What is the gross profit?', o: ['₹2,00,000', '₹1,80,000', '₹2,20,000', '₹4,80,000'], a: 1, why: 'Net sales = 5,00,000 − 20,000 = 4,80,000. Gross profit = 4,80,000 − 3,00,000 = 1,80,000.' },
+      { q: 'Gross profit ₹1,50,000; other income ₹5,000; indirect expenses ₹1,70,000. What is the result?', o: ['Net profit ₹25,000', 'Net loss ₹15,000', 'Net loss ₹25,000', 'Net profit ₹15,000'], a: 1, why: '1,50,000 + 5,000 − 1,70,000 = −15,000, a net loss of 15,000.' },
+      { q: 'Gross profit is ₹2,20,000 on net sales of ₹6,00,000. What is the gross profit ratio (to one decimal place)?', o: ['22.0%', '36.7%', '63.3%', '45.5%'], a: 1, why: 'Gross profit ratio = Gross profit ÷ Net sales × 100 = 2,20,000 ÷ 6,00,000 × 100 ≈ 36.7%.' }
+    ]}
+  ]
+};
+</script>
+<script src="lessons.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
