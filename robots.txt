@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /voiceovers/
+
+Sitemap: https://drdebit.netlify.app/sitemap.xml
