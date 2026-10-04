@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Goods, Debtors &amp; Creditors · Dr. Debit</title>
+<meta name="description" content="Goods (raw materials, work in progress, finished goods), debtors and creditors: credit terms, ageing, bad debts and early-payment discounts, with a three-level quiz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="rail" id="rail" aria-label="Topics">
+    <div class="brand" aria-label="Dr. Debit">
+      <span class="brand-word">Dr<span style="color:var(--real)">.</span>Debit</span>
+      <svg class="brand-pulse" viewBox="0 0 400 80" fill="none" aria-hidden="true">
+        <polyline points="0,58 80,58 96,58 110,22 126,74 140,38 152,58 214,58" stroke="var(--real)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="232" y="48" width="26" height="22" rx="5" fill="var(--personal)"/>
+        <rect x="272" y="34" width="26" height="36" rx="5" fill="var(--real)"/>
+        <rect x="312" y="20" width="26" height="50" rx="5" fill="var(--nominal)"/>
+        <rect x="352" y="6" width="26" height="64" rx="5" fill="var(--dr)"/>
+      </svg>
+    </div>
+    <div class="progress-wrap">
+      <span id="progText">0 of 1 lessons complete</span>
+      <div class="bar"><span id="progBar"></span></div>
+    </div>
+    <nav class="nav" id="nav"></nav>
+  </aside>
+
+  <main>
+    <button class="btn menu-btn" id="menuBtn" aria-controls="rail" aria-expanded="false">☰ Topics</button>
+
+    <div class="head">
+      <div class="crumbs">Financial Accounting <span>›</span> Introduction to Financial Accounting <span>›</span> <b>Goods, Debtors &amp; Creditors</b></div>
+      <h1>Goods, Debtors &amp; Creditors</h1>
+      <div class="meta">
+        <a class="chip" href="#slides">6 slides</a>
+        <a class="chip" href="#quiz-section">Quiz: Medium · High · Expert</a>
+      </div>
+    </div>
+
+    <div class="legend" aria-label="Colour key">
+      <span><i class="sw" style="background:var(--personal)"></i><span class="t-personal">Personal</span></span>
+      <span><i class="sw" style="background:var(--real)"></i><span class="t-real">Real</span></span>
+      <span><i class="sw" style="background:var(--nominal)"></i><span class="t-nominal">Nominal</span></span>
+      <span><i class="sw" style="background:var(--dr)"></i><span class="t-dr">Debit (Dr)</span></span>
+      <span><i class="sw" style="background:var(--cr)"></i><span class="t-cr">Credit (Cr)</span></span>
+    </div>
+
+    <section class="block">
+      <div class="block-title"><h2>Key takeaways</h2><small>30-second read</small></div>
+      <div class="takeaways">
+        <ul>
+          <li><span class="tick">✓</span><span><span class="t-real">Goods</span> are items a business buys or makes in order to sell. Unsold goods are inventory, a current asset.</span></li>
+          <li><span class="tick">✓</span><span>Whether something is "goods" depends on the business: a laptop is goods for a laptop shop, but an asset for a law firm.</span></li>
+          <li><span class="tick">✓</span><span><span class="t-personal">Debtors</span> (accounts receivable) owe <b>us</b> money for credit sales: a current asset.</span></li>
+          <li><span class="tick">✓</span><span><span class="t-personal">Creditors</span> (accounts payable) are suppliers <b>we</b> owe for credit purchases: a current liability.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block deck" id="slides" aria-roledescription="carousel" aria-label="Lesson slides">
+      <div class="block-title"><h2>Slides</h2><small>Use ← → keys or the buttons</small></div>
+      <div class="stage" id="stage">
+
+        <div class="slide" data-script="Two businesses each buy a laptop. One is a laptop shop. The other is a law firm. Is the laptop goods, or an asset? Here's the twist: it's different for each of them.">
+          <p class="s-eyebrow a" style="--d:0">Quick question</p>
+          <p class="s-big a" style="--d:1">One laptop. Two buyers.<br><span class="t-real">Goods</span> or <span class="t-real">asset</span>?</p>
+          <p class="s-text a" style="--d:2">A laptop shop buys one. A law firm buys one. Same item, same answer?</p>
+        </div>
+
+        <div class="slide" data-script="Goods are items a business buys or makes in order to sell. For a manufacturer, they move through three stages. Raw materials, like wood or flour. Work in progress, things half made. And finished goods, ready to sell. Until they're sold, goods sit in the balance sheet as inventory, a current asset.">
+          <p class="s-eyebrow a" style="--d:0">Goods</p>
+          <p class="s-title a" style="--d:1">Bought or made <span class="t-real">to sell</span></p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:2;border-color:var(--real)"><b class="t-real">Raw materials</b><span>Wood, flour</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--real)"><b class="t-real">Work in progress</b><span>Half-made tables</span></div>
+            <div class="s-card a" style="--d:4;border-color:var(--real)"><b class="t-real">Finished goods</b><span>Ready to sell</span></div>
+          </div>
+          <p class="s-text a" style="--d:5">Unsold goods = inventory, a current asset. When sold, their cost moves to COGS.</p>
+        </div>
+
+        <div class="slide" data-script="Debtors are customers who've received goods or services but haven't paid yet. They owe us, so they're a current asset. Credit terms say when to pay. Net thirty means within thirty days of the invoice. And if a customer can't pay, the amount becomes a bad debt and is written off as a loss.">
+          <p class="s-eyebrow a" style="--d:0">Debtors · accounts receivable</p>
+          <p class="s-title a" style="--d:1">They owe <span class="t-personal">us</span>. A current asset.</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:2;border-color:var(--personal)"><b class="t-personal">Credit terms</b><span>"Net 30" = pay within 30 days of the invoice</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--personal)"><b class="t-personal">Ageing</b><span>Sort dues by how long they're unpaid</span></div>
+            <div class="s-card a" style="--d:4;border-color:var(--personal)"><b class="t-personal">Bad debts</b><span>Can't be collected → written off as a loss</span></div>
+          </div>
+        </div>
+
+        <div class="slide" data-script="Creditors are the flip side. They're suppliers we owe for goods and services already received. So they're a current liability. Payment terms tell us when to pay, and some suppliers offer a discount for paying early. One catch: unpaid expenses like salary due are outstanding expenses, a separate liability, not trade creditors.">
+          <p class="s-eyebrow a" style="--d:0">Creditors · accounts payable</p>
+          <p class="s-title a" style="--d:1"><span class="t-personal">We</span> owe them. A current liability.</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:2;border-color:var(--personal)"><b class="t-personal">Payment terms</b><span>Due date, and discounts for paying early</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--personal)"><b class="t-personal">Ageing</b><span>Prioritise which bills to pay first</span></div>
+            <div class="s-card a" style="--d:4;border-color:var(--nominal)"><b class="t-nominal">Not creditors</b><span>Salary due, rent due → outstanding expenses</span></div>
+          </div>
+        </div>
+
+        <div class="slide" data-script="Let's see both. We sell goods for fifty thousand on net thirty terms. That customer is now a debtor for fifty thousand. We also buy goods for thirty thousand on terms of two by ten, net thirty: two percent off if we pay within ten days. We pay on day eight, so we pay twenty-nine thousand four hundred and save six hundred.">
+          <p class="s-eyebrow a" style="--d:0">Example · both sides of credit</p>
+          <div class="s-row">
+            <div class="s-entry a" style="--d:1;flex:1">
+              <span class="t-personal">We sell on credit</span><br>
+              Goods&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50,000<br>
+              Terms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;net 30<br>
+              <b>Debtor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50,000</b>
+            </div>
+            <div class="s-entry a" style="--d:2;flex:1.2">
+              <span class="t-personal">We buy on credit</span><br>
+              Goods&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30,000<br>
+              Terms&nbsp;&nbsp;&nbsp;&nbsp;2/10, net 30<br>
+              Paid day 8&nbsp;&nbsp;&nbsp;&nbsp;29,400<br>
+              <b class="t-real">Discount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;600</b>
+            </div>
+          </div>
+          <p class="s-text a" style="--d:3">2/10, net 30 = 2% off if paid within 10 days; full amount due in 30.</p>
+        </div>
+
+        <div class="slide" data-script="So, the laptop? For the laptop shop, it's goods, bought to sell. For the law firm, it's an asset, used for years. And remember: debtors owe us, so they're an asset. Creditors are owed by us, so they're a liability.">
+          <p class="s-eyebrow a" style="--d:0">Recap</p>
+          <p class="s-title a" style="--d:1">The laptop? <span class="t-real">It depends on the business.</span></p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:2;border-color:var(--real)"><b class="t-real">Laptop shop</b><span>Goods, bought to sell</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--real)"><b class="t-real">Law firm</b><span>Asset, used for years</span></div>
+          </div>
+          <p class="s-text a" style="--d:4"><span class="t-personal">Debtors</span> = asset (they owe us). <span class="t-personal">Creditors</span> = liability (we owe them).</p>
+        </div>
+
+        <span class="s-count" id="slideCount">1 / 6</span>
+      </div>
+      <div class="controls">
+        <button class="btn" id="prevSlide" aria-label="Previous slide">← Prev</button>
+        <div class="dots" id="dots"></div>
+        <button class="btn" id="autoBtn">▶ Auto-play</button>
+        <button class="btn" id="nextSlide" aria-label="Next slide">Next →</button>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title"><h2>Notes</h2><small>Goods, receivables and payables</small></div>
+
+      <div class="types two">
+        <article class="type">
+          <div class="type-head"><h3 class="t-real">Goods</h3></div>
+          <p class="rule" style="background:var(--real-bg)">Tangible items a business buys or makes to sell to customers. Central to any retail or manufacturing business.</p>
+          <dl>
+            <div><dt>Raw materials</dt><dd>Basic inputs for production, like wood for furniture or flour for bread</dd></div>
+            <div><dt>Work in progress (WIP)</dt><dd>Partly finished items, including all costs so far</dd></div>
+            <div><dt>Finished goods</dt><dd>Completed products ready for sale</dd></div>
+            <div><dt>In the accounts</dt><dd>Unsold goods are inventory, a current asset. Once sold, their cost moves to cost of goods sold (COGS).</dd></div>
+          </dl>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3 class="t-personal">Debtors (accounts receivable)</h3></div>
+          <p class="rule" style="background:var(--personal-bg)">Customers who received goods or services on credit and still owe the business. A current asset, usually collected within a year.</p>
+          <dl>
+            <div><dt>Invoices</dt><dd>Bills sent to customers that set out what they owe</dd></div>
+            <div><dt>Credit terms</dt><dd>When payment is due, e.g. "net 30" = within 30 days of the invoice</dd></div>
+            <div><dt>Ageing report</dt><dd>Groups dues by how long they're outstanding, to judge collectability</dd></div>
+            <div><dt>Bad debts</dt><dd>Amounts that won't be collected. Businesses also estimate a provision for doubtful debts.</dd></div>
+            <div><dt>Collections &amp; write-offs</dt><dd>Following up for payment; writing a debt off as a loss once collection fails</dd></div>
+          </dl>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3 class="t-personal">Creditors (accounts payable)</h3></div>
+          <p class="rule" style="background:var(--personal-bg)">Suppliers the business owes for goods and services already received. A current liability.</p>
+          <dl>
+            <div><dt>Invoices</dt><dd>The supplier's bill; the amount owed is recorded as a creditor</dd></div>
+            <div><dt>Payment terms</dt><dd>Due date, and sometimes a discount for early payment, e.g. "2/10, net 30"</dd></div>
+            <div><dt>Ageing of payables</dt><dd>Groups bills by age to plan cash and prioritise payments</dd></div>
+            <div><dt>Supplier relationships</dt><dd>Paying on time builds trust and can win better credit terms</dd></div>
+            <div><dt>Payment management</dt><dd>Scheduling payments to protect cash flow and use early-payment discounts</dd></div>
+          </dl>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3 class="t-nominal">Watch out</h3></div>
+          <dl>
+            <div><dt>Outstanding expenses</dt><dd>Expenses incurred but unpaid, like salary or rent due, are shown as <b>outstanding expenses</b>, a separate current liability. They are not trade creditors.</dd></div>
+            <div><dt>Goods depend on the business</dt><dd>Cars are goods for a car dealer, but an asset for a taxi company.</dd></div>
+            <div><dt>Account type</dt><dd>Debtors and creditors are persons, so they are <span class="t-personal">Personal</span> accounts.</dd></div>
+          </dl>
+        </article>
+      </div>
+
+      <h3 style="font-size:20px;margin-top:8px">Classify it</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Item</th><th>Classification</th></tr></thead>
+          <tbody>
+            <tr><td>Timber in a furniture factory's store</td><td><span class="pill tag-r">Goods</span> raw materials (inventory)</td></tr>
+            <tr><td>Half-built cupboards on the factory floor</td><td><span class="pill tag-r">Goods</span> work in progress</td></tr>
+            <tr><td>Cars on a car dealer's showroom floor</td><td><span class="pill tag-r">Goods</span> finished goods</td></tr>
+            <tr><td>The car the dealer's manager uses for work</td><td><span class="pill tag-r">Non-current asset</span>, not goods</td></tr>
+            <tr><td>A customer who owes ₹25,000 for a credit sale</td><td><span class="pill tag-p">Debtor</span> current asset</td></tr>
+            <tr><td>A supplier owed ₹40,000 for goods bought on credit</td><td><span class="pill tag-p">Creditor</span> current liability</td></tr>
+            <tr><td>Staff salary of ₹18,000 due but unpaid</td><td><span class="pill tag-n">Outstanding expense</span> current liability</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title"><h2>Common mistakes</h2><small>Where marks are lost</small></div>
+      <div class="mistakes">
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Debtors are a Real account because they're an asset.</p><p><span class="lbl right">Right</span>Debtors are persons, so they're a <span class="t-personal">Personal</span> account, even though they're an asset.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Unpaid salary is shown under creditors.</p><p><span class="lbl right">Right</span>It is an <b>outstanding expense</b>, a separate current liability.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Anything a business buys is "goods".</p><p><span class="lbl right">Right</span>Only items bought or made <b>to sell</b>. Items for use are assets.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>A bad debt is simply forgotten.</p><p><span class="lbl right">Right</span>It is <b>written off as a loss</b>, reducing debtors and profit.</p></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title" id="quiz-section"><h2>Test yourself</h2><small>Three levels, instant answers</small></div>
+      <div class="levels" role="tablist" aria-label="Quiz level" id="levels"></div>
+      <div class="quiz" id="quiz" aria-live="polite"></div>
+    </section>
+
+    <div class="complete-row">
+      <button class="btn primary" id="completeBtn">Mark lesson complete</button>
+      <span id="completeMsg" style="color:var(--muted);font-size:14px"></span>
+    </div>
+
+    <nav class="pager" id="pager" aria-label="Lesson navigation" hidden></nav>
+  </main>
+</div>
+
+<script>
+// Lesson settings. To show a video, paste the YouTube video ID between the quotes
+// (for https://www.youtube.com/watch?v=abc123XYZ use 'abc123XYZ').
+window.LESSON = {
+  id: 'goods-debtors-creditors',
+  video: { youtubeId: '' },
+  quiz: [
+    { name: 'Medium', note: 'Know the basics', qs: [
+      { q: 'Customers who bought goods on credit and have not yet paid are called:', o: ['Creditors', 'Debtors', 'Suppliers', 'Investors'], a: 1, why: 'Debtors (accounts receivable) owe the business money for credit sales.' },
+      { q: 'In the balance sheet, creditors are shown as:', o: ['A current asset', 'A non-current asset', 'A current liability', 'Capital'], a: 2, why: 'Creditors are suppliers the business owes, usually within a short period, so they are a current liability.' },
+      { q: 'Partly completed products in a factory are called:', o: ['Raw materials', 'Work in progress', 'Finished goods', 'Cost of goods sold'], a: 1, why: 'Items that have started production but are not finished are work in progress (WIP).' },
+      { q: 'An invoice says "net 30". This means:', o: ['A 30% discount is allowed', 'Payment is due within 30 days of the invoice date', 'Payment is due in 30 instalments', 'Only 30% must be paid now'], a: 1, why: '"Net 30" is a credit term: the full amount is due within 30 days of the invoice date.' },
+      { q: 'For a furniture shop, which of these is NOT goods?', o: ['Tables for sale', 'Chairs for sale', 'The shop\'s delivery van', 'Sofas for sale'], a: 2, why: 'The van is used to run the business, not to sell, so it is a non-current asset.' }
+    ]},
+    { name: 'High', note: 'Watch the traps', qs: [
+      { q: 'A law firm buys a laptop for its office. How is it classified?', o: ['Goods', 'Non-current asset', 'Expense', 'Debtor'], a: 1, why: 'The law firm uses the laptop for years and does not sell it, so it is a non-current asset, not goods.' },
+      { q: 'Salary of ₹18,000 for March is unpaid at year end. Where is it shown?', o: ['Under trade creditors', 'As an outstanding expense, a separate current liability', 'As a current asset', 'It is not recorded until paid'], a: 1, why: 'Unpaid expenses are outstanding expenses. They are a liability but are shown separately from trade creditors.' },
+      { q: 'What is the main purpose of an ageing report for debtors?', o: ['To find the age of each customer', 'To group dues by how long they are outstanding and judge how collectable they are', 'To calculate tax', 'To value inventory'], a: 1, why: 'Older dues are less likely to be collected, so ageing helps manage credit risk and spot possible bad debts.' },
+      { q: 'Which statement about debtors is correct?', o: ['Asset; Real account', 'Asset; Personal account', 'Liability; Personal account', 'Expense; Nominal account'], a: 1, why: 'Debtors are an asset because they owe the business money, and a Personal account because they are persons.' },
+      { q: 'Finished goods still unsold at the year end are shown as:', o: ['Cost of goods sold', 'Inventory, a current asset', 'An expense', 'A creditor'], a: 1, why: 'Unsold goods stay in inventory as a current asset. Their cost moves to COGS only when they are sold.' }
+    ]},
+    { name: 'Expert', note: 'Think it through', qs: [
+      { q: 'Goods worth ₹30,000 are bought on terms "2/10, net 30". The business pays on day 8. How much is paid, and what is the discount?', o: ['₹30,000 paid; no discount', '₹29,400 paid; ₹600 discount received', '₹29,400 paid; ₹600 discount allowed', '₹24,000 paid; ₹6,000 discount'], a: 1, why: 'Paying within 10 days earns 2%: 2% × 30,000 = 600. Amount paid = 29,400. A discount the business receives is "discount received".' },
+      { q: 'Debtors total ₹2,00,000. A customer owing ₹20,000 becomes insolvent and pays nothing. After the write-off, what are debtors and the bad debt?', o: ['Debtors ₹2,00,000; bad debt ₹0', 'Debtors ₹1,80,000; bad debt ₹20,000', 'Debtors ₹2,20,000; bad debt ₹20,000', 'Debtors ₹1,80,000; bad debt ₹0'], a: 1, why: 'The uncollectable 20,000 is written off as a bad debt (a loss), and debtors fall to 1,80,000.' },
+      { q: 'Opening debtors ₹1,50,000; credit sales ₹6,00,000; cash collected ₹5,40,000; bad debts written off ₹10,000. What are closing debtors?', o: ['₹2,10,000', '₹2,00,000', '₹1,90,000', '₹60,000'], a: 1, why: 'Closing debtors = 1,50,000 + 6,00,000 − 5,40,000 − 10,000 = 2,00,000.' },
+      { q: 'Opening creditors ₹80,000; credit purchases ₹4,00,000; paid ₹3,70,000; discount received ₹5,000. What are closing creditors?', o: ['₹1,10,000', '₹1,05,000', '₹1,15,000', '₹30,000'], a: 1, why: 'Closing creditors = 80,000 + 4,00,000 − 3,70,000 − 5,000 = 1,05,000. A discount received also reduces the amount owed.' },
+      { q: 'Debtors are ₹1,00,000 and yearly credit sales are ₹12,00,000. Roughly how many days do customers take to pay (365-day year)?', o: ['About 12 days', 'About 30 days', 'About 120 days', 'About 365 days'], a: 1, why: 'Collection period = Debtors ÷ Credit sales × 365 = 1,00,000 ÷ 12,00,000 × 365 ≈ 30 days.' }
+    ]}
+  ]
+};
+</script>
+<script src="lessons.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
