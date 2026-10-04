@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Accounting Conventions · Dr. Debit</title>
+<meta name="description" content="The four accounting conventions: consistency, conservatism, disclosure and materiality, with stock valuation, provisions vs contingent liabilities and a quiz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="rail" id="rail" aria-label="Topics">
+    <div class="brand" aria-label="Dr. Debit">
+      <span class="brand-word">Dr<span style="color:var(--real)">.</span>Debit</span>
+      <svg class="brand-pulse" viewBox="0 0 400 80" fill="none" aria-hidden="true">
+        <polyline points="0,58 80,58 96,58 110,22 126,74 140,38 152,58 214,58" stroke="var(--real)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="232" y="48" width="26" height="22" rx="5" fill="var(--personal)"/>
+        <rect x="272" y="34" width="26" height="36" rx="5" fill="var(--real)"/>
+        <rect x="312" y="20" width="26" height="50" rx="5" fill="var(--nominal)"/>
+        <rect x="352" y="6" width="26" height="64" rx="5" fill="var(--dr)"/>
+      </svg>
+    </div>
+    <nav class="nav" id="nav"></nav>
+  </aside>
+
+  <main>
+    <button class="btn menu-btn" id="menuBtn" aria-controls="rail" aria-expanded="false">☰ Topics</button>
+
+    <div class="head">
+      <div class="crumbs">Financial Accounting <span>›</span> Introduction to Financial Accounting <span>›</span> <b>Accounting Conventions</b></div>
+      <h1>Accounting Conventions</h1>
+      <div class="meta">
+        <a class="chip" href="#slides">6 slides</a>
+        <a class="chip" href="#quiz-section">Quiz: Medium · High · Expert</a>
+      </div>
+    </div>
+
+    <div class="legend" aria-label="Colour key">
+      <span><i class="sw" style="background:var(--personal)"></i><span class="t-personal">Personal</span></span>
+      <span><i class="sw" style="background:var(--real)"></i><span class="t-real">Real</span></span>
+      <span><i class="sw" style="background:var(--nominal)"></i><span class="t-nominal">Nominal</span></span>
+      <span><i class="sw" style="background:var(--dr)"></i><span class="t-dr">Debit (Dr)</span></span>
+      <span><i class="sw" style="background:var(--cr)"></i><span class="t-cr">Credit (Cr)</span></span>
+    </div>
+
+    <section class="block">
+      <div class="block-title"><h2>Key takeaways</h2><small>30-second read</small></div>
+      <div class="takeaways">
+        <ul>
+          <li><span class="tick">✓</span><span><b>Consistency</b>: use the same accounting methods year after year; if a change is justified, disclose it and its effect.</span></li>
+          <li><span class="tick">✓</span><span><b>Conservatism</b> (prudence): anticipate no profit, but provide for all known or probable losses, e.g. stock at the lower of cost or net realisable value.</span></li>
+          <li><span class="tick">✓</span><span><b>Disclosure</b>: give all information that matters to users, often in notes to the accounts.</span></li>
+          <li><span class="tick">✓</span><span><b>Materiality</b>: report separately only what is significant enough to affect decisions; it depends on the size and nature of the item.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block deck" id="slides" aria-roledescription="carousel" aria-label="Lesson slides">
+      <div class="block-title"><h2>Slides</h2><small>Use ← → keys or the buttons</small></div>
+      <div class="stage" id="stage">
+
+        <div class="slide" data-script="Your closing stock cost one lakh rupees. But prices have fallen, and now it would sell for only eighty thousand. So what value goes in the books? Cost, or the lower selling value?">
+          <p class="s-eyebrow a" style="--d:0">Quick question</p>
+          <p class="s-big a" style="--d:1">Stock cost ₹1,00,000.<br>Now sells for ₹80,000. <span class="t-nominal">Which value?</span></p>
+          <p class="s-text a" style="--d:2">Cost, or the lower selling value?</p>
+        </div>
+
+        <div class="slide" data-script="Conventions are accepted practices for preparing accounts. The first is consistency. Use the same methods every year, so this year can be compared with last year. You can change a method if a law or standard requires it, or it gives a better picture. For example, moving from FIFO to weighted average stock valuation. But you must disclose the change and its effect.">
+          <p class="s-eyebrow a" style="--d:0">Consistency</p>
+          <p class="s-title a" style="--d:1">Same methods, <span class="t-personal">year after year</span></p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:2;border-color:var(--personal)"><b class="t-personal">Why</b><span>So years can be compared fairly</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--personal)"><b class="t-personal">Changing a method</b><span>Only for good reason, e.g. FIFO → weighted average</span><span>Disclose the change and its effect</span></div>
+          </div>
+        </div>
+
+        <div class="slide" data-script="Conservatism, or prudence: anticipate no profit, but provide for all known or probable losses. So closing stock is valued at the lower of cost or net realisable value. And a provision is made for debts that may not be collected. But a lawsuit loss is recorded only if payment is probable and can be estimated. If it's merely possible, it's disclosed as a contingent liability instead.">
+          <p class="s-eyebrow a" style="--d:0">Conservatism (prudence)</p>
+          <p class="s-title a" style="--d:1">No profit early. <span class="t-nominal">Losses when probable.</span></p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:2;border-color:var(--nominal)"><b class="t-nominal">Stock</b><span>Lower of cost or net realisable value</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--nominal)"><b class="t-nominal">Doubtful debts</b><span>Provide for likely bad debts</span></div>
+            <div class="s-card a" style="--d:4;border-color:var(--nominal)"><b class="t-nominal">Lawsuits</b><span>Probable → provision. Possible → disclose only</span></div>
+          </div>
+        </div>
+
+        <div class="slide" data-script="Disclosure: share everything that matters to users, usually through notes to the accounts. Like the terms of a loan, or a pending lawsuit. Materiality: only items significant enough to affect decisions need separate reporting. A small stapler is simply an expense. And materiality depends on the business. Fifty thousand rupees matters to a small shop, but not to a large company.">
+          <p class="s-eyebrow a" style="--d:0">Disclosure &amp; materiality</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:1;border-color:var(--real)"><b class="t-real">Disclosure</b><span>Share all that matters, in notes</span><span>Loan terms · Pending lawsuits</span></div>
+            <div class="s-card a" style="--d:2;border-color:var(--cr)"><b class="t-cr">Materiality</b><span>Report what affects decisions</span><span>Depends on size and nature</span></div>
+          </div>
+        </div>
+
+        <div class="slide" data-script="Let's value the stock item by item. Item A cost forty thousand and would sell for fifty thousand: take the lower, forty thousand. Item B cost sixty thousand but would sell for only forty thousand: take forty thousand. Closing stock is eighty thousand. Notice we ignored the possible gain on A, but recognised the loss on B. That's conservatism.">
+          <p class="s-eyebrow a" style="--d:0">Example · lower of cost or NRV</p>
+          <div class="s-entry a" style="--d:1;font-size:2.2cqw;display:grid;grid-template-columns:auto auto auto auto;column-gap:2.4cqw;row-gap:.5cqw">
+            <span style="color:var(--muted)">Item</span><span style="color:var(--muted);text-align:right">Cost</span><span style="color:var(--muted);text-align:right">NRV</span><span style="color:var(--muted);text-align:right">Value</span>
+            <span>A</span><span style="text-align:right">40,000</span><span style="text-align:right">50,000</span><span class="t-real" style="text-align:right">40,000</span>
+            <span>B</span><span style="text-align:right">60,000</span><span style="text-align:right">40,000</span><span class="t-real" style="text-align:right">40,000</span>
+            <b>Total</b><b style="text-align:right">1,00,000</b><b style="text-align:right">90,000</b><b class="t-real" style="text-align:right">80,000</b>
+          </div>
+          <p class="s-text a" style="--d:2">Gain on A ignored; loss on B recognised.</p>
+        </div>
+
+        <div class="slide" data-script="So, the stock? It goes in at eighty thousand, the lower value. That's conservatism. Remember the four conventions: consistency, conservatism, disclosure and materiality.">
+          <p class="s-eyebrow a" style="--d:0">Recap</p>
+          <p class="s-title a" style="--d:1">The stock? <span class="t-real">₹80,000</span>, the lower value.</p>
+          <div class="s-rule a" style="--d:2"><div class="t-personal">Consistency</div><div class="t-nominal">Conservatism</div><div class="t-real">Disclosure</div><div class="t-cr">Materiality</div></div>
+        </div>
+
+        <span class="s-count" id="slideCount">1 / 6</span>
+      </div>
+      <div class="controls">
+        <button class="btn" id="prevSlide" aria-label="Previous slide">← Prev</button>
+        <div class="dots" id="dots"></div>
+        <button class="btn" id="autoBtn">▶ Auto-play</button>
+        <button class="btn" id="nextSlide" aria-label="Next slide">Next →</button>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title"><h2>Notes</h2><small>The four conventions</small></div>
+      <div class="prose">
+        <p>Accounting <b>conventions</b> are widely accepted practices that make financial reporting regular and open. They sit alongside the accounting concepts as part of GAAP.</p>
+      </div>
+
+      <div class="types two">
+        <article class="type">
+          <div class="type-head"><h3 class="t-personal">Consistency</h3></div>
+          <p class="rule" style="background:var(--personal-bg)">Accounting methods are applied the same way over time, unless there is a valid reason to change.</p>
+          <dl>
+            <div><dt>Why</dt><dd>Users can compare performance across years.</dd></div>
+            <div><dt>Valid reasons to change</dt><dd>A law or accounting standard requires it, or it gives a more appropriate presentation.</dd></div>
+            <div><dt>Example</dt><dd>Changing from FIFO to weighted average stock valuation, or from straight-line to written-down-value depreciation, with the reason and effect disclosed. (LIFO is not permitted under AS 2 or Ind AS 2.)</dd></div>
+          </dl>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3 class="t-nominal">Conservatism (prudence)</h3></div>
+          <p class="rule" style="background:var(--nominal-bg)">"Anticipate no profit, but provide for all possible losses." Gains are recognised when realised; known or probable losses are provided for.</p>
+          <dl>
+            <div><dt>Examples</dt><dd>Closing stock at the lower of cost or net realisable value; provision for doubtful debts</dd></div>
+            <div><dt>Note</dt><dd>Prudence should not be used to deliberately understate profits or create secret reserves.</dd></div>
+          </dl>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3 class="t-real">Disclosure</h3></div>
+          <p class="rule" style="background:var(--real-bg)">All information that could affect users' understanding of the statements must be disclosed.</p>
+          <p class="ask">Usually through notes to the accounts: accounting policies, loan terms and repayment schedules, contingent liabilities. Companies must follow Schedule III and the Accounting Standards.</p>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3 class="t-cr">Materiality</h3></div>
+          <p class="rule" style="background:var(--surface-2)">Only items significant enough to influence users' decisions need separate reporting; trivial items can be grouped.</p>
+          <p class="ask">It depends on the item's size relative to the business and on its nature. ₹50,000 may be material for a small shop but not for a large company; some items, like fraud, matter whatever the amount.</p>
+        </article>
+      </div>
+
+      <h3 style="font-size:20px;margin-top:8px">Lawsuits: record or disclose?</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Likelihood of paying</th><th>Treatment (AS 29 / Ind AS 37)</th></tr></thead>
+          <tbody>
+            <tr><td><b>Probable</b>, and the amount can be reliably estimated</td><td><span class="pill tag-n">Provision</span> recorded as an expense and a liability</td></tr>
+            <tr><td><b>Possible</b>, but not probable</td><td><span class="pill tag-r">Contingent liability</span> disclosed in the notes, not recorded</td></tr>
+            <tr><td><b>Remote</b></td><td>Neither recorded nor disclosed</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 style="font-size:20px;margin-top:8px">Which convention applies?</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Situation</th><th>Convention</th></tr></thead>
+          <tbody>
+            <tr><td>The same depreciation method is used every year.</td><td><span class="pill tag-p">Consistency</span></td></tr>
+            <tr><td>Stock is valued at the lower of cost or net realisable value.</td><td><span class="pill tag-n">Conservatism</span></td></tr>
+            <tr><td>A provision is made for debts that may not be collected.</td><td><span class="pill tag-n">Conservatism</span></td></tr>
+            <tr><td>A note explains the interest rate and repayment terms of a loan.</td><td><span class="pill tag-r">Disclosure</span></td></tr>
+            <tr><td>A ₹150 stapler is charged as an expense instead of being shown as an asset.</td><td><span class="pill tag-c">Materiality</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title"><h2>Common mistakes</h2><small>Where marks are lost</small></div>
+      <div class="mistakes">
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Consistency means a method can never change.</p><p><span class="lbl right">Right</span>It can change for a valid reason, but the change and its effect must be <b>disclosed</b>.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Any possible lawsuit loss is recorded as an expense.</p><p><span class="lbl right">Right</span>Record a provision only if payment is <b>probable</b> and measurable; if merely possible, <b>disclose</b> it.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Switching from FIFO to LIFO is a good consistency example.</p><p><span class="lbl right">Right</span>LIFO is <b>not permitted</b> in India under AS 2 / Ind AS 2.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Materiality is a fixed rupee limit.</p><p><span class="lbl right">Right</span>It depends on the item's <b>size relative to the business</b> and its nature.</p></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title" id="quiz-section"><h2>Test yourself</h2><small>Three levels, instant answers</small></div>
+      <div class="levels" role="tablist" aria-label="Quiz level" id="levels"></div>
+      <div class="quiz" id="quiz" aria-live="polite"></div>
+    </section>
+
+    <nav class="pager" id="pager" aria-label="Lesson navigation" hidden></nav>
+  </main>
+</div>
+
+<script>
+// Lesson settings. To show a video, paste the YouTube video ID between the quotes
+// (for https://www.youtube.com/watch?v=abc123XYZ use 'abc123XYZ').
+window.LESSON = {
+  id: 'accounting-conventions',
+  video: { youtubeId: '' },
+  quiz: [
+    { name: 'Medium', note: 'Know the basics', qs: [
+      { q: 'Using the same accounting methods every year follows which convention?', o: ['Consistency', 'Materiality', 'Disclosure', 'Conservatism'], a: 0, why: 'Consistency means applying methods the same way over time so years can be compared.' },
+      { q: '"Anticipate no profit, but provide for all possible losses" describes:', o: ['Disclosure', 'Conservatism', 'Matching', 'Consistency'], a: 1, why: 'This is the classic statement of the conservatism (prudence) convention.' },
+      { q: 'Notes to the accounts explaining loan terms follow which convention?', o: ['Materiality', 'Disclosure', 'Consistency', 'Cost'], a: 1, why: 'The disclosure convention requires all information that matters to users to be shared.' },
+      { q: 'Very small items are not shown separately in the accounts. Which convention allows this?', o: ['Materiality', 'Conservatism', 'Dual aspect', 'Going concern'], a: 0, why: 'Materiality means only significant items need separate reporting.' },
+      { q: 'Under conservatism, closing stock is valued at:', o: ['Cost only', 'Market value only', 'Lower of cost or net realisable value', 'Higher of cost or market value'], a: 2, why: 'Taking the lower value avoids overstating assets and profit.' }
+    ]},
+    { name: 'High', note: 'Watch the traps', qs: [
+      { q: 'A company wants to change its stock valuation method. Which change is acceptable under Indian standards (with disclosure)?', o: ['FIFO to LIFO', 'FIFO to weighted average', 'Cost to selling price', 'Any method the owner prefers, with no disclosure'], a: 1, why: 'LIFO is not permitted under AS 2 / Ind AS 2. FIFO and weighted average are allowed; a change must be justified and disclosed.' },
+      { q: 'A company will probably have to pay ₹2,00,000 in a lawsuit, and the amount can be reliably estimated. How is it treated?', o: ['Disclosed only, as a contingent liability', 'Recorded as a provision (an expense and a liability)', 'Ignored until paid', 'Recorded as income'], a: 1, why: 'Under AS 29 / Ind AS 37, a probable and measurable obligation is recorded as a provision.' },
+      { q: 'A lawsuit loss is possible but not probable. How is it treated?', o: ['Recorded as an expense', 'Disclosed in the notes as a contingent liability, not recorded', 'Recorded as a provision', 'Ignored completely'], a: 1, why: 'A possible obligation is disclosed as a contingent liability; it is not recorded in the accounts.' },
+      { q: 'A stapler costing ₹150, expected to last three years, is charged as an expense. Which convention justifies this?', o: ['Consistency', 'Materiality', 'Going concern', 'Cost'], a: 1, why: 'The amount is too small to affect users, so it is expensed rather than shown as an asset.' },
+      { q: 'A company changes its depreciation method from straight-line to written-down value. What must it do?', o: ['Nothing; methods can change freely', 'Disclose the change, the reason and its effect on profit', 'Restate the owner\'s capital only', 'Stop charging depreciation'], a: 1, why: 'Consistency allows justified changes, but they must be disclosed so users can compare years.' }
+    ]},
+    { name: 'Expert', note: 'Think it through', qs: [
+      { q: 'Item A: cost ₹40,000, NRV ₹50,000. Item B: cost ₹60,000, NRV ₹40,000. Valued item by item at the lower of cost or NRV, what is closing stock?', o: ['₹1,00,000', '₹90,000', '₹80,000', '₹70,000'], a: 2, why: 'A at 40,000 (lower) + B at 40,000 (lower) = 80,000.' },
+      { q: 'Valuing that stock at ₹80,000 instead of its cost of ₹1,00,000 changes this year\'s profit by:', o: ['+₹20,000', '−₹20,000', '−₹10,000', 'No change'], a: 1, why: 'Lower closing stock means higher cost of goods sold, so profit is ₹20,000 lower.' },
+      { q: 'Debtors are ₹2,00,000 and a 5% provision for doubtful debts is made. At what amount are debtors shown?', o: ['₹2,00,000', '₹1,90,000', '₹2,10,000', '₹1,95,000'], a: 1, why: 'Provision = 5% × 2,00,000 = 10,000. Debtors shown at 2,00,000 − 10,000 = 1,90,000.' },
+      { q: 'An error of ₹50,000 is material for a firm with profit of ₹2,00,000 but not for a company with profit of ₹50 crore. What does this show?', o: ['Materiality is a fixed amount', 'Materiality depends on the size of the item relative to the business', 'Small firms ignore errors', 'Large companies follow different standards'], a: 1, why: 'Materiality is relative: the same amount can be significant for one business and trivial for another.' },
+      { q: 'A company switches its depreciation method, raising depreciation by ₹30,000, and says nothing in its accounts. Which convention is broken?', o: ['Materiality', 'Consistency, because the change and its effect were not disclosed', 'Going concern', 'Money measurement'], a: 1, why: 'Changes are allowed under consistency only if the reason and effect are disclosed, so users can compare years.' }
+    ]}
+  ]
+};
+</script>
+<script src="lessons.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

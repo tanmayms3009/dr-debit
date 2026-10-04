@@ -20,7 +20,8 @@ window.DRDEBIT_LESSONS = [
       { id: 'balance-sheet', title: 'The Balance Sheet', file: 'balance-sheet.html' },
       { id: 'cash-flow', title: 'The Cash Flow Statement', file: 'cash-flow-statement.html' },
       { id: 'gaap-basic-concepts', title: 'GAAP & the Basic Concepts', file: 'gaap-and-basic-concepts.html' },
-      { id: 'dual-realisation-accrual-matching', title: 'Dual Aspect, Realisation, Accrual & Matching', file: 'dual-aspect-realisation-accrual-matching.html' }
+      { id: 'dual-realisation-accrual-matching', title: 'Dual Aspect, Realisation, Accrual & Matching', file: 'dual-aspect-realisation-accrual-matching.html' },
+      { id: 'accounting-conventions', title: 'Accounting Conventions', file: 'accounting-conventions.html' }
     ]
   }
 ];
