@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Cash Flow Statement · Dr. Debit</title>
+<meta name="description" content="The cash flow statement: operating, investing and financing activities, why profit is not cash, and how to read it, with a worked example and quiz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="rail" id="rail" aria-label="Topics">
+    <div class="brand" aria-label="Dr. Debit">
+      <span class="brand-word">Dr<span style="color:var(--real)">.</span>Debit</span>
+      <svg class="brand-pulse" viewBox="0 0 400 80" fill="none" aria-hidden="true">
+        <polyline points="0,58 80,58 96,58 110,22 126,74 140,38 152,58 214,58" stroke="var(--real)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="232" y="48" width="26" height="22" rx="5" fill="var(--personal)"/>
+        <rect x="272" y="34" width="26" height="36" rx="5" fill="var(--real)"/>
+        <rect x="312" y="20" width="26" height="50" rx="5" fill="var(--nominal)"/>
+        <rect x="352" y="6" width="26" height="64" rx="5" fill="var(--dr)"/>
+      </svg>
+    </div>
+    <nav class="nav" id="nav"></nav>
+  </aside>
+
+  <main>
+    <button class="btn menu-btn" id="menuBtn" aria-controls="rail" aria-expanded="false">☰ Topics</button>
+
+    <div class="head">
+      <div class="crumbs">Financial Accounting <span>›</span> Introduction to Financial Accounting <span>›</span> <b>The Cash Flow Statement</b></div>
+      <h1>The Cash Flow Statement</h1>
+      <div class="meta">
+        <a class="chip" href="#slides">6 slides</a>
+        <a class="chip" href="#quiz-section">Quiz: Medium · High · Expert</a>
+      </div>
+    </div>
+
+    <div class="legend" aria-label="Colour key">
+      <span><i class="sw" style="background:var(--personal)"></i><span class="t-personal">Personal</span></span>
+      <span><i class="sw" style="background:var(--real)"></i><span class="t-real">Real</span></span>
+      <span><i class="sw" style="background:var(--nominal)"></i><span class="t-nominal">Nominal</span></span>
+      <span><i class="sw" style="background:var(--dr)"></i><span class="t-dr">Debit (Dr)</span></span>
+      <span><i class="sw" style="background:var(--cr)"></i><span class="t-cr">Credit (Cr)</span></span>
+    </div>
+
+    <section class="block">
+      <div class="block-title"><h2>Key takeaways</h2><small>30-second read</small></div>
+      <div class="takeaways">
+        <ul>
+          <li><span class="tick">✓</span><span>The <b>cash flow statement</b> shows how cash came in and went out <b>during a period</b>.</span></li>
+          <li><span class="tick">✓</span><span>Cash flows are grouped into <span class="t-real">operating</span>, <span class="t-personal">investing</span> and <span class="t-cr">financing</span> activities.</span></li>
+          <li><span class="tick">✓</span><span><b>Profit is not cash.</b> Credit sales, buying assets and repaying loans make the two differ.</span></li>
+          <li><span class="tick">✓</span><span>In India it is prepared under AS 3 (or Ind AS 7). It helps judge liquidity and plan short-term cash needs.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block deck" id="slides" aria-roledescription="carousel" aria-label="Lesson slides">
+      <div class="block-title"><h2>Slides</h2><small>Use ← → keys or the buttons</small></div>
+      <div class="stage" id="stage">
+
+        <div class="slide" data-script="A business made a healthy profit this year. Yet next week, it can't pay its staff salaries. How can a profitable business run out of cash? The cash flow statement explains it.">
+          <p class="s-eyebrow a" style="--d:0">Quick question</p>
+          <p class="s-big a" style="--d:1">Profitable.<br>But can't pay salaries. <span class="t-nominal">How?</span></p>
+          <p class="s-text a" style="--d:2">How does a profitable business run out of cash?</p>
+        </div>
+
+        <div class="slide" data-script="The cash flow statement tracks every rupee of cash coming in and going out during a period. It's one of the main financial statements, alongside the income statement and balance sheet. In India, it follows Accounting Standard 3, or Ind AS 7.">
+          <p class="s-eyebrow a" style="--d:0">The cash flow statement</p>
+          <p class="s-title a" style="--d:1">Cash <span class="t-real">in</span>, cash <span class="t-nominal">out</span>, for a period</p>
+          <p class="s-text a" style="--d:2">One of the main financial statements. Prepared under AS 3 or Ind AS 7.</p>
+        </div>
+
+        <div class="slide" data-script="Every cash flow fits one of three groups. Operating: the day-to-day business, like cash from customers and cash paid for expenses. Investing: buying or selling long-term assets, like machinery, or investments. Financing: money from or back to owners and lenders, like loans, capital and dividends.">
+          <p class="s-eyebrow a" style="--d:0">Three activities</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:1;border-color:var(--real)"><b class="t-real">Operating</b><span>Cash from customers</span><span>Paid to suppliers, staff</span></div>
+            <div class="s-card a" style="--d:2;border-color:var(--personal)"><b class="t-personal">Investing</b><span>Buy or sell machinery</span><span>Buy investments</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--cr)"><b class="t-cr">Financing</b><span>Loans taken or repaid</span><span>Capital, dividends</span></div>
+          </div>
+        </div>
+
+        <div class="slide" data-script="Why does profit differ from cash? Credit sales count as profit before any cash arrives. Buying machinery uses cash but isn't an expense right away. Repaying a loan uses cash but isn't an expense at all. And depreciation reduces profit without using any cash.">
+          <p class="s-eyebrow a" style="--d:0">Profit ≠ cash</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:1;border-color:var(--nominal)"><b class="t-nominal">Profit, no cash yet</b><span>Credit sales not collected</span></div>
+            <div class="s-card a" style="--d:2;border-color:var(--nominal)"><b class="t-nominal">Cash out, not an expense</b><span>Buying machinery · Repaying loans</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--nominal)"><b class="t-nominal">Expense, no cash</b><span>Depreciation</span></div>
+          </div>
+        </div>
+
+        <div class="slide" data-script="Here's a year. Operating activities brought in one lakh ten thousand. Investing used one lakh fifty thousand on new machinery. Financing brought in sixty thousand: a loan of one lakh, less drawings of forty thousand. Net increase in cash: twenty thousand. Opening cash one lakh ten thousand, so closing cash is one lakh thirty thousand.">
+          <p class="s-eyebrow a" style="--d:0">Example · one year of cash</p>
+          <div class="s-entry a" style="--d:1;font-size:2.2cqw;display:grid;grid-template-columns:auto auto;column-gap:3cqw;row-gap:.5cqw">
+            <span class="t-real">Operating activities</span><span style="text-align:right">+1,10,000</span>
+            <span class="t-personal">Investing (new machinery)</span><span style="text-align:right">−1,50,000</span>
+            <span class="t-cr">Financing (loan − drawings)</span><span style="text-align:right">+60,000</span>
+            <b>Net increase in cash</b><b style="text-align:right">+20,000</b>
+            <span>Opening cash</span><span style="text-align:right">1,10,000</span>
+            <b class="t-real">Closing cash</b><b class="t-real" style="text-align:right">1,30,000</b>
+          </div>
+        </div>
+
+        <div class="slide" data-script="So how does a profitable business run out of cash? Customers haven't paid yet, cash went into new machinery, or loans were repaid. That's why owners watch the cash flow statement alongside profit. Profit keeps a business alive in the long run. Cash keeps it alive this week.">
+          <p class="s-eyebrow a" style="--d:0">Recap</p>
+          <p class="s-title a" style="--d:1">Profit ≠ cash. <span class="t-real">Watch both.</span></p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:2;border-color:var(--real)"><b class="t-real">Operating</b><span>Day-to-day</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--personal)"><b class="t-personal">Investing</b><span>Long-term assets</span></div>
+            <div class="s-card a" style="--d:4;border-color:var(--cr)"><b class="t-cr">Financing</b><span>Owners and lenders</span></div>
+          </div>
+        </div>
+
+        <span class="s-count" id="slideCount">1 / 6</span>
+      </div>
+      <div class="controls">
+        <button class="btn" id="prevSlide" aria-label="Previous slide">← Prev</button>
+        <div class="dots" id="dots"></div>
+        <button class="btn" id="autoBtn">▶ Auto-play</button>
+        <button class="btn" id="nextSlide" aria-label="Next slide">Next →</button>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title"><h2>Notes</h2><small>Cash in and cash out</small></div>
+      <div class="prose">
+        <p>A cash flow statement tracks the inflow and outflow of cash in an organisation over a period. It is one of the main financial statements, alongside the income statement and balance sheet, and is especially useful for short-term financial planning and cash forecasting. Without enough cash, a business may have to borrow just to keep running.</p>
+      </div>
+
+      <div class="types two">
+        <article class="type">
+          <div class="type-head"><h3 class="t-real">Operating activities</h3></div>
+          <p class="rule" style="background:var(--real-bg)">Cash flows from the main business operations.</p>
+          <p class="ask">Cash received from customers; cash paid to suppliers, employees and for operating expenses.</p>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3 class="t-personal">Investing activities</h3></div>
+          <p class="rule" style="background:var(--personal-bg)">Cash flows from buying and selling long-term assets and investments.</p>
+          <p class="ask">Purchase or sale of machinery and equipment; buying shares of other companies. For non-financial companies, interest and dividends received usually go here too.</p>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3 class="t-cr">Financing activities</h3></div>
+          <p class="rule" style="background:var(--surface-2)">Cash flows with owners and lenders.</p>
+          <p class="ask">Borrowing and repaying loans; issuing or buying back shares; paying dividends (and, for non-financial companies, interest paid). For sole traders: capital introduced and drawings.</p>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3>Why it matters</h3></div>
+          <dl>
+            <div><dt>Shows the cash side</dt><dd>Inventory and equipment purchases appear in the balance sheet; this statement shows the cash actually paid for them, and loan principal repaid</dd></div>
+            <div><dt>Right cash balance</dt><dd>Shows whether cash is idle, excessive or too low, so surplus can be invested or a shortage planned for</dd></div>
+            <div><dt>Focus on generating cash</dt><dd>Points to ways of improving cash, such as collecting receivables faster or negotiating better prices</dd></div>
+            <div><dt>Short-term planning</dt><dd>Helps anticipate cash shortfalls and arrange credit from banks in time</dd></div>
+          </dl>
+        </article>
+      </div>
+
+      <h3 style="font-size:20px;margin-top:8px">Classify the cash flow</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Item</th><th>Activity</th></tr></thead>
+          <tbody>
+            <tr><td>Cash received from customers</td><td><span class="pill tag-r">Operating</span> inflow</td></tr>
+            <tr><td>Salaries paid to staff</td><td><span class="pill tag-r">Operating</span> outflow</td></tr>
+            <tr><td>New machinery bought for cash</td><td><span class="pill tag-p">Investing</span> outflow</td></tr>
+            <tr><td>Old furniture sold for cash</td><td><span class="pill tag-p">Investing</span> inflow</td></tr>
+            <tr><td>Shares of another company bought</td><td><span class="pill tag-p">Investing</span> outflow</td></tr>
+            <tr><td>Bank loan taken</td><td><span class="pill tag-c">Financing</span> inflow</td></tr>
+            <tr><td>Dividend paid to shareholders</td><td><span class="pill tag-c">Financing</span> outflow</td></tr>
+            <tr><td>Owner's drawings in cash</td><td><span class="pill tag-c">Financing</span> outflow</td></tr>
+            <tr><td>Depreciation on machinery</td><td>Not a cash flow (no cash moves)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title"><h2>Common mistakes</h2><small>Where marks are lost</small></div>
+      <div class="mistakes">
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Profit and cash are the same.</p><p><span class="lbl right">Right</span>Credit sales, asset purchases and loan repayments make them differ.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Depreciation is a cash outflow.</p><p><span class="lbl right">Right</span>It reduces profit but <b>no cash is paid</b>.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Buying machinery is an operating activity.</p><p><span class="lbl right">Right</span>It is a long-term asset, so it is an <span class="t-personal">investing</span> activity.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Taking a loan is an operating inflow.</p><p><span class="lbl right">Right</span>Loans taken or repaid are <span class="t-cr">financing</span> activities.</p></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title" id="quiz-section"><h2>Test yourself</h2><small>Three levels, instant answers</small></div>
+      <div class="levels" role="tablist" aria-label="Quiz level" id="levels"></div>
+      <div class="quiz" id="quiz" aria-live="polite"></div>
+    </section>
+
+    <nav class="pager" id="pager" aria-label="Lesson navigation" hidden></nav>
+  </main>
+</div>
+
+<script>
+// Lesson settings. To show a video, paste the YouTube video ID between the quotes
+// (for https://www.youtube.com/watch?v=abc123XYZ use 'abc123XYZ').
+window.LESSON = {
+  id: 'cash-flow',
+  video: { youtubeId: '' },
+  quiz: [
+    { name: 'Medium', note: 'Know the basics', qs: [
+      { q: 'A cash flow statement shows:', o: ['Assets and liabilities on a date', 'Inflows and outflows of cash during a period', 'Profit or loss for a period', 'Only cash in hand on the last day'], a: 1, why: 'It tracks how cash came in and went out over the period.' },
+      { q: 'Cash received from customers is a cash flow from:', o: ['Operating activities', 'Investing activities', 'Financing activities', 'It is not a cash flow'], a: 0, why: 'Receipts from selling goods and services come from the core business, so they are operating.' },
+      { q: 'Buying new machinery for cash is a cash flow from:', o: ['Operating activities', 'Investing activities', 'Financing activities', 'It is not recorded'], a: 1, why: 'Machinery is a long-term asset, so buying it is an investing activity.' },
+      { q: 'Taking a bank loan is a cash flow from:', o: ['Operating activities', 'Investing activities', 'Financing activities', 'It is not a cash flow'], a: 2, why: 'Borrowing and repaying loans are financing activities.' },
+      { q: 'Which accounting standard covers the cash flow statement in India?', o: ['AS 3 (Ind AS 7 for Ind AS companies)', 'AS 10', 'AS 2', 'There is no standard'], a: 0, why: 'AS 3 deals with cash flow statements; companies following Ind AS use Ind AS 7.' }
+    ]},
+    { name: 'High', note: 'Watch the traps', qs: [
+      { q: 'How is depreciation treated in a cash flow statement?', o: ['As an operating outflow', 'As an investing outflow', 'It is not a cash flow, because no cash is paid', 'As a financing outflow'], a: 2, why: 'Depreciation reduces profit, but no cash leaves the business, so it is not a cash flow.' },
+      { q: 'Dividends paid by a company to its shareholders are:', o: ['An operating outflow', 'An investing outflow', 'A financing outflow', 'Not a cash flow'], a: 2, why: 'Dividends are a return to the owners who provide finance, so they are a financing activity.' },
+      { q: 'For a non-financial company under AS 3, interest received on investments is usually classified as:', o: ['Operating', 'Investing', 'Financing', 'Not a cash flow'], a: 1, why: 'For non-financial companies, interest and dividends received are treated as investing inflows.' },
+      { q: 'Old furniture is sold for ₹15,000 cash. This is:', o: ['An operating inflow', 'An investing inflow', 'A financing inflow', 'Not a cash flow'], a: 1, why: 'Selling a long-term asset is an investing activity, here a cash inflow.' },
+      { q: 'A business reports a large profit but is short of cash. Which is the most likely reason?', o: ['Most sales were on credit and customers have not paid', 'Depreciation was charged', 'Commission was received in cash', 'The owner introduced fresh capital'], a: 0, why: 'Credit sales add to profit before any cash arrives, leaving the business short of cash.' }
+    ]},
+    { name: 'Expert', note: 'Think it through', qs: [
+      { q: 'Operating +₹1,10,000; investing −₹1,50,000; financing +₹60,000. What is the net change in cash?', o: ['+₹3,20,000', '+₹20,000', '−₹20,000', '−₹1,00,000'], a: 1, why: '1,10,000 − 1,50,000 + 60,000 = +20,000.' },
+      { q: 'With that net change and opening cash of ₹1,10,000, what is the closing cash?', o: ['₹1,30,000', '₹90,000', '₹1,10,000', '₹2,20,000'], a: 0, why: 'Closing cash = Opening cash + Net change = 1,10,000 + 20,000 = 1,30,000.' },
+      { q: 'Operating +₹50,000; investing −₹2,00,000; financing +₹1,20,000. What happened to cash?', o: ['It rose by ₹30,000', 'It fell by ₹30,000', 'It rose by ₹3,70,000', 'No change'], a: 1, why: '50,000 − 2,00,000 + 1,20,000 = −30,000, a fall of 30,000.' },
+      { q: 'Cash from customers ₹8,00,000; paid to suppliers ₹5,20,000; salaries ₹1,10,000; rent ₹40,000. What is the cash from operating activities?', o: ['₹1,30,000', '₹2,80,000', '₹1,70,000', '₹6,70,000'], a: 0, why: '8,00,000 − 5,20,000 − 1,10,000 − 40,000 = 1,30,000.' },
+      { q: 'Which pattern most suggests a healthy business over several years?', o: ['Steady positive cash from operating activities', 'Large loans taken every year to cover daily costs', 'Selling machinery each year to pay salaries', 'Negative operating cash flow every year'], a: 0, why: 'A healthy business generates cash from its own operations. Relying on loans or asset sales to pay running costs is a warning sign.' }
+    ]}
+  ]
+};
+</script>
+<script src="lessons.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
