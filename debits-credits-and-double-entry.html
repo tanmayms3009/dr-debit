@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Debits, Credits &amp; Double Entry · Dr. Debit</title>
+<meta name="description" content="The double-entry system and the rules of debit and credit for assets, liabilities, capital, revenue and expenses, shown alongside the golden rules, with a three-level quiz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="rail" id="rail" aria-label="Topics">
+    <div class="brand" aria-label="Dr. Debit">
+      <span class="brand-word">Dr<span style="color:var(--real)">.</span>Debit</span>
+      <svg class="brand-pulse" viewBox="0 0 400 80" fill="none" aria-hidden="true">
+        <polyline points="0,58 80,58 96,58 110,22 126,74 140,38 152,58 214,58" stroke="var(--real)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="232" y="48" width="26" height="22" rx="5" fill="var(--personal)"/>
+        <rect x="272" y="34" width="26" height="36" rx="5" fill="var(--real)"/>
+        <rect x="312" y="20" width="26" height="50" rx="5" fill="var(--nominal)"/>
+        <rect x="352" y="6" width="26" height="64" rx="5" fill="var(--dr)"/>
+      </svg>
+    </div>
+    <nav class="nav" id="nav"></nav>
+  </aside>
+
+  <main>
+    <button class="btn menu-btn" id="menuBtn" aria-controls="rail" aria-expanded="false">☰ Topics</button>
+
+    <div class="head">
+      <div class="crumbs">Financial Accounting <span>›</span> Introduction to Financial Accounting <span>›</span> <b>Debits, Credits &amp; Double Entry</b></div>
+      <h1>Debits, Credits &amp; Double Entry</h1>
+      <div class="meta">
+        <a class="chip" href="#slides">6 slides</a>
+        <a class="chip" href="#quiz-section">Quiz: Medium · High · Expert</a>
+      </div>
+    </div>
+
+    <div class="legend" aria-label="Colour key">
+      <span><i class="sw" style="background:var(--personal)"></i><span class="t-personal">Personal</span></span>
+      <span><i class="sw" style="background:var(--real)"></i><span class="t-real">Real</span></span>
+      <span><i class="sw" style="background:var(--nominal)"></i><span class="t-nominal">Nominal</span></span>
+      <span><i class="sw" style="background:var(--dr)"></i><span class="t-dr">Debit (Dr)</span></span>
+      <span><i class="sw" style="background:var(--cr)"></i><span class="t-cr">Credit (Cr)</span></span>
+    </div>
+
+    <section class="block">
+      <div class="block-title"><h2>Key takeaways</h2><small>30-second read</small></div>
+      <div class="takeaways">
+        <ul>
+          <li><span class="tick">✓</span><span><b>Double entry</b>: every transaction affects at least two accounts, and total <span class="t-dr">debits</span> always equal total <span class="t-cr">credits</span>.</span></li>
+          <li><span class="tick">✓</span><span><span class="t-dr">Debit</span> increases assets, expenses and drawings. <span class="t-cr">Credit</span> increases liabilities, capital and revenue.</span></li>
+          <li><span class="tick">✓</span><span>"Debit" and "credit" just mean <b>left side</b> and <b>right side</b> of an account. Neither means good or bad.</span></li>
+          <li><span class="tick">✓</span><span>These modern rules and the golden rules always give the <b>same entry</b>.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block deck" id="slides" aria-roledescription="carousel" aria-label="Lesson slides">
+      <div class="block-title"><h2>Slides</h2><small>Use ← → keys or the buttons</small></div>
+      <div class="stage" id="stage">
+
+        <div class="slide" data-script="You deposit ten thousand rupees in your bank. Your bank statement says: credit, ten thousand. Wait, doesn't credit mean money going out? Let's clear this up for good.">
+          <p class="s-eyebrow a" style="--d:0">Quick question</p>
+          <p class="s-big a" style="--d:1">You deposit ₹10,000.<br>The bank says <span class="t-cr">"Credit"</span>. Why?</p>
+          <p class="s-text a" style="--d:2">Doesn't credit mean money going out?</p>
+        </div>
+
+        <div class="slide" data-script="First, double entry. Every transaction touches at least two accounts. One side is debited, the other credited, and the totals always match. Debit simply means the left side of an account. Credit means the right side. That's all.">
+          <p class="s-eyebrow a" style="--d:0">Double entry</p>
+          <p class="s-title a" style="--d:1">Every transaction has <span class="t-dr">two sides</span></p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:2;border-color:var(--dr)"><b class="t-dr">Debit (Dr)</b><span>Left side of an account</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--cr)"><b class="t-cr">Credit (Cr)</b><span>Right side of an account</span></div>
+          </div>
+          <p class="s-text a" style="--d:4">Total debits = total credits. Always.</p>
+        </div>
+
+        <div class="slide" data-script="The modern rules. Debit increases assets, expenses and drawings. Credit increases liabilities, capital and revenue. To decrease any account, do the opposite. Remember it as DEA and LCR.">
+          <p class="s-eyebrow a" style="--d:0">The modern rules</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:1;border-color:var(--dr)"><b class="t-dr">Debit increases</b><span><b>D</b>rawings</span><span><b>E</b>xpenses</span><span><b>A</b>ssets</span></div>
+            <div class="s-card a" style="--d:2;border-color:var(--cr)"><b class="t-cr">Credit increases</b><span><b>L</b>iabilities</span><span><b>C</b>apital</span><span><b>R</b>evenue</span></div>
+          </div>
+          <p class="s-text a" style="--d:3">To decrease an account, do the opposite. Remember: DEA · LCR.</p>
+        </div>
+
+        <div class="slide" data-script="Do these clash with the golden rules? Never. Take rent paid in cash. Modern rules: expense goes up, so debit rent. Cash, an asset, goes down, so credit cash. Golden rules: rent is a nominal expense, so debit it. Cash is real and goes out, so credit it. Same entry.">
+          <p class="s-eyebrow a" style="--d:0">Same answer, two ways</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:1;border-color:var(--personal)"><b>Modern rules</b><span>Expense ↑ → <span class="t-dr">Dr</span> Rent</span><span>Asset ↓ → <span class="t-cr">Cr</span> Cash</span></div>
+            <div class="s-card a" style="--d:2;border-color:var(--nominal)"><b>Golden rules</b><span><span class="t-nominal">Nominal</span>: expense → <span class="t-dr">Dr</span> Rent</span><span><span class="t-real">Real</span>: goes out → <span class="t-cr">Cr</span> Cash</span></div>
+          </div>
+          <div class="s-entry a" style="--d:3">Rent A/c <span class="t-dr">Dr</span> 12,000<div class="to">To Cash A/c <span class="t-cr">12,000</span></div></div>
+        </div>
+
+        <div class="slide" data-script="Three transactions. The owner invests three lakh in cash: debit cash, credit capital. Machinery bought on credit for one lakh twenty thousand: debit machinery, credit the supplier. Commission of fifteen thousand received in cash: debit cash, credit commission. Total debits, four lakh thirty-five thousand. Total credits, the same.">
+          <p class="s-eyebrow a" style="--d:0">Example · debits = credits</p>
+          <div class="s-entry a" style="--d:1;font-size:2.1cqw;display:grid;grid-template-columns:auto auto auto;column-gap:2.4cqw;row-gap:.5cqw">
+            <span style="color:var(--muted)">Entry</span><span style="color:var(--muted);text-align:right">Dr</span><span style="color:var(--muted);text-align:right">Cr</span>
+            <span>Cash A/c / Capital A/c</span><span class="t-dr" style="text-align:right">3,00,000</span><span class="t-cr" style="text-align:right">3,00,000</span>
+            <span>Machinery A/c / Supplier A/c</span><span class="t-dr" style="text-align:right">1,20,000</span><span class="t-cr" style="text-align:right">1,20,000</span>
+            <span>Cash A/c / Commission A/c</span><span class="t-dr" style="text-align:right">15,000</span><span class="t-cr" style="text-align:right">15,000</span>
+            <b>Total</b><b class="t-dr" style="text-align:right">4,35,000</b><b class="t-cr" style="text-align:right">4,35,000</b>
+          </div>
+          <p class="s-text a" style="--d:2">Debits and credits always match ✓</p>
+        </div>
+
+        <div class="slide" data-script="Back to the bank. Your statement is the bank's record, not yours. To the bank, your deposit is money it owes you, a liability. Liabilities increase with a credit. In your own books, your bank account is an asset, so you debit it. Same money, two points of view.">
+          <p class="s-eyebrow a" style="--d:0">Recap</p>
+          <p class="s-title a" style="--d:1">The statement is <span class="t-cr">the bank's</span> view.</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:2;border-color:var(--cr)"><b class="t-cr">Bank's books</b><span>Your deposit = what it owes you → liability ↑ → <span class="t-cr">Credit</span></span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--dr)"><b class="t-dr">Your books</b><span>Bank balance = your asset ↑ → <span class="t-dr">Debit</span></span></div>
+          </div>
+        </div>
+
+        <span class="s-count" id="slideCount">1 / 6</span>
+      </div>
+      <div class="controls">
+        <button class="btn" id="prevSlide" aria-label="Previous slide">← Prev</button>
+        <div class="dots" id="dots"></div>
+        <button class="btn" id="autoBtn">▶ Auto-play</button>
+        <button class="btn" id="nextSlide" aria-label="Next slide">Next →</button>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title"><h2>Notes</h2><small>The rules of debit and credit</small></div>
+      <div class="prose">
+        <p>To record transactions in the <b>double-entry system</b>, you need to know what debits and credits do. Every transaction affects at least two accounts. Debits and credits keep the accounting equation balanced: <span class="t-real">Assets</span> = <span class="t-personal">Liabilities</span> + <span class="t-cr">Capital</span>.</p>
+      </div>
+
+      <h3 style="font-size:20px">Effect of debits and credits (modern approach)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Account type</th><th>Debit (Dr)</th><th>Credit (Cr)</th><th>Example of an increase</th></tr></thead>
+          <tbody>
+            <tr><td><b>Assets</b></td><td class="t-dr">Increase</td><td>Decrease</td><td>Cash received → Dr Cash</td></tr>
+            <tr><td><b>Expenses</b></td><td class="t-dr">Increase</td><td>Decrease (e.g. a refund)</td><td>Rent paid → Dr Rent</td></tr>
+            <tr><td><b>Drawings</b></td><td class="t-dr">Increase</td><td>Decrease</td><td>Owner withdraws cash → Dr Drawings</td></tr>
+            <tr><td><b>Liabilities</b></td><td>Decrease (e.g. a loan repaid)</td><td class="t-cr">Increase</td><td>Loan taken → Cr Loan</td></tr>
+            <tr><td><b>Capital</b></td><td>Decrease (e.g. drawings, losses)</td><td class="t-cr">Increase</td><td>Owner invests → Cr Capital</td></tr>
+            <tr><td><b>Revenue</b></td><td>Decrease (e.g. sales returns)</td><td class="t-cr">Increase</td><td>Commission earned → Cr Commission</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 style="font-size:20px;margin-top:8px">Modern rules vs golden rules: same entry</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Transaction</th><th>Modern reasoning</th><th>Golden-rule reasoning</th><th>Entry</th></tr></thead>
+          <tbody>
+            <tr><td>Owner starts business with cash ₹3,00,000</td><td>Asset ↑ Dr; capital ↑ Cr</td><td><span class="t-real">Real</span>: comes in, Dr · <span class="t-personal">Personal</span>: owner gives, Cr</td><td class="mono"><span class="t-dr">Cash Dr</span><br><span class="t-cr">To Capital</span></td></tr>
+            <tr><td>Machinery bought on credit ₹1,20,000</td><td>Asset ↑ Dr; liability ↑ Cr</td><td><span class="t-real">Real</span>: comes in, Dr · <span class="t-personal">Personal</span>: supplier gives, Cr</td><td class="mono"><span class="t-dr">Machinery Dr</span><br><span class="t-cr">To Supplier</span></td></tr>
+            <tr><td>Rent paid in cash ₹12,000</td><td>Expense ↑ Dr; asset ↓ Cr</td><td><span class="t-nominal">Nominal</span>: expense, Dr · <span class="t-real">Real</span>: goes out, Cr</td><td class="mono"><span class="t-dr">Rent Dr</span><br><span class="t-cr">To Cash</span></td></tr>
+            <tr><td>Commission received in cash ₹15,000</td><td>Asset ↑ Dr; revenue ↑ Cr</td><td><span class="t-real">Real</span>: comes in, Dr · <span class="t-nominal">Nominal</span>: income, Cr</td><td class="mono"><span class="t-dr">Cash Dr</span><br><span class="t-cr">To Commission</span></td></tr>
+            <tr><td>Loan of ₹50,000 repaid by cheque</td><td>Liability ↓ Dr; asset ↓ Cr</td><td><span class="t-personal">Personal</span>: lender receives, Dr · <span class="t-personal">Personal</span>: bank gives, Cr</td><td class="mono"><span class="t-dr">Loan Dr</span><br><span class="t-cr">To Bank</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="prose" style="font-size:14.5px;color:var(--muted)">A transaction can affect more than two accounts (a compound entry). The rule still holds: total debits = total credits.</p>
+    </section>
+
+    <section class="block">
+      <div class="block-title"><h2>Common mistakes</h2><small>Where marks are lost</small></div>
+      <div class="mistakes">
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Debit means bad, credit means good.</p><p><span class="lbl right">Right</span>They only mean <b>left side</b> and <b>right side</b>. Whether they increase or decrease depends on the account type.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>A "Cr" on my bank statement means money went out.</p><p><span class="lbl right">Right</span>The statement is the <b>bank's</b> record. A deposit increases what the bank owes you, so the bank credits it.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Drawings are credited because capital goes down.</p><p><span class="lbl right">Right</span>Drawings A/c is <span class="t-dr">debited</span>. The debit reduces capital.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Every entry has exactly one debit and one credit.</p><p><span class="lbl right">Right</span>Compound entries can have several. Only the <b>totals</b> must match.</p></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title" id="quiz-section"><h2>Test yourself</h2><small>Three levels, instant answers</small></div>
+      <div class="levels" role="tablist" aria-label="Quiz level" id="levels"></div>
+      <div class="quiz" id="quiz" aria-live="polite"></div>
+    </section>
+
+    <nav class="pager" id="pager" aria-label="Lesson navigation" hidden></nav>
+  </main>
+</div>
+
+<script>
+// Lesson settings. To show a video, paste the YouTube video ID between the quotes
+// (for https://www.youtube.com/watch?v=abc123XYZ use 'abc123XYZ').
+window.LESSON = {
+  id: 'debits-credits',
+  video: { youtubeId: '' },
+  quiz: [
+    { name: 'Medium', note: 'Know the basics', qs: [
+      { q: 'A debit entry increases which type of account?', o: ['Assets', 'Liabilities', 'Revenue', 'Capital'], a: 0, why: 'Debits increase assets, expenses and drawings. Liabilities, revenue and capital increase with a credit.' },
+      { q: 'A credit entry increases which type of account?', o: ['Expenses', 'Assets', 'Liabilities', 'Drawings'], a: 2, why: 'Credits increase liabilities, capital and revenue.' },
+      { q: 'In the double-entry system, total debits must always equal:', o: ['Total assets', 'Total credits', 'Total expenses', 'Net profit'], a: 1, why: 'Every transaction is recorded with equal debits and credits, so their totals always match.' },
+      { q: 'Electricity bill of ₹4,000 is paid in cash. Which account is debited?', o: ['Cash A/c', 'Electricity A/c', 'Capital A/c', 'Bank A/c'], a: 1, why: 'An expense increases with a debit, so Electricity A/c is debited. Cash, an asset, decreases and is credited.' },
+      { q: 'The owner brings ₹1,00,000 into the business. Which account is credited?', o: ['Cash A/c', 'Drawings A/c', 'Capital A/c', 'Sales A/c'], a: 2, why: 'Capital increases with a credit. Cash, an asset, increases with a debit.' }
+    ]},
+    { name: 'High', note: 'Watch the traps', qs: [
+      { q: 'You deposit ₹10,000 and your bank statement shows it as a credit. Why?', o: ['The bank made an error', 'In the bank\'s books, your deposit is a liability (money it owes you), and liabilities increase with a credit', 'Credit always means money coming in', 'Deposits are recorded as the bank\'s revenue'], a: 1, why: 'The statement shows the bank\'s view. To the bank, your deposit is an amount owed to you, a liability, so it is credited. In your books, Bank A/c is debited.' },
+      { q: 'How does the Drawings account increase?', o: ['By a credit, because capital falls', 'By a debit, which reduces capital', 'Drawings never change', 'By a credit to cash only'], a: 1, why: 'Drawings increase with a debit. Since drawings reduce the owner\'s capital, the debit has the effect of decreasing equity.' },
+      { q: 'Goods sold earlier are returned by a customer. How is the revenue side reduced?', o: ['Sales (or Sales Returns) is debited', 'Sales is credited', 'Capital is credited', 'No entry is needed'], a: 0, why: 'Revenue increases with a credit, so it decreases with a debit, usually through a Sales Returns (Returns Inward) account.' },
+      { q: 'Machinery is bought on credit from a supplier. Which entry is correct?', o: ['Machinery A/c Dr, To Cash A/c', 'Supplier A/c Dr, To Machinery A/c', 'Machinery A/c Dr, To Supplier A/c', 'Purchases A/c Dr, To Supplier A/c'], a: 2, why: 'An asset increases (Dr Machinery) and a liability to the supplier increases (Cr Supplier). No cash moves.' },
+      { q: 'Commission is received in cash. The modern rules and the golden rules give which entry?', o: ['Commission A/c Dr, To Cash A/c', 'Cash A/c Dr, To Commission Received A/c', 'Cash A/c Dr, To Capital A/c', 'They give different entries'], a: 1, why: 'Modern: asset up (Dr Cash), revenue up (Cr Commission). Golden: real comes in (Dr), nominal income (Cr). Both give the same entry.' }
+    ]},
+    { name: 'Expert', note: 'Think it through', qs: [
+      { q: 'Goods are sold for ₹50,000: ₹30,000 received in cash, the rest on credit to a customer. Which entry is correct?', o: ['Cash A/c Dr 50,000, To Sales A/c 50,000', 'Cash A/c Dr 30,000; Customer A/c Dr 20,000; To Sales A/c 50,000', 'Sales A/c Dr 50,000; To Cash A/c 30,000; To Customer A/c 20,000', 'Cash A/c Dr 30,000, To Sales A/c 30,000'], a: 1, why: 'A compound entry: two debits (cash received and the amount the customer owes) and one credit to Sales. Debits 50,000 = credits 50,000.' },
+      { q: 'Salary for the month is ₹25,000. ₹20,000 is paid in cash and ₹5,000 is still owed. Which entry is correct?', o: ['Salary A/c Dr 20,000, To Cash A/c 20,000', 'Salary A/c Dr 25,000; To Cash A/c 20,000; To Outstanding Salary A/c 5,000', 'Salary A/c Dr 25,000, To Cash A/c 25,000', 'Cash A/c Dr 20,000; Outstanding Salary A/c Dr 5,000; To Salary A/c 25,000'], a: 1, why: 'The full expense of 25,000 is debited. Cash paid is credited, and the unpaid part is credited to a liability, Outstanding Salary.' },
+      { q: 'Which transaction leaves total assets unchanged?', o: ['Cash deposited into the bank', 'Owner introduces capital', 'Loan repaid by cheque', 'Goods bought on credit'], a: 0, why: 'Bank A/c Dr, Cash A/c Cr: one asset rises and another falls by the same amount.' },
+      { q: 'The owner invests ₹3,00,000 in cash, machinery is bought on credit for ₹1,20,000, and commission of ₹15,000 is received in cash. What is the cash balance?', o: ['₹4,35,000', '₹3,15,000', '₹1,95,000', '₹3,00,000'], a: 1, why: 'Only two transactions involve cash: 3,00,000 + 15,000 = 3,15,000. The machinery was bought on credit.' },
+      { q: 'A loan of ₹50,000 is repaid by cheque. What is the effect under the modern rules?', o: ['Liability ↓ (Dr Loan); asset ↓ (Cr Bank)', 'Liability ↑ (Cr Loan); asset ↑ (Dr Bank)', 'Expense ↑ (Dr Loan); asset ↓ (Cr Bank)', 'Capital ↓ (Dr Capital); asset ↓ (Cr Bank)'], a: 0, why: 'Repaying reduces what is owed (a liability decreases with a debit) and reduces the bank balance (an asset decreases with a credit).' }
+    ]}
+  ]
+};
+</script>
+<script src="lessons.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
