@@ -12,7 +12,8 @@ window.DRDEBIT_LESSONS = [
       { id: 'assets-liabilities', title: 'Assets & Liabilities', file: 'assets-and-liabilities.html' },
       { id: 'capital-equation', title: 'Capital & the Accounting Equation', file: 'capital-and-accounting-equation.html' },
       { id: 'revenue-expenses', title: 'Revenue, Expenses & Costs', file: 'revenue-expenses-and-costs.html' },
-      { id: 'goods-debtors-creditors', title: 'Goods, Debtors & Creditors', file: 'goods-debtors-and-creditors.html' }
+      { id: 'goods-inventory', title: 'Goods & Inventory', file: 'goods-and-inventory.html' },
+      { id: 'debtors-creditors', title: 'Debtors & Creditors', file: 'debtors-and-creditors.html' }
     ]
   }
 ];

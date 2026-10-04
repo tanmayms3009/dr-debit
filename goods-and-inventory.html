@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Goods &amp; Inventory · Dr. Debit</title>
+<meta name="description" content="Goods and inventory: what counts as goods, raw materials, work in progress and finished goods, and how cost of goods sold is calculated, with a three-level quiz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="rail" id="rail" aria-label="Topics">
+    <div class="brand" aria-label="Dr. Debit">
+      <span class="brand-word">Dr<span style="color:var(--real)">.</span>Debit</span>
+      <svg class="brand-pulse" viewBox="0 0 400 80" fill="none" aria-hidden="true">
+        <polyline points="0,58 80,58 96,58 110,22 126,74 140,38 152,58 214,58" stroke="var(--real)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="232" y="48" width="26" height="22" rx="5" fill="var(--personal)"/>
+        <rect x="272" y="34" width="26" height="36" rx="5" fill="var(--real)"/>
+        <rect x="312" y="20" width="26" height="50" rx="5" fill="var(--nominal)"/>
+        <rect x="352" y="6" width="26" height="64" rx="5" fill="var(--dr)"/>
+      </svg>
+    </div>
+    <nav class="nav" id="nav"></nav>
+  </aside>
+
+  <main>
+    <button class="btn menu-btn" id="menuBtn" aria-controls="rail" aria-expanded="false">☰ Topics</button>
+
+    <div class="head">
+      <div class="crumbs">Financial Accounting <span>›</span> Introduction to Financial Accounting <span>›</span> <b>Goods &amp; Inventory</b></div>
+      <h1>Goods &amp; Inventory</h1>
+      <div class="meta">
+        <a class="chip" href="#slides">6 slides</a>
+        <a class="chip" href="#quiz-section">Quiz: Medium · High · Expert</a>
+      </div>
+    </div>
+
+    <div class="legend" aria-label="Colour key">
+      <span><i class="sw" style="background:var(--personal)"></i><span class="t-personal">Personal</span></span>
+      <span><i class="sw" style="background:var(--real)"></i><span class="t-real">Real</span></span>
+      <span><i class="sw" style="background:var(--nominal)"></i><span class="t-nominal">Nominal</span></span>
+      <span><i class="sw" style="background:var(--dr)"></i><span class="t-dr">Debit (Dr)</span></span>
+      <span><i class="sw" style="background:var(--cr)"></i><span class="t-cr">Credit (Cr)</span></span>
+    </div>
+
+    <section class="block">
+      <div class="block-title"><h2>Key takeaways</h2><small>30-second read</small></div>
+      <div class="takeaways">
+        <ul>
+          <li><span class="tick">✓</span><span><span class="t-real">Goods</span> are items a business buys or makes <b>in order to sell</b>.</span></li>
+          <li><span class="tick">✓</span><span>Whether something is goods depends on the business: a laptop is goods for a laptop shop, but an asset for a law firm.</span></li>
+          <li><span class="tick">✓</span><span>A manufacturer's goods pass through three stages: <b>raw materials → work in progress → finished goods</b>.</span></li>
+          <li><span class="tick">✓</span><span>Unsold goods are <b>inventory</b>, a current asset. Once sold, their cost becomes <span class="t-nominal">cost of goods sold</span>.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block deck" id="slides" aria-roledescription="carousel" aria-label="Lesson slides">
+      <div class="block-title"><h2>Slides</h2><small>Use ← → keys or the buttons</small></div>
+      <div class="stage" id="stage">
+
+        <div class="slide" data-script="Two businesses each buy a laptop. One is a laptop shop. The other is a law firm. Is the laptop goods, or an asset? Here's the twist: it's different for each of them.">
+          <p class="s-eyebrow a" style="--d:0">Quick question</p>
+          <p class="s-big a" style="--d:1">One laptop. Two buyers.<br><span class="t-real">Goods</span> or <span class="t-real">asset</span>?</p>
+          <p class="s-text a" style="--d:2">A laptop shop buys one. A law firm buys one. Same item, same answer?</p>
+        </div>
+
+        <div class="slide" data-script="Goods are items a business buys or makes in order to sell. So it's the purpose that decides, not the item. Cars are goods for a car dealer, but an asset for a taxi company. Furniture is goods for a furniture shop, but an asset for a bank.">
+          <p class="s-eyebrow a" style="--d:0">Goods</p>
+          <p class="s-title a" style="--d:1">Bought or made <span class="t-real">to sell</span></p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:2;border-color:var(--real)"><b class="t-real">Cars</b><span>Car dealer → goods</span><span>Taxi company → asset</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--real)"><b class="t-real">Furniture</b><span>Furniture shop → goods</span><span>Bank → asset</span></div>
+          </div>
+          <p class="s-text a" style="--d:4">The purpose decides, not the item.</p>
+        </div>
+
+        <div class="slide" data-script="A manufacturer's goods pass through three stages. Raw materials, like wood or flour. Work in progress, things half made. And finished goods, ready to sell. A trader skips the first two: it buys finished goods and sells them on.">
+          <p class="s-eyebrow a" style="--d:0">Three stages</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:1;border-color:var(--real)"><b class="t-real">Raw materials</b><span>Wood, flour</span></div>
+            <div class="s-card a" style="--d:2;border-color:var(--real)"><b class="t-real">Work in progress</b><span>Half-made tables</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--real)"><b class="t-real">Finished goods</b><span>Ready to sell</span></div>
+          </div>
+          <p class="s-text a" style="--d:4">A trader buys finished goods and sells them on.</p>
+        </div>
+
+        <div class="slide" data-script="Until goods are sold, they're inventory, a current asset in the balance sheet. When they're sold, their cost moves to the income statement as cost of goods sold. The formula: opening stock, plus purchases, minus closing stock.">
+          <p class="s-eyebrow a" style="--d:0">From inventory to expense</p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:1;border-color:var(--real)"><b class="t-real">Unsold</b><span>Inventory: a current asset</span></div>
+            <div class="s-card a" style="--d:2;border-color:var(--nominal)"><b class="t-nominal">Sold</b><span>Cost of goods sold: an expense</span></div>
+          </div>
+          <div class="s-rule a" style="--d:3"><div><span class="t-nominal">COGS</span> = Opening stock + Purchases − Closing stock</div></div>
+        </div>
+
+        <div class="slide" data-script="Let's try it. Opening stock forty thousand. Purchases two lakh. Closing stock sixty thousand. So cost of goods sold is one lakh eighty thousand. If sales were two lakh fifty thousand, gross profit is seventy thousand.">
+          <p class="s-eyebrow a" style="--d:0">Example · cost of goods sold</p>
+          <div class="s-row">
+            <div class="s-entry a" style="--d:1;flex:1">
+              Opening stock&nbsp;&nbsp;&nbsp;&nbsp;40,000<br>
+              + Purchases&nbsp;&nbsp;&nbsp;&nbsp;2,00,000<br>
+              − Closing stock&nbsp;&nbsp;60,000<br>
+              <b class="t-nominal">COGS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1,80,000</b>
+            </div>
+            <div class="s-entry a" style="--d:2;flex:1">
+              Sales&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2,50,000<br>
+              − COGS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1,80,000<br>
+              <b class="t-real">Gross profit&nbsp;&nbsp;70,000</b>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide" data-script="So, the laptop? For the laptop shop, it's goods, bought to sell. For the law firm, it's an asset, used for years. Remember: unsold goods are inventory, and only goods actually sold become cost of goods sold.">
+          <p class="s-eyebrow a" style="--d:0">Recap</p>
+          <p class="s-title a" style="--d:1">The laptop? <span class="t-real">It depends on the business.</span></p>
+          <div class="s-row">
+            <div class="s-card a" style="--d:2;border-color:var(--real)"><b class="t-real">Laptop shop</b><span>Goods, bought to sell</span></div>
+            <div class="s-card a" style="--d:3;border-color:var(--real)"><b class="t-real">Law firm</b><span>Asset, used for years</span></div>
+          </div>
+          <p class="s-text a" style="--d:4">Unsold = inventory. Sold = cost of goods sold.</p>
+        </div>
+
+        <span class="s-count" id="slideCount">1 / 6</span>
+      </div>
+      <div class="controls">
+        <button class="btn" id="prevSlide" aria-label="Previous slide">← Prev</button>
+        <div class="dots" id="dots"></div>
+        <button class="btn" id="autoBtn">▶ Auto-play</button>
+        <button class="btn" id="nextSlide" aria-label="Next slide">Next →</button>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title"><h2>Notes</h2><small>Goods and inventory</small></div>
+      <div class="prose">
+        <p>Goods are tangible items a business acquires for the purpose of selling them to customers. They are central to any retail or manufacturing business. Managing inventory well matters for both cash flow and profit: too much stock ties up cash, too little loses sales.</p>
+      </div>
+
+      <div class="types two">
+        <article class="type">
+          <div class="type-head"><h3 class="t-real">Categories of goods</h3></div>
+          <dl>
+            <div><dt>Raw materials</dt><dd>Basic inputs for production, like wood for furniture or flour for bread</dd></div>
+            <div><dt>Work in progress (WIP)</dt><dd>Partly finished items, valued at all costs incurred so far</dd></div>
+            <div><dt>Finished goods</dt><dd>Completed products ready for sale</dd></div>
+          </dl>
+          <p class="ask">A trader holds only goods bought for resale. A manufacturer can hold all three.</p>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3 class="t-nominal">In the accounts</h3></div>
+          <dl>
+            <div><dt>Unsold goods</dt><dd>Shown as inventory (stock), a current asset in the Balance Sheet</dd></div>
+            <div><dt>Goods sold</dt><dd>Their cost moves to cost of goods sold in the income statement</dd></div>
+            <div><dt>Formula</dt><dd>COGS = Opening stock + Purchases − Closing stock</dd></div>
+            <div><dt>Gross profit</dt><dd>Sales − COGS</dd></div>
+          </dl>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3 class="t-real">It depends on the business</h3></div>
+          <p class="rule" style="background:var(--real-bg)">The same item can be goods for one business and an asset for another.</p>
+          <dl>
+            <div><dt>Goods</dt><dd>Bought or made to sell: cars for a car dealer, laptops for a laptop shop</dd></div>
+            <div><dt>Asset</dt><dd>Bought to use for years: a taxi company's cars, a law firm's laptops</dd></div>
+          </dl>
+        </article>
+        <article class="type">
+          <div class="type-head"><h3 class="t-cr">Goods that leave without a sale</h3></div>
+          <dl>
+            <div><dt>Taken by the owner</dt><dd>Treated as <b>drawings</b> at cost, not as a sale: Drawings A/c Dr, To Purchases A/c</dd></div>
+            <div><dt>Lost by fire or theft</dt><dd>A loss at cost: Loss by Fire A/c Dr, To Purchases A/c</dd></div>
+            <div><dt>Given as free samples</dt><dd>An advertising expense at cost: Advertisement A/c Dr, To Purchases A/c</dd></div>
+          </dl>
+        </article>
+      </div>
+
+      <h3 style="font-size:20px;margin-top:8px">Goods or not?</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Item</th><th>Classification</th></tr></thead>
+          <tbody>
+            <tr><td>Timber in a furniture factory's store</td><td><span class="pill tag-r">Goods</span> raw materials</td></tr>
+            <tr><td>Half-built cupboards on the factory floor</td><td><span class="pill tag-r">Goods</span> work in progress</td></tr>
+            <tr><td>Cars on a car dealer's showroom floor</td><td><span class="pill tag-r">Goods</span> finished goods</td></tr>
+            <tr><td>The car the dealer's manager uses for work</td><td><span class="pill tag-r">Non-current asset</span>, not goods</td></tr>
+            <tr><td>Notebooks on a stationery shop's shelves</td><td><span class="pill tag-r">Goods</span> bought for resale</td></tr>
+            <tr><td>Paper used in a law firm's office</td><td><span class="pill tag-n">Expense</span> (office supplies), not goods</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title"><h2>Common mistakes</h2><small>Where marks are lost</small></div>
+      <div class="mistakes">
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Anything a business buys is "goods".</p><p><span class="lbl right">Right</span>Only items bought or made <b>to sell</b>. Items for use are assets or expenses.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Cost of goods sold equals purchases.</p><p><span class="lbl right">Right</span>Adjust for stock: Opening stock + Purchases − Closing stock.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Goods taken by the owner are recorded as sales.</p><p><span class="lbl right">Right</span>They are <b>drawings</b> at cost. No sale happened.</p></div>
+        <div class="mistake"><p><span class="lbl wrong">Wrong</span>Unsold goods at year end are an expense.</p><p><span class="lbl right">Right</span>They are <span class="t-real">inventory</span>, a current asset, until sold.</p></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-title" id="quiz-section"><h2>Test yourself</h2><small>Three levels, instant answers</small></div>
+      <div class="levels" role="tablist" aria-label="Quiz level" id="levels"></div>
+      <div class="quiz" id="quiz" aria-live="polite"></div>
+    </section>
+
+    <nav class="pager" id="pager" aria-label="Lesson navigation" hidden></nav>
+  </main>
+</div>
+
+<script>
+// Lesson settings. To show a video, paste the YouTube video ID between the quotes
+// (for https://www.youtube.com/watch?v=abc123XYZ use 'abc123XYZ').
+window.LESSON = {
+  id: 'goods-inventory',
+  video: { youtubeId: '' },
+  quiz: [
+    { name: 'Medium', note: 'Know the basics', qs: [
+      { q: 'In accounting, "goods" means items that a business:', o: ['Uses for many years', 'Buys or makes in order to sell', 'Borrows from a bank', 'Gives to employees'], a: 1, why: 'Goods are bought or made for the purpose of selling them to customers.' },
+      { q: 'Partly completed products in a factory are called:', o: ['Raw materials', 'Work in progress', 'Finished goods', 'Cost of goods sold'], a: 1, why: 'Items that have started production but are not finished are work in progress (WIP).' },
+      { q: 'Unsold goods at the year end are shown as:', o: ['An expense', 'Inventory, a current asset', 'A non-current asset', 'A liability'], a: 1, why: 'Unsold goods remain inventory (stock), a current asset, until they are sold.' },
+      { q: 'For a furniture shop, which of these is NOT goods?', o: ['Tables for sale', 'Chairs for sale', "The shop's delivery van", 'Sofas for sale'], a: 2, why: 'The van is used to run the business, not to sell, so it is a non-current asset.' },
+      { q: 'For a bakery, flour is an example of:', o: ['Finished goods', 'Work in progress', 'Raw materials', 'A fixed asset'], a: 2, why: 'Flour is a basic input used to make bread, so it is a raw material.' }
+    ]},
+    { name: 'High', note: 'Watch the traps', qs: [
+      { q: 'A law firm buys a laptop for its office. How is it classified?', o: ['Goods', 'Non-current asset', 'Raw material', 'Cost of goods sold'], a: 1, why: 'The firm uses the laptop for years and does not sell it, so it is a non-current asset.' },
+      { q: 'A taxi company buys 10 cars to run its taxi service. The cars are:', o: ['Goods', 'Non-current assets', 'Work in progress', 'Inventory'], a: 1, why: 'The cars are used to earn income over years, not sold, so they are non-current assets.' },
+      { q: 'The owner takes goods costing ₹5,000 from the shop for family use. How is this recorded?', o: ['As sales of ₹5,000', 'As drawings: Drawings A/c Dr, To Purchases A/c', 'As an expense: Purchases A/c Dr, To Cash A/c', 'It is not recorded'], a: 1, why: 'No sale took place. The owner received goods for personal use, so it is drawings at cost, and purchases are reduced.' },
+      { q: 'A trader buys mobile phones and sells them on without changing them. Which category of goods does the trader hold?', o: ['Raw materials', 'Work in progress', 'Finished goods bought for resale', 'All three'], a: 2, why: 'A trader does not manufacture, so it holds only finished goods bought for resale.' },
+      { q: 'When goods are sold, what happens to their cost?', o: ['It stays in inventory', 'It moves to cost of goods sold, an expense', 'It is added to capital', 'It becomes a liability'], a: 1, why: 'Once sold, the cost of the goods is matched against sales revenue as cost of goods sold.' }
+    ]},
+    { name: 'Expert', note: 'Think it through', qs: [
+      { q: 'Opening stock ₹40,000; purchases ₹2,00,000; closing stock ₹60,000. What is the cost of goods sold?', o: ['₹2,00,000', '₹1,80,000', '₹2,20,000', '₹3,00,000'], a: 1, why: 'COGS = 40,000 + 2,00,000 − 60,000 = 1,80,000.' },
+      { q: 'Using the figures above, sales were ₹2,50,000. What is the gross profit?', o: ['₹50,000', '₹70,000', '₹2,50,000', '₹10,000'], a: 1, why: 'Gross profit = Sales − COGS = 2,50,000 − 1,80,000 = 70,000.' },
+      { q: 'Opening stock ₹50,000; purchases ₹3,00,000; cost of goods sold ₹2,80,000. What is the closing stock?', o: ['₹30,000', '₹70,000', '₹1,30,000', '₹20,000'], a: 1, why: 'Closing stock = Opening stock + Purchases − COGS = 50,000 + 3,00,000 − 2,80,000 = 70,000.' },
+      { q: 'Closing stock is overstated by ₹10,000 by mistake. What is the effect on gross profit?', o: ['Understated by ₹10,000', 'Overstated by ₹10,000', 'No effect', 'Overstated by ₹20,000'], a: 1, why: 'A higher closing stock lowers COGS by 10,000, so gross profit is overstated by 10,000.' },
+      { q: 'Goods costing ₹8,000 are destroyed by fire and are not insured. Which entry is correct?', o: ['Purchases A/c Dr, To Loss by Fire A/c', 'Loss by Fire A/c Dr, To Purchases A/c', 'Drawings A/c Dr, To Purchases A/c', 'No entry is needed'], a: 1, why: 'The loss is recorded at cost (a nominal loss, debited) and the goods available are reduced by crediting Purchases.' }
+    ]}
+  ]
+};
+</script>
+<script src="lessons.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

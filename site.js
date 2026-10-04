@@ -1,4 +1,5 @@
 // Dr. Debit: shared page behaviour for every lesson.
+// (Progress tracking was removed; it returns later with user accounts.)
 // Each lesson page defines window.LESSON = { id, video: { youtubeId }, quiz: [...] }
 // and loads lessons.js before this file.
 (function () {
@@ -6,11 +7,6 @@
   const GROUPS = window.DRDEBIT_LESSONS || [];
   const ALL = GROUPS.flatMap(g => g.lessons);
   const here = ALL.findIndex(l => l.id === LESSON.id);
-
-  // ---------- Progress (saved on this device only) ----------
-  let done = {};
-  try { done = JSON.parse(localStorage.getItem('ll-done') || '{}') || {}; } catch (e) { done = {}; }
-  function save() { try { localStorage.setItem('ll-done', JSON.stringify(done)); } catch (e) {} }
 
   // ---------- Sidebar ----------
   function renderNav() {
@@ -27,30 +23,14 @@
         const el = document.createElement(cur ? 'div' : 'a');
         if (!cur) { el.href = l.file; el.style.textDecoration = 'none'; }
         else { el.setAttribute('aria-current', 'page'); }
-        el.className = 'nav-item' + (cur ? ' current' : '') + (done[l.id] ? ' done' : '');
-        el.innerHTML = '<span class="dot"></span><span></span>';
-        el.children[0].textContent = done[l.id] ? '✓' : '';
-        el.children[1].textContent = l.title;
+        el.className = 'nav-item' + (cur ? ' current' : '');
+        el.textContent = l.title;
         li.appendChild(el); ul.appendChild(li);
       });
       box.appendChild(ul); nav.appendChild(box);
     });
-    const n = ALL.filter(l => done[l.id]).length;
-    const t = document.getElementById('progText');
-    if (t) t.textContent = n + ' of ' + ALL.length + (ALL.length === 1 ? ' lesson' : ' lessons') + ' complete';
-    const bar = document.getElementById('progBar');
-    if (bar) bar.style.width = (ALL.length ? n / ALL.length * 100 : 0) + '%';
-    const btn = document.getElementById('completeBtn');
-    if (btn) btn.textContent = done[LESSON.id] ? 'Completed ✓' : 'Mark lesson complete';
   }
   renderNav();
-  const completeBtn = document.getElementById('completeBtn');
-  if (completeBtn) completeBtn.addEventListener('click', () => {
-    done[LESSON.id] = !done[LESSON.id]; save(); renderNav();
-    const m = document.getElementById('completeMsg');
-    if (m) m.textContent = done[LESSON.id] ? 'Nice work. Progress saved on this device.' : '';
-  });
-
   // ---------- Previous / Next (only lessons that exist) ----------
   const pager = document.getElementById('pager');
   if (pager && here >= 0) {
