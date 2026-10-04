@@ -211,3 +211,5 @@ a.nav-item:hover { background: var(--surface-2); color: var(--fg); }
 html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 .pager a.pager-link { text-decoration: none; display: flex; flex-direction: column; gap: 2px; padding: 12px 16px; border: 1px solid var(--line); border-radius: var(--r); background: var(--surface); min-width: 0; }
+.types.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 900px) { .types.two { grid-template-columns: minmax(0, 1fr); } }
